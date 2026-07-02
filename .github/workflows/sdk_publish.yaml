@@ -130,6 +130,12 @@ jobs:
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           packages-dir: dist/pypi-clients
+          # The 4 API clients are bootstrap-uploaded manually with a token on
+          # release day (only the `nightona` SDK has a PyPI pending publisher).
+          # skip-existing lets the workflow tolerate those pre-existing uploads
+          # instead of failing on HTTP 409. NOTE: not set on the SDK publish
+          # step below, where a silent skip would mask a real failure.
+          skip-existing: true
 
       - name: Wait for Python API clients on PyPI
         if: matrix.projects == 'sdk-python'
