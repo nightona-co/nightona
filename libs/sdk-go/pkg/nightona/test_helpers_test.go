@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
-	"github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/types"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
 	"github.com/stretchr/testify/require"
 )
 

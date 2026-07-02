@@ -33,7 +33,7 @@ COPY apps/snapshot-manager/go.mod apps/snapshot-manager/go.sum apps/snapshot-man
 RUN head -1 go.work > go.work.tmp && printf '\nuse (\n\t./apps/snapshot-manager\n)\n' >> go.work.tmp && mv go.work.tmp go.work
 
 ENV NX_DAEMON=false
-ENV GONOSUMDB=github.com/Amartuvshins0404/nightona
+ENV GONOSUMDB=github.com/nightona-co/nightona
 
 RUN cd apps/snapshot-manager && go mod download
 

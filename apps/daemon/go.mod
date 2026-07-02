@@ -1,4 +1,4 @@
-module github.com/Amartuvshins0404/nightona/apps/daemon
+module github.com/nightona-co/nightona/apps/daemon
 
 go 1.25.4
 
@@ -9,7 +9,6 @@ replace github.com/docker/go-connections => github.com/docker/go-connections v0.
 replace github.com/samber/lo => github.com/samber/lo v1.39.0
 
 require (
-	github.com/Amartuvshins0404/nightona/libs/common-go v0.0.0-00010101000000-000000000000
 	github.com/Masterminds/semver/v3 v3.4.0
 	github.com/cakturk/go-netstat v0.0.0-20200220111822-e5b49efee7a5
 	github.com/creack/pty v1.1.23
@@ -24,6 +23,7 @@ require (
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/lmittmann/tint v1.1.2
 	github.com/mattn/go-isatty v0.0.20
+	github.com/nightona-co/nightona/libs/common-go v0.0.0-00010101000000-000000000000
 	github.com/orcaman/concurrent-map/v2 v2.0.1
 	github.com/pkg/sftp v1.13.6
 	github.com/ramr/go-reaper v0.3.1
@@ -46,7 +46,6 @@ require (
 
 require (
 	dario.cat/mergo v1.0.2 // indirect
-	github.com/Amartuvshins0404/nightona/libs/api-client-go v0.152.1 // indirect
 	github.com/KyleBanks/depth v1.2.1 // indirect
 	github.com/Microsoft/go-winio v0.6.2 // indirect
 	github.com/ProtonMail/go-crypto v1.3.0 // indirect
@@ -96,6 +95,7 @@ require (
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.3-0.20250322232337-35a7c28c31ee // indirect
+	github.com/nightona-co/nightona/libs/api-client-go v0.152.1 // indirect
 	github.com/oklog/run v1.0.0 // indirect
 	github.com/onsi/gomega v1.38.1 // indirect
 	github.com/pelletier/go-toml/v2 v2.2.4 // indirect
@@ -137,6 +137,6 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/Amartuvshins0404/nightona/libs/common-go => ../../libs/common-go
+replace github.com/nightona-co/nightona/libs/common-go => ../../libs/common-go
 
-replace github.com/Amartuvshins0404/nightona/libs/api-client-go => ../../libs/api-client-go
+replace github.com/nightona-co/nightona/libs/api-client-go => ../../libs/api-client-go

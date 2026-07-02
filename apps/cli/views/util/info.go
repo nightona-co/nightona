@@ -5,7 +5,7 @@ package util
 
 import (
 	"github.com/charmbracelet/lipgloss"
-	"github.com/Amartuvshins0404/nightona/apps/cli/views/common"
+	"github.com/nightona-co/nightona/apps/cli/views/common"
 )
 
 const PropertyNameWidth = 16

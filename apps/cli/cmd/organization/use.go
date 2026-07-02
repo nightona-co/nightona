@@ -7,12 +7,12 @@ import (
 	"context"
 	"fmt"
 
-	apiclient_cli "github.com/Amartuvshins0404/nightona/apps/cli/apiclient"
-	"github.com/Amartuvshins0404/nightona/apps/cli/config"
-	"github.com/Amartuvshins0404/nightona/apps/cli/views/common"
-	"github.com/Amartuvshins0404/nightona/apps/cli/views/organization"
-	"github.com/Amartuvshins0404/nightona/apps/cli/views/util"
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
+	apiclient_cli "github.com/nightona-co/nightona/apps/cli/apiclient"
+	"github.com/nightona-co/nightona/apps/cli/config"
+	"github.com/nightona-co/nightona/apps/cli/views/common"
+	"github.com/nightona-co/nightona/apps/cli/views/organization"
+	"github.com/nightona-co/nightona/apps/cli/views/util"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 	"github.com/spf13/cobra"
 )
 

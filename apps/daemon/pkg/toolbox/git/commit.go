@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"time"
 
-	common_errors "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/errors"
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/git"
+	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/git"
 	"github.com/gin-gonic/gin"
 	go_git "github.com/go-git/go-git/v5"
 	"github.com/go-git/go-git/v5/plumbing/object"

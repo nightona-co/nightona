@@ -16,7 +16,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/toolbox/computeruse"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/toolbox/computeruse"
 	"github.com/godbus/dbus/v5"
 )
 
@@ -920,7 +920,7 @@ func (c *ComputerUse) setAccessibilityNodeValue(id string, value string) error {
 // These adapt the lowercase plugin-internal methods (positional args,
 // plugin-owned A11yNode/A11yBounds) to the shape the daemon's IComputerUse
 // interface expects (request structs, wire types from
-// github.com/Amartuvshins0404/nightona/apps/daemon/pkg/toolbox/computeruse). Error translation to
+// github.com/nightona-co/nightona/apps/daemon/pkg/toolbox/computeruse). Error translation to
 // HTTP status codes happens in the handler layer — wrappers propagate
 // sentinel errors unchanged so the handler can use errors.Is.
 // ---------------------------------------------------------------------------

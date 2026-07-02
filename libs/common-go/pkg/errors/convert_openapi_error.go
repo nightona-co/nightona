@@ -7,7 +7,7 @@ import (
 	"encoding/json"
 	"errors"
 
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 )
 
 func ConvertOpenAPIError(err error) error {

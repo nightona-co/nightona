@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"time"
 
-	apiclient_cli "github.com/Amartuvshins0404/nightona/apps/cli/apiclient"
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
+	apiclient_cli "github.com/nightona-co/nightona/apps/cli/apiclient"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 )
 
 func AwaitSnapshotState(ctx context.Context, apiClient *apiclient.APIClient, name string, states ...apiclient.SnapshotState) error {

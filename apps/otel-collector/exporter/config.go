@@ -6,7 +6,7 @@ package exporter
 import (
 	"time"
 
-	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/cache"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/cache"
 	"go.opentelemetry.io/collector/config/configretry"
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 )

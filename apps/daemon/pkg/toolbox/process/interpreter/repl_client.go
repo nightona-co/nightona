@@ -16,8 +16,8 @@ import (
 	"syscall"
 	"time"
 
-	common_errors "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/errors"
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/childreap"
+	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/childreap"
 	"github.com/google/uuid"
 	"github.com/gorilla/websocket"
 )

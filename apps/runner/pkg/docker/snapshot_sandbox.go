@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/api/dto"
+	"github.com/nightona-co/nightona/apps/runner/pkg/api/dto"
 )
 
 func snapshotRegistryProject(reg *dto.RegistryDTO) string {

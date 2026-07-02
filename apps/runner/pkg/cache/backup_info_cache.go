@@ -7,10 +7,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/models"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/models/enums"
+	"github.com/nightona-co/nightona/apps/runner/pkg/models"
+	"github.com/nightona-co/nightona/apps/runner/pkg/models/enums"
 
-	common_cache "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/cache"
+	common_cache "github.com/nightona-co/nightona/libs/common-go/pkg/cache"
 )
 
 type BackupInfoCache struct {

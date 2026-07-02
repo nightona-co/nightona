@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/toolbox/computeruse"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/toolbox/computeruse"
 	"github.com/go-vgo/robotgo"
 	log "github.com/sirupsen/logrus"
 )

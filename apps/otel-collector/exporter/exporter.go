@@ -11,8 +11,8 @@ import (
 	"net/http"
 	"sync"
 
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
-	"github.com/Amartuvshins0404/nightona/apps/otel-collector/exporter/internal/config"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
+	"github.com/nightona-co/nightona/apps/otel-collector/exporter/internal/config"
 	"go.opentelemetry.io/collector/client"
 	"go.opentelemetry.io/collector/consumer/consumererror"
 	"go.opentelemetry.io/collector/pdata/plog"

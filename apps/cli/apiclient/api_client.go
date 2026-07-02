@@ -10,10 +10,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/Amartuvshins0404/nightona/apps/cli/auth"
-	"github.com/Amartuvshins0404/nightona/apps/cli/config"
-	"github.com/Amartuvshins0404/nightona/apps/cli/internal"
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
+	"github.com/nightona-co/nightona/apps/cli/auth"
+	"github.com/nightona-co/nightona/apps/cli/config"
+	"github.com/nightona-co/nightona/apps/cli/internal"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 
 	log "github.com/sirupsen/logrus"
 )
@@ -63,7 +63,7 @@ func checkVersionsMismatch(res *http.Response) {
 	}
 
 	versionMismatchWarningOnce.Do(func() {
-		log.Warn(fmt.Sprintf("Version mismatch: Nightona CLI is on v%s and API is on v%s.\nMake sure the versions are aligned using 'brew upgrade amartuvshins0404/cli/nightona' or by downloading the latest version from https://github.com/Amartuvshins0404/nightona/releases.", cliVersion, apiVersion))
+		log.Warn(fmt.Sprintf("Version mismatch: Nightona CLI is on v%s and API is on v%s.\nMake sure the versions are aligned using 'brew upgrade nightona-co/cli/nightona' or by downloading the latest version from https://github.com/nightona-co/nightona/releases.", cliVersion, apiVersion))
 	})
 }
 

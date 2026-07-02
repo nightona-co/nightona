@@ -9,9 +9,9 @@ import (
 	"time"
 
 	"github.com/containerd/errdefs"
-	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/utils"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/api/dto"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/common"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/utils"
+	"github.com/nightona-co/nightona/apps/runner/pkg/api/dto"
+	"github.com/nightona-co/nightona/apps/runner/pkg/common"
 
 	"github.com/docker/docker/api/types/container"
 	v1 "github.com/opencontainers/image-spec/specs-go/v1"

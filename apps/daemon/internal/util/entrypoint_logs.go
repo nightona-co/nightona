@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/log"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/log"
 )
 
 func ReadEntrypointLogs(entrypointLogFilePath string) error {

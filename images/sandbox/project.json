@@ -7,13 +7,13 @@
   "targets": {
     "docker": {
       "options": {
-        "tags": ["ghcr.io/amartuvshins0404/sandbox:$VERSION$ARCH"],
-        "cache-from": ["type=registry,ref=ghcr.io/amartuvshins0404/sandbox:buildcache$ARCH"],
-        "cache-to": ["type=registry,ref=ghcr.io/amartuvshins0404/sandbox:buildcache$ARCH,mode=max"]
+        "tags": ["ghcr.io/nightona-co/sandbox:$VERSION$ARCH"],
+        "cache-from": ["type=registry,ref=ghcr.io/nightona-co/sandbox:buildcache$ARCH"],
+        "cache-to": ["type=registry,ref=ghcr.io/nightona-co/sandbox:buildcache$ARCH,mode=max"]
       },
       "configurations": {
         "pr-build": {
-          "tags": ["ghcr.io/amartuvshins0404/sandbox:$VERSION"]
+          "tags": ["ghcr.io/nightona-co/sandbox:$VERSION"]
         }
       }
     }

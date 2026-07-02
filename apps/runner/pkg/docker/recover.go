@@ -7,9 +7,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/api/dto"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/common"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/models"
+	"github.com/nightona-co/nightona/apps/runner/pkg/api/dto"
+	"github.com/nightona-co/nightona/apps/runner/pkg/common"
+	"github.com/nightona-co/nightona/apps/runner/pkg/models"
 )
 
 func (d *DockerClient) RecoverSandbox(ctx context.Context, sandboxId string, recoverDto dto.RecoverSandboxDTO) error {

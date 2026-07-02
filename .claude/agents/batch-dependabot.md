@@ -76,8 +76,8 @@ Compare each version against what's on the `main` branch. If any module shows a 
 
 Pay special attention to these internal dependencies:
 
-- `github.com/Amartuvshins0404/nightona/libs/api-client-go`
-- `github.com/Amartuvshins0404/nightona/libs/toolbox-api-client-go`
+- `github.com/nightona-co/nightona/libs/api-client-go`
+- `github.com/nightona-co/nightona/libs/toolbox-api-client-go`
 
 ### 3b. Check for breaking API changes
 

@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/recording"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/recording"
 	"github.com/gin-gonic/gin"
 )
 

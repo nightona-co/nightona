@@ -8,7 +8,7 @@ permissions: {}
 
 jobs:
   build:
-    if: github.repository == 'Amartuvshins0404/nightona'
+    if: github.repository == 'nightona-co/nightona'
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -34,8 +34,8 @@ jobs:
           # see: https://github.com/devcontainers/ci/issues/191#issuecomment-1603857155
           BUILDX_NO_DEFAULT_ATTESTATIONS: true
         with:
-          imageName: ghcr.io/amartuvshins0404/nightona-devcontainer
-          cacheFrom: ghcr.io/amartuvshins0404/nightona-devcontainer
+          imageName: ghcr.io/nightona-co/nightona-devcontainer
+          cacheFrom: ghcr.io/nightona-co/nightona-devcontainer
           platform: linux/amd64,linux/arm64
           imageTag: main,latest
           configFile: .devcontainer/devcontainer.build.json

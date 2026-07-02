@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/options"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/options"
 )
 
 // DockerImage provides a fluent interface for building Docker images declaratively.

@@ -1,4 +1,4 @@
-module github.com/Amartuvshins0404/nightona/apps/snapshot-manager
+module github.com/nightona-co/nightona/apps/snapshot-manager
 
 go 1.25.0
 

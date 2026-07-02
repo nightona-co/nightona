@@ -162,10 +162,10 @@
       "options": {
         "context": "{workspaceRoot}",
         "file": "{projectRoot}/Dockerfile",
-        "tags": ["ghcr.io/amartuvshins0404/nightona-{projectName}:$VERSION$ARCH"],
+        "tags": ["ghcr.io/nightona-co/nightona-{projectName}:$VERSION$ARCH"],
         "build-args": ["VERSION=$VERSION"],
-        "cache-from": ["type=registry,ref=ghcr.io/amartuvshins0404/nightona-{projectName}:buildcache$ARCH"],
-        "cache-to": ["type=registry,ref=ghcr.io/amartuvshins0404/nightona-{projectName}:buildcache$ARCH,mode=max"]
+        "cache-from": ["type=registry,ref=ghcr.io/nightona-co/nightona-{projectName}:buildcache$ARCH"],
+        "cache-to": ["type=registry,ref=ghcr.io/nightona-co/nightona-{projectName}:buildcache$ARCH,mode=max"]
       },
       "configurations": {
         "production": {
@@ -174,26 +174,26 @@
         "production-multi-platform": {
           "push": true,
           "platforms": ["linux/amd64", "linux/arm64"],
-          "tags": ["ghcr.io/amartuvshins0404/nightona-{projectName}:$VERSION"],
-          "cache-from": ["type=registry,ref=ghcr.io/amartuvshins0404/nightona-{projectName}:buildcache"],
-          "cache-to": ["type=registry,ref=ghcr.io/amartuvshins0404/nightona-{projectName}:buildcache,mode=max"]
+          "tags": ["ghcr.io/nightona-co/nightona-{projectName}:$VERSION"],
+          "cache-from": ["type=registry,ref=ghcr.io/nightona-co/nightona-{projectName}:buildcache"],
+          "cache-to": ["type=registry,ref=ghcr.io/nightona-co/nightona-{projectName}:buildcache,mode=max"]
         },
         "local-registry": {
           "push": true,
           "tags": [
-            "registry:5000/ghcr.io/amartuvshins0404/test-nightona-{projectName}:$VERSION",
-            "registry:5000/ghcr.io/amartuvshins0404/test-nightona-{projectName}:latest"
+            "registry:5000/ghcr.io/nightona-co/test-nightona-{projectName}:$VERSION",
+            "registry:5000/ghcr.io/nightona-co/test-nightona-{projectName}:latest"
           ],
-          "cache-from": ["type=registry,ref=registry:5000/ghcr.io/amartuvshins0404/test-nightona-{projectName}:buildcache"],
+          "cache-from": ["type=registry,ref=registry:5000/ghcr.io/nightona-co/test-nightona-{projectName}:buildcache"],
           "cache-to": [
-            "type=registry,ref=registry:5000/ghcr.io/amartuvshins0404/test-nightona-{projectName}:buildcache,mode=max"
+            "type=registry,ref=registry:5000/ghcr.io/nightona-co/test-nightona-{projectName}:buildcache,mode=max"
           ]
         },
         "pr-build": {
           "push": false,
           "load": false,
           "platforms": ["linux/amd64"],
-          "tags": ["ghcr.io/amartuvshins0404/nightona-{projectName}:$VERSION"],
+          "tags": ["ghcr.io/nightona-co/nightona-{projectName}:$VERSION"],
           "cache-from": ["type=gha,scope=docker-{projectName}"],
           "cache-to": ["type=gha,scope=docker-{projectName},mode=max"]
         }
@@ -205,10 +205,10 @@
       "options": {
         "parallel": false,
         "commands": [
-          "docker manifest create ghcr.io/amartuvshins0404/nightona-{projectName}:$VERSION ghcr.io/amartuvshins0404/nightona-{projectName}:$VERSION-amd64 ghcr.io/amartuvshins0404/nightona-{projectName}:$VERSION-arm64",
-          "docker manifest push ghcr.io/amartuvshins0404/nightona-{projectName}:$VERSION",
-          "docker manifest create ghcr.io/amartuvshins0404/nightona-{projectName}:latest ghcr.io/amartuvshins0404/nightona-{projectName}:$VERSION-amd64 ghcr.io/amartuvshins0404/nightona-{projectName}:$VERSION-arm64",
-          "docker manifest push ghcr.io/amartuvshins0404/nightona-{projectName}:latest"
+          "docker manifest create ghcr.io/nightona-co/nightona-{projectName}:$VERSION ghcr.io/nightona-co/nightona-{projectName}:$VERSION-amd64 ghcr.io/nightona-co/nightona-{projectName}:$VERSION-arm64",
+          "docker manifest push ghcr.io/nightona-co/nightona-{projectName}:$VERSION",
+          "docker manifest create ghcr.io/nightona-co/nightona-{projectName}:latest ghcr.io/nightona-co/nightona-{projectName}:$VERSION-amd64 ghcr.io/nightona-co/nightona-{projectName}:$VERSION-arm64",
+          "docker manifest push ghcr.io/nightona-co/nightona-{projectName}:latest"
         ]
       }
     },

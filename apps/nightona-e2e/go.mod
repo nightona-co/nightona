@@ -1,4 +1,4 @@
-module github.com/Amartuvshins0404/nightona/apps/nightona-e2e
+module github.com/nightona-co/nightona/apps/nightona-e2e
 
 go 1.25.5
 

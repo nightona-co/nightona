@@ -2,7 +2,7 @@
 
 This document contains information related to preparing changes for a pull request. Here's a quick checklist for a good PR, more details below:
 
-1. A discussion around the change in a [GitHub Discussion](https://github.com/Amartuvshins0404/nightona/discussions) or in an issue.
+1. A discussion around the change in a [GitHub Discussion](https://github.com/nightona-co/nightona/discussions) or in an issue.
 1. A GitHub Issue with a good description associated with the PR
 1. One feature/change per PR
 1. One commit per PR
@@ -19,7 +19,7 @@ For example, if a descriptive title covers what the commit does in practice, the
 However, if the commit has an out-sized impact relative to other commits, its description will need to reflect that.
 
 Reviewers may ask you to amend your commits if they are not descriptive enough.
-Since the descriptiveness of a commit is subjective, please feel free to ask in [GitHub Discussions](https://github.com/Amartuvshins0404/nightona/discussions) if you have any questions.
+Since the descriptiveness of a commit is subjective, please feel free to ask in [GitHub Discussions](https://github.com/nightona-co/nightona/discussions) if you have any questions.
 
 ### Optional Commit Template
 

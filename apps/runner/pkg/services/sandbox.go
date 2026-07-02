@@ -7,10 +7,10 @@ import (
 	"context"
 	"log/slog"
 
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/cache"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/docker"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/models"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/models/enums"
+	"github.com/nightona-co/nightona/apps/runner/pkg/cache"
+	"github.com/nightona-co/nightona/apps/runner/pkg/docker"
+	"github.com/nightona-co/nightona/apps/runner/pkg/models"
+	"github.com/nightona-co/nightona/apps/runner/pkg/models/enums"
 )
 
 type SandboxService struct {

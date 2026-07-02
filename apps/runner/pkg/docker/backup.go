@@ -8,8 +8,8 @@ import (
 	"errors"
 	"time"
 
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/api/dto"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/models/enums"
+	"github.com/nightona-co/nightona/apps/runner/pkg/api/dto"
+	"github.com/nightona-co/nightona/apps/runner/pkg/models/enums"
 
 	cmap "github.com/orcaman/concurrent-map/v2"
 )

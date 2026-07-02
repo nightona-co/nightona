@@ -8,7 +8,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/childreap"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/childreap"
 )
 
 func GetShell() string {

@@ -8,11 +8,11 @@ import (
 	"fmt"
 
 	"github.com/charmbracelet/huh"
-	apiclient_cli "github.com/Amartuvshins0404/nightona/apps/cli/apiclient"
-	"github.com/Amartuvshins0404/nightona/apps/cli/config"
-	"github.com/Amartuvshins0404/nightona/apps/cli/views/common"
-	"github.com/Amartuvshins0404/nightona/apps/cli/views/organization"
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
+	apiclient_cli "github.com/nightona-co/nightona/apps/cli/apiclient"
+	"github.com/nightona-co/nightona/apps/cli/config"
+	"github.com/nightona-co/nightona/apps/cli/views/common"
+	"github.com/nightona-co/nightona/apps/cli/views/organization"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 	"github.com/spf13/cobra"
 )
 

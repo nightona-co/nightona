@@ -6,7 +6,7 @@ package recording
 import (
 	"time"
 
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/recording"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/recording"
 )
 
 // Recording represents a recording session (active or completed)

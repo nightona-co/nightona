@@ -9,7 +9,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	recordingservice "github.com/Amartuvshins0404/nightona/apps/daemon/pkg/recording"
+	recordingservice "github.com/nightona-co/nightona/apps/daemon/pkg/recording"
 )
 
 // StartRecording godoc

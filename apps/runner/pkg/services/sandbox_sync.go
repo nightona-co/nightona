@@ -9,10 +9,10 @@ import (
 	"log/slog"
 	"time"
 
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
-	runnerapiclient "github.com/Amartuvshins0404/nightona/apps/runner/pkg/apiclient"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/docker"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/models/enums"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
+	runnerapiclient "github.com/nightona-co/nightona/apps/runner/pkg/apiclient"
+	"github.com/nightona-co/nightona/apps/runner/pkg/docker"
+	"github.com/nightona-co/nightona/apps/runner/pkg/models/enums"
 	"github.com/docker/docker/api/types/container"
 )
 

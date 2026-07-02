@@ -11,8 +11,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/errors"
-	"github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/types"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/errors"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
 	"github.com/gorilla/websocket"
 )
 

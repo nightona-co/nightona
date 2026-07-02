@@ -9,9 +9,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/Amartuvshins0404/nightona/apps/cli/apiclient"
-	"github.com/Amartuvshins0404/nightona/apps/cli/cmd/common"
-	"github.com/Amartuvshins0404/nightona/apps/cli/toolbox"
+	"github.com/nightona-co/nightona/apps/cli/apiclient"
+	"github.com/nightona-co/nightona/apps/cli/cmd/common"
+	"github.com/nightona-co/nightona/apps/cli/toolbox"
 	"github.com/spf13/cobra"
 )
 

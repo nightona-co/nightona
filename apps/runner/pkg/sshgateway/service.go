@@ -12,7 +12,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/docker"
+	"github.com/nightona-co/nightona/apps/runner/pkg/docker"
 	"golang.org/x/crypto/ssh"
 )
 

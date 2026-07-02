@@ -12,7 +12,7 @@
       "options": {
         "commands": [
           "rm -rf {projectRoot}/nightona_api_client_async",
-          "yarn run openapi-generator-cli generate --git-repo-id=nightona --git-user-id=Amartuvshins0404 -i dist/apps/api/openapi.json -g python -t hack/python-client/openapi-templates --additional-properties=packageName=nightona_api_client_async,projectName=nightona_api_client_async,packageVersion=$DEFAULT_PACKAGE_VERSION,pythonPackageName=nightona_api_client_async,disallowAdditionalPropertiesIfNotPresent=false,library=asyncio,enumUnknownDefaultCase=true -o {projectRoot}",
+          "yarn run openapi-generator-cli generate --git-repo-id=nightona --git-user-id=nightona-co -i dist/apps/api/openapi.json -g python -t hack/python-client/openapi-templates --additional-properties=packageName=nightona_api_client_async,projectName=nightona_api_client_async,packageVersion=$DEFAULT_PACKAGE_VERSION,pythonPackageName=nightona_api_client_async,disallowAdditionalPropertiesIfNotPresent=false,library=asyncio,enumUnknownDefaultCase=true -o {projectRoot}",
           "bash hack/python-client/postprocess.sh {projectRoot}"
         ],
         "parallel": false

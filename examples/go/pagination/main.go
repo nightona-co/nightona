@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/nightona"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/nightona"
 )
 
 func main() {

@@ -200,7 +200,7 @@ While OpenCode is in use, the plugin uses Git to keep session sandboxes and your
 4. Your current `HEAD` is pushed to `opencode`, and the sandbox repo is reset to that state.
 5. On session idle, the plugin commits in the sandbox on `opencode`, then pulls into a local branch (`opencode/1`, `opencode/2`, etc.) which is unique to each sandbox. A notification is shown when the sync is complete.
 
-For more information on how the sync is implemented, see the [SessionGitManager](https://github.com/Amartuvshins0404/nightona/blob/main/libs/opencode-plugin/.opencode/plugin/nightona/git/session-git-manager.ts) class.
+For more information on how the sync is implemented, see the [SessionGitManager](https://github.com/nightona-co/nightona/blob/main/libs/opencode-plugin/.opencode/plugin/nightona/git/session-git-manager.ts) class.
 
 :::caution
 When the plugin syncs to local `opencode` branches, any local changes on those branches are overwritten.

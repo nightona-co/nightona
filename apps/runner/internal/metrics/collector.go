@@ -14,8 +14,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/common"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/docker"
+	"github.com/nightona-co/nightona/apps/runner/pkg/common"
+	"github.com/nightona-co/nightona/apps/runner/pkg/docker"
 	"github.com/docker/docker/api/types/container"
 	"github.com/shirou/gopsutil/v4/cpu"
 	"github.com/shirou/gopsutil/v4/disk"

@@ -8,7 +8,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/models"
+	"github.com/nightona-co/nightona/apps/runner/pkg/models"
 )
 
 // Patterns that indicate recoverable errors mapped to their recovery types

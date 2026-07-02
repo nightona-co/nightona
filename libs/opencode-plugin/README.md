@@ -124,7 +124,7 @@ This plugin is part of the Nightona monorepo.
 First, clone the Nightona monorepo:
 
 ```bash
-git clone https://github.com/Amartuvshins0404/nightona
+git clone https://github.com/nightona-co/nightona
 cd nightona
 ```
 

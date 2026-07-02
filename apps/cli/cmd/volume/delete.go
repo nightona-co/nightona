@@ -7,9 +7,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/Amartuvshins0404/nightona/apps/cli/apiclient"
-	"github.com/Amartuvshins0404/nightona/apps/cli/cmd/common"
-	view_common "github.com/Amartuvshins0404/nightona/apps/cli/views/common"
+	"github.com/nightona-co/nightona/apps/cli/apiclient"
+	"github.com/nightona-co/nightona/apps/cli/cmd/common"
+	view_common "github.com/nightona-co/nightona/apps/cli/views/common"
 	"github.com/spf13/cobra"
 )
 

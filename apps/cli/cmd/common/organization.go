@@ -6,9 +6,9 @@ package common
 import (
 	"context"
 
-	apiclient_cli "github.com/Amartuvshins0404/nightona/apps/cli/apiclient"
-	"github.com/Amartuvshins0404/nightona/apps/cli/config"
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
+	apiclient_cli "github.com/nightona-co/nightona/apps/cli/apiclient"
+	"github.com/nightona-co/nightona/apps/cli/config"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 )
 
 func GetPersonalOrganizationId(profile config.Profile) (string, error) {

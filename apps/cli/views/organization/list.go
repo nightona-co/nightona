@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/Amartuvshins0404/nightona/apps/cli/views/common"
-	"github.com/Amartuvshins0404/nightona/apps/cli/views/util"
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
+	"github.com/nightona-co/nightona/apps/cli/views/common"
+	"github.com/nightona-co/nightona/apps/cli/views/util"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 )
 
 type RowData struct {

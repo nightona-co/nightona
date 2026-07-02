@@ -95,13 +95,13 @@ fi
 # Build the binary
 echo "Building Nightona CLI with version: $NIGHTONA_VERSION"
 go build \
-    -ldflags "-X 'github.com/Amartuvshins0404/nightona/apps/cli/internal.Version=${NIGHTONA_VERSION}' \
-    -X 'github.com/Amartuvshins0404/nightona/apps/cli/internal.NightonaApiUrl=${NIGHTONA_API_URL}' \
-    -X 'github.com/Amartuvshins0404/nightona/apps/cli/internal.Auth0Domain=${NIGHTONA_AUTH0_DOMAIN}' \
-    -X 'github.com/Amartuvshins0404/nightona/apps/cli/internal.Auth0ClientId=${NIGHTONA_AUTH0_CLIENT_ID}' \
-    -X 'github.com/Amartuvshins0404/nightona/apps/cli/internal.Auth0ClientSecret=${NIGHTONA_AUTH0_CLIENT_SECRET}' \
-    -X 'github.com/Amartuvshins0404/nightona/apps/cli/internal.Auth0CallbackPort=${NIGHTONA_AUTH0_CALLBACK_PORT}' \
-    -X 'github.com/Amartuvshins0404/nightona/apps/cli/internal.Auth0Audience=${NIGHTONA_AUTH0_AUDIENCE}'" \
+    -ldflags "-X 'github.com/nightona-co/nightona/apps/cli/internal.Version=${NIGHTONA_VERSION}' \
+    -X 'github.com/nightona-co/nightona/apps/cli/internal.NightonaApiUrl=${NIGHTONA_API_URL}' \
+    -X 'github.com/nightona-co/nightona/apps/cli/internal.Auth0Domain=${NIGHTONA_AUTH0_DOMAIN}' \
+    -X 'github.com/nightona-co/nightona/apps/cli/internal.Auth0ClientId=${NIGHTONA_AUTH0_CLIENT_ID}' \
+    -X 'github.com/nightona-co/nightona/apps/cli/internal.Auth0ClientSecret=${NIGHTONA_AUTH0_CLIENT_SECRET}' \
+    -X 'github.com/nightona-co/nightona/apps/cli/internal.Auth0CallbackPort=${NIGHTONA_AUTH0_CALLBACK_PORT}' \
+    -X 'github.com/nightona-co/nightona/apps/cli/internal.Auth0Audience=${NIGHTONA_AUTH0_AUDIENCE}'" \
     -o "${DIST_DIR}/dist/apps/cli/${OUTPUT_FILE}" main.go
 
 echo "Build complete: ${DIST_DIR}/dist/apps/cli/${OUTPUT_FILE}"

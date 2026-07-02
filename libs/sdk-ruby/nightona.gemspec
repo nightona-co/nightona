@@ -10,14 +10,14 @@ Gem::Specification.new do |spec|
 
   spec.summary = 'Ruby SDK for Nightona'
   spec.description = 'High-level Ruby SDK for Nightona: sandboxes, git, filesystem, LSP, process, and object storage.'
-  spec.homepage = 'https://github.com/Amartuvshins0404/nightona'
+  spec.homepage = 'https://github.com/nightona-co/nightona'
   spec.required_ruby_version = '>= 3.2.0'
 
   spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
   spec.metadata['homepage_uri'] = spec.homepage
-  spec.metadata['source_code_uri'] = 'https://github.com/Amartuvshins0404/nightona'
-  spec.metadata['changelog_uri'] = 'https://github.com/Amartuvshins0404/nightona/releases'
+  spec.metadata['source_code_uri'] = 'https://github.com/nightona-co/nightona'
+  spec.metadata['changelog_uri'] = 'https://github.com/nightona-co/nightona/releases'
   spec.metadata['rubygems_mfa_required'] = 'true'
 
   # Specify which files should be added to the gem when it is released.

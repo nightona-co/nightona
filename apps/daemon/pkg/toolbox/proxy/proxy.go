@@ -9,8 +9,8 @@ import (
 	"net/url"
 	"strings"
 
-	common_errors "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/errors"
-	commonproxy "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/proxy"
+	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
+	commonproxy "github.com/nightona-co/nightona/libs/common-go/pkg/proxy"
 	"github.com/gin-gonic/gin"
 )
 

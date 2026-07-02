@@ -9,7 +9,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/gitprovider"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/gitprovider"
 	"gopkg.in/ini.v1"
 )
 

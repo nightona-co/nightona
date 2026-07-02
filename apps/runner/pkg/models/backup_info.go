@@ -4,7 +4,7 @@
 package models
 
 import (
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/models/enums"
+	"github.com/nightona-co/nightona/apps/runner/pkg/models/enums"
 )
 
 type BackupInfo struct {

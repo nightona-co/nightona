@@ -7,7 +7,7 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/Amartuvshins0404/nightona/apps/cli/mcp"
+	"github.com/nightona-co/nightona/apps/cli/mcp"
 	"github.com/spf13/cobra"
 )
 

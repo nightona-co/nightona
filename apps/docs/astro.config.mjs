@@ -32,11 +32,11 @@ export default defineConfig({
         {
           icon: 'github',
           label: 'GitHub',
-          href: 'https://github.com/Amartuvshins0404/nightona',
+          href: 'https://github.com/nightona-co/nightona',
         },
       ],
       editLink: {
-        baseUrl: 'https://github.com/Amartuvshins0404/nightona/blob/main/apps/docs/',
+        baseUrl: 'https://github.com/nightona-co/nightona/blob/main/apps/docs/',
       },
       tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 },
       customCss: ['./src/fonts/font-face.css', './src/styles/style.scss'],

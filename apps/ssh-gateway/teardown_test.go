@@ -159,7 +159,7 @@ func newChannelPair(t *testing.T) *channelPair {
 }
 
 // TestClientDisconnectTeardownPropagatesUpstream is the regression test for the stale
-// SSH keepalive bug (https://github.com/Amartuvshins0404/nightona/issues/4805).
+// SSH keepalive bug (https://github.com/nightona-co/nightona/issues/4805).
 //
 // Before the fix, killing the SSH client (SIGKILL / network drop) left the reverse
 // io.Copy (runner→client) blocked indefinitely: nothing closed runnerChannel, so the

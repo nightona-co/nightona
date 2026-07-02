@@ -12,9 +12,9 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/Amartuvshins0404/nightona/apps/snapshot-manager/internal/config"
-	"github.com/Amartuvshins0404/nightona/apps/snapshot-manager/internal/logger"
-	"github.com/Amartuvshins0404/nightona/apps/snapshot-manager/internal/server"
+	"github.com/nightona-co/nightona/apps/snapshot-manager/internal/config"
+	"github.com/nightona-co/nightona/apps/snapshot-manager/internal/logger"
+	"github.com/nightona-co/nightona/apps/snapshot-manager/internal/server"
 )
 
 func main() {

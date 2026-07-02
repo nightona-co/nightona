@@ -12,10 +12,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/log"
-	"github.com/Amartuvshins0404/nightona/apps/runner/cmd/runner/config"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/api/dto"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/storage"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/log"
+	"github.com/nightona-co/nightona/apps/runner/cmd/runner/config"
+	"github.com/nightona-co/nightona/apps/runner/pkg/api/dto"
+	"github.com/nightona-co/nightona/apps/runner/pkg/storage"
 
 	"github.com/docker/docker/api/types/build"
 	docker_registry "github.com/docker/docker/api/types/registry"

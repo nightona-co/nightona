@@ -12,7 +12,7 @@ import (
 	"image/jpeg"
 	"image/png"
 
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/toolbox/computeruse"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/toolbox/computeruse"
 	"github.com/go-vgo/robotgo"
 	"github.com/kbinani/screenshot"
 )

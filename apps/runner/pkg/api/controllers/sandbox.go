@@ -8,13 +8,13 @@ import (
 	"log/slog"
 	"net/http"
 
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/api/dto"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/common"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/models/enums"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/runner"
+	"github.com/nightona-co/nightona/apps/runner/pkg/api/dto"
+	"github.com/nightona-co/nightona/apps/runner/pkg/common"
+	"github.com/nightona-co/nightona/apps/runner/pkg/models/enums"
+	"github.com/nightona-co/nightona/apps/runner/pkg/runner"
 	"github.com/gin-gonic/gin"
 
-	common_errors "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/errors"
+	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
 )
 
 var errInvalidSnapshotFromSandboxRegistry = errors.New("registry is required for sandbox snapshot")

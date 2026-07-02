@@ -10,9 +10,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/errors"
-	"github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/types"
-	"github.com/Amartuvshins0404/nightona/libs/toolbox-api-client-go"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/errors"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
+	"github.com/nightona-co/nightona/libs/toolbox-api-client-go"
 )
 
 // ComputerUseService provides desktop automation operations for a sandbox.

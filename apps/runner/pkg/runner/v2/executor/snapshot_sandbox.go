@@ -9,8 +9,8 @@ import (
 	"context"
 	"fmt"
 
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/common"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
+	"github.com/nightona-co/nightona/apps/runner/pkg/common"
 )
 
 type snapshotSandboxJobResult struct {

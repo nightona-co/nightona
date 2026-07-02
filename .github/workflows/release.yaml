@@ -14,11 +14,11 @@ env:
   VERSION: ${{ inputs.version }}
   BUILDX_NO_DEFAULT_ATTESTATIONS: 1
   POETRY_VIRTUALENVS_IN_PROJECT: true
-  GONOSUMDB: github.com/Amartuvshins0404/nightona
+  GONOSUMDB: github.com/nightona-co/nightona
 
 jobs:
   publish:
-    if: github.repository == 'Amartuvshins0404/nightona'
+    if: github.repository == 'nightona-co/nightona'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -64,7 +64,7 @@ jobs:
 
       - name: Go work sync
         run: |
-          GONOSUMDB=github.com/Amartuvshins0404/nightona go work sync
+          GONOSUMDB=github.com/nightona-co/nightona go work sync
           go env -w GOFLAGS="-buildvcs=false"
 
         # Write version to required folders so nx release can run
@@ -270,7 +270,7 @@ jobs:
 
       - name: Generate go.work.sum
         run: |
-          GONOSUMDB=github.com/Amartuvshins0404/nightona go work sync
+          GONOSUMDB=github.com/nightona-co/nightona go work sync
           touch go.work.sum
 
       - name: Log in to the Container registry
@@ -399,7 +399,7 @@ jobs:
       - name: Sync go.sum and create PR
         run: |
           git checkout -b "sync-gosum-$VERSION"
-          GONOSUMDB=github.com/Amartuvshins0404/nightona go work sync
+          GONOSUMDB=github.com/nightona-co/nightona go work sync
           if git diff --quiet -- **/go.sum; then
             echo "No go.sum changes detected; skipping commit and PR creation."
           else

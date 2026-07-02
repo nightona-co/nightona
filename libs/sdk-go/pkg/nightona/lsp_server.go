@@ -7,9 +7,9 @@ import (
 	"context"
 	"strings"
 
-	"github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/errors"
-	"github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/types"
-	"github.com/Amartuvshins0404/nightona/libs/toolbox-api-client-go"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/errors"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
+	"github.com/nightona-co/nightona/libs/toolbox-api-client-go"
 )
 
 // LspServerService provides Language Server Protocol (LSP) operations for a sandbox.

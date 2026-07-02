@@ -12,8 +12,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/Amartuvshins0404/nightona/apps/cli/config"
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
+	"github.com/nightona-co/nightona/apps/cli/config"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 )
 
 type ExecuteRequest struct {

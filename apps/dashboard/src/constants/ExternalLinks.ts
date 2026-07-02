@@ -8,4 +8,4 @@
  */
 // upstream docs; switch when Nightona docs are hosted
 export const NIGHTONA_DOCS_URL = 'https://www.daytona.io/docs'
-export const NIGHTONA_COMMUNITY_URL = 'https://github.com/Amartuvshins0404/nightona'
+export const NIGHTONA_COMMUNITY_URL = 'https://github.com/nightona-co/nightona'

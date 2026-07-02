@@ -6,8 +6,8 @@ package types
 import (
 	"time"
 
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
-	toolbox "github.com/Amartuvshins0404/nightona/libs/toolbox-api-client-go"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
+	toolbox "github.com/nightona-co/nightona/libs/toolbox-api-client-go"
 )
 
 const CodeToolboxLanguageLabel = "code-toolbox-language"

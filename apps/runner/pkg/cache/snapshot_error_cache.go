@@ -7,7 +7,7 @@ import (
 	"context"
 	"time"
 
-	common_cache "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/cache"
+	common_cache "github.com/nightona-co/nightona/libs/common-go/pkg/cache"
 )
 
 type SnapshotErrorCache struct {

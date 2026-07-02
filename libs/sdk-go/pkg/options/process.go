@@ -6,7 +6,7 @@ package options
 import (
 	"time"
 
-	"github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/types"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
 )
 
 // ExecuteCommand holds optional parameters for [nightona.ProcessService.ExecuteCommand].

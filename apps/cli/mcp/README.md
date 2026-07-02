@@ -20,7 +20,7 @@ Nightona MCP Server allows AI agents to utilize:
 **Mac/Linux**
 
 ```bash
-brew install amartuvshins0404/cli/nightona
+brew install nightona-co/cli/nightona
 ```
 
 **Windows**

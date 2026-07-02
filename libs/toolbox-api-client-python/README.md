@@ -20,10 +20,10 @@ Python 3.8+
 If the python package is hosted on a repository, you can install directly using:
 
 ```sh
-pip install git+https://github.com/Amartuvshins0404/nightona.git
+pip install git+https://github.com/nightona-co/nightona.git
 ```
 
-(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/Amartuvshins0404/nightona.git`)
+(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/nightona-co/nightona.git`)
 
 Then import the package:
 

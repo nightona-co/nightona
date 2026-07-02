@@ -10,9 +10,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/Amartuvshins0404/nightona/apps/proxy/cmd/proxy/config"
-	"github.com/Amartuvshins0404/nightona/apps/proxy/pkg/proxy"
-	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/envcompat"
+	"github.com/nightona-co/nightona/apps/proxy/cmd/proxy/config"
+	"github.com/nightona-co/nightona/apps/proxy/pkg/proxy"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/envcompat"
 
 	log "github.com/sirupsen/logrus"
 )

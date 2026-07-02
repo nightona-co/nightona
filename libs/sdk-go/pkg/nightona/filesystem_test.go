@@ -19,9 +19,9 @@ import (
 	"testing"
 	"time"
 
-	sdkerrors "github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/errors"
-	"github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/options"
-	toolbox "github.com/Amartuvshins0404/nightona/libs/toolbox-api-client-go"
+	sdkerrors "github.com/nightona-co/nightona/libs/sdk-go/pkg/errors"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/options"
+	toolbox "github.com/nightona-co/nightona/libs/toolbox-api-client-go"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

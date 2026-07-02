@@ -15,13 +15,13 @@ Thanks for taking the time to contribute! ❤️
 ## Code of Conduct
 
 This project and everyone participating in it is governed by the
-[Nightona Code of Conduct](https://github.com/Amartuvshins0404/nightona?tab=coc-ov-file#readme).
+[Nightona Code of Conduct](https://github.com/nightona-co/nightona?tab=coc-ov-file#readme).
 By participating, you are expected to uphold this code. Please report unacceptable behavior
-to the maintainers by [opening an issue](https://github.com/Amartuvshins0404/nightona/issues/new) or, for sensitive reports, through [GitHub's private reporting](https://github.com/Amartuvshins0404/nightona/security/advisories/new).
+to the maintainers by [opening an issue](https://github.com/nightona-co/nightona/issues/new) or, for sensitive reports, through [GitHub's private reporting](https://github.com/nightona-co/nightona/security/advisories/new).
 
 ## Provide Feedback
 
-You might find things that can be improved while you are using Nightona. You can help by [submitting an issue](https://github.com/Amartuvshins0404/nightona/issues/new) when:
+You might find things that can be improved while you are using Nightona. You can help by [submitting an issue](https://github.com/nightona-co/nightona/issues/new) when:
 
 - A new feature or an enhancement to an existing feature will improve the utility or usability of Nightona.
 - Nightona crashes, or you encounter a bug that can only be resolved by restarting Nightona.
@@ -35,7 +35,7 @@ We will then take care of the issue as soon as possible.
 
 You can engage with our community by:
 
-- Helping other users in [GitHub Discussions](https://github.com/Amartuvshins0404/nightona/discussions)
+- Helping other users in [GitHub Discussions](https://github.com/nightona-co/nightona/discussions)
 - Improving the [documentation](apps/docs/)
 - Participating in general discussions about development and DevOps
 - Authoring new Nightona Plugins and sharing those Plugins
@@ -49,7 +49,7 @@ You can contribute to Nightona by:
 - Fixing bugs
 - Adding new features and capabilities
 
-Before starting your contribution, especially for core features, we encourage you to open a [GitHub Discussion](https://github.com/Amartuvshins0404/nightona/discussions) or an [issue](https://github.com/Amartuvshins0404/nightona/issues) first. This allows us to ensure that your proposed feature aligns with the project's roadmap and goals. Developers are the key to making Nightona the best tool it can be, and we value input from the community.
+Before starting your contribution, especially for core features, we encourage you to open a [GitHub Discussion](https://github.com/nightona-co/nightona/discussions) or an [issue](https://github.com/nightona-co/nightona/issues) first. This allows us to ensure that your proposed feature aligns with the project's roadmap and goals. Developers are the key to making Nightona the best tool it can be, and we value input from the community.
 
 We look forward to working with you to improve Nightona and make development environments as easy as possible for developers everywhere.
 
@@ -60,7 +60,7 @@ Follow the following steps to ensure your contribution goes smoothly.
 1. Read and follow the steps outlined in the [Nightona Contributing Policy](README.md#contributing).
 1. Configure your development environment by either following the guide below.
 1. [Fork](https://help.github.com/articles/working-with-forks/) the GitHub Repository allowing you to make the changes in your own copy of the repository.
-1. Create a [GitHub issue](https://github.com/Amartuvshins0404/nightona/issues) if one doesn't exist already.
+1. Create a [GitHub issue](https://github.com/nightona-co/nightona/issues) if one doesn't exist already.
 1. [Prepare your changes](./PREPARING_YOUR_CHANGES.md) and ensure your commits are descriptive. The document contains an optional commit template, if desired.
 1. Ensure that you sign off on all your commits to comply with the DCO v1.1. We have more details in [Prepare your changes](./PREPARING_YOUR_CHANGES.md).
 1. Ensure to generate new docs after making command related changes, by running `./hack/generate-cli-docs.sh` in the nightona root directory.
@@ -105,4 +105,4 @@ Here is what being a contributor means for you:
 - License all our contributions to the project under the AGPL 3.0 License or the Apache 2.0 License
 - Have the legal rights to license our contributions ourselves, or get permission to license them from our employers, clients, or others who may have them
 
-For more information, see the [README](README.md) and feel free to reach out via [GitHub Discussions](https://github.com/Amartuvshins0404/nightona/discussions).
+For more information, see the [README](README.md) and feel free to reach out via [GitHub Discussions](https://github.com/nightona-co/nightona/discussions).

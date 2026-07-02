@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/toolbox/computeruse"
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/toolbox/computeruse/manager"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/toolbox/computeruse"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/toolbox/computeruse/manager"
 	"github.com/hashicorp/go-hclog"
 	hc_plugin "github.com/hashicorp/go-plugin"
 	"github.com/stretchr/testify/assert"

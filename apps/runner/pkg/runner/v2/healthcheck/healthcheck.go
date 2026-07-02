@@ -11,11 +11,11 @@ import (
 	"log/slog"
 	"time"
 
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
-	"github.com/Amartuvshins0404/nightona/apps/runner/internal"
-	"github.com/Amartuvshins0404/nightona/apps/runner/internal/metrics"
-	runnerapiclient "github.com/Amartuvshins0404/nightona/apps/runner/pkg/apiclient"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/docker"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
+	"github.com/nightona-co/nightona/apps/runner/internal"
+	"github.com/nightona-co/nightona/apps/runner/internal/metrics"
+	runnerapiclient "github.com/nightona-co/nightona/apps/runner/pkg/apiclient"
+	"github.com/nightona-co/nightona/apps/runner/pkg/docker"
 )
 
 type HealthcheckServiceConfig struct {

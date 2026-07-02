@@ -7,8 +7,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/api/dto"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/common"
+	"github.com/nightona-co/nightona/apps/runner/pkg/api/dto"
+	"github.com/nightona-co/nightona/apps/runner/pkg/common"
 )
 
 // RecoverFromStorageLimit attempts to recover a sandbox from storage limit issues

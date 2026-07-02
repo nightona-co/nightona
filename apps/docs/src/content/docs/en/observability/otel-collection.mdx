@@ -195,8 +195,8 @@ export NIGHTONA_OTEL_ENABLED=true
         "context"
         "log"
 
-        "github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/nightona"
-        "github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/types"
+        "github.com/nightona-co/nightona/libs/sdk-go/pkg/nightona"
+        "github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
     )
 
     client, err := nightona.NewClientWithConfig(&types.NightonaConfig{
@@ -284,7 +284,7 @@ OTEL_EXPORTER_OTLP_ENDPOINT=https://otlp-gateway-prod-<region>.grafana.net/otlp
 OTEL_EXPORTER_OTLP_HEADERS="Authorization=Basic <BASE64_ENCODED_CREDENTIALS>"
 ```
 
-Setup: Go to [Grafana Cloud Portal](https://grafana.com) → **Connections** → **Add new connection** → Search for **OpenTelemetry (OTLP)** → Follow the wizard to create an access token. The endpoint and headers will be provided in the instrumentation instructions. See the [Grafana dashboard example](https://github.com/Amartuvshins0404/nightona/tree/main/examples/otel-dashboards/grafana) for detailed setup steps.
+Setup: Go to [Grafana Cloud Portal](https://grafana.com) → **Connections** → **Add new connection** → Search for **OpenTelemetry (OTLP)** → Follow the wizard to create an access token. The endpoint and headers will be provided in the instrumentation instructions. See the [Grafana dashboard example](https://github.com/nightona-co/nightona/tree/main/examples/otel-dashboards/grafana) for detailed setup steps.
 
 ### Datadog
 
@@ -306,7 +306,7 @@ When configuring Datadog as your [sandbox collection endpoint](#configure-sandbo
 | US5                   | `https://otlp.us5.datadoghq.com` |
 | AP1                   | `https://otlp.ap1.datadoghq.com` |
 
-Use the base endpoint without a `/v1/...` path — the path is appended automatically. Generate an API key under **Datadog → Organization Settings → API Keys**. See the [Datadog dashboard example](https://github.com/Amartuvshins0404/nightona/tree/main/examples/otel-dashboards/datadog) for an importable dashboard and verification steps.
+Use the base endpoint without a `/v1/...` path — the path is appended automatically. Generate an API key under **Datadog → Organization Settings → API Keys**. See the [Datadog dashboard example](https://github.com/nightona-co/nightona/tree/main/examples/otel-dashboards/datadog) for an importable dashboard and verification steps.
 
 Once data is flowing, your metrics appear under **Metrics → Summary** (search for `nightona.sandbox`), where you can also confirm the exact tag keys (e.g. `service`, `region.id`) Datadog assigned.
 
@@ -415,8 +415,8 @@ print(f"NumPy version: {np.__version__}")
         "log"
         "os"
 
-        "github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/nightona"
-        "github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/types"
+        "github.com/nightona-co/nightona/libs/sdk-go/pkg/nightona"
+        "github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
     )
 
     func main() {
@@ -547,9 +547,9 @@ Each trace includes valuable metadata such as:
 
 ## Dashboard Examples
 
-- [New Relic](https://github.com/Amartuvshins0404/nightona/tree/main/examples/otel-dashboards/new-relic)
-- [Grafana](https://github.com/Amartuvshins0404/nightona/tree/main/examples/otel-dashboards/grafana)
-- [Datadog](https://github.com/Amartuvshins0404/nightona/tree/main/examples/otel-dashboards/datadog)
+- [New Relic](https://github.com/nightona-co/nightona/tree/main/examples/otel-dashboards/new-relic)
+- [Grafana](https://github.com/nightona-co/nightona/tree/main/examples/otel-dashboards/grafana)
+- [Datadog](https://github.com/nightona-co/nightona/tree/main/examples/otel-dashboards/datadog)
 
 ## Troubleshooting
 

@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/common"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/common"
 	"github.com/gin-gonic/gin"
 )
 

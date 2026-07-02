@@ -6,8 +6,8 @@ package session
 import (
 	"net/http"
 
-	"github.com/Amartuvshins0404/nightona/apps/daemon/internal/util"
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/session"
+	"github.com/nightona-co/nightona/apps/daemon/internal/util"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/session"
 	"github.com/gin-gonic/gin"
 )
 

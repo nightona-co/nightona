@@ -1,10 +1,8 @@
-module github.com/Amartuvshins0404/nightona/apps/runner
+module github.com/nightona-co/nightona/apps/runner
 
 go 1.25.5
 
 require (
-	github.com/Amartuvshins0404/nightona/libs/api-client-go v0.152.1
-	github.com/Amartuvshins0404/nightona/libs/common-go v0.0.0-00010101000000-000000000000
 	github.com/containerd/errdefs v1.0.0
 	github.com/coreos/go-iptables v0.8.0
 	github.com/docker/cli v29.2.1+incompatible
@@ -20,6 +18,8 @@ require (
 	github.com/mattn/go-isatty v0.0.20
 	github.com/minio/minio-go/v7 v7.0.91
 	github.com/moby/buildkit v0.28.1
+	github.com/nightona-co/nightona/libs/api-client-go v0.152.1
+	github.com/nightona-co/nightona/libs/common-go v0.0.0-00010101000000-000000000000
 	github.com/opencontainers/image-spec v1.1.1
 	github.com/orcaman/concurrent-map/v2 v2.0.1
 	github.com/prometheus/client_golang v1.23.2
@@ -172,6 +172,6 @@ require (
 	gotest.tools/v3 v3.5.2 // indirect
 )
 
-replace github.com/Amartuvshins0404/nightona/libs/api-client-go => ../../libs/api-client-go
+replace github.com/nightona-co/nightona/libs/api-client-go => ../../libs/api-client-go
 
-replace github.com/Amartuvshins0404/nightona/libs/common-go => ../../libs/common-go
+replace github.com/nightona-co/nightona/libs/common-go => ../../libs/common-go

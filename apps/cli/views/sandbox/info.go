@@ -9,9 +9,9 @@ import (
 	"strings"
 
 	"github.com/charmbracelet/lipgloss"
-	"github.com/Amartuvshins0404/nightona/apps/cli/views/common"
-	"github.com/Amartuvshins0404/nightona/apps/cli/views/util"
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
+	"github.com/nightona-co/nightona/apps/cli/views/common"
+	"github.com/nightona-co/nightona/apps/cli/views/util"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 	"golang.org/x/term"
 )
 

@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   docker-build:
-    if: github.repository == 'Amartuvshins0404/nightona' && github.event.pull_request.head.repo.full_name == github.repository
+    if: github.repository == 'nightona-co/nightona' && github.event.pull_request.head.repo.full_name == github.repository
     name: Docker build
     runs-on: ubuntu-latest
     timeout-minutes: 80

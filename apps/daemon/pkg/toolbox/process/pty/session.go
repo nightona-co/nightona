@@ -12,8 +12,8 @@ import (
 	"syscall"
 
 	"github.com/creack/pty"
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/childreap"
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/common"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/childreap"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/common"
 	"github.com/shirou/gopsutil/v4/process"
 )
 

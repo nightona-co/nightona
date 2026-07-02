@@ -5,7 +5,7 @@
 
 package models
 
-import "github.com/Amartuvshins0404/nightona/apps/runner/pkg/models/enums"
+import "github.com/nightona-co/nightona/apps/runner/pkg/models/enums"
 
 type SandboxInfo struct {
 	SandboxState      enums.SandboxState

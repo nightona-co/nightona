@@ -9,8 +9,8 @@ import (
 	"os"
 	"strings"
 
-	common_errors "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/errors"
-	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/log"
+	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/log"
 )
 
 // SendInput sends data to the session's stdin for a specific running command

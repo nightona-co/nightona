@@ -14,8 +14,8 @@ import (
 	"sync"
 	"time"
 
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
-	"github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/types"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/metric"
 	"go.opentelemetry.io/otel/trace"

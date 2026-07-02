@@ -12,10 +12,10 @@ import (
 	"strings"
 	"time"
 
-	common_errors "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/errors"
-	proxy "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/proxy"
-	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/utils"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/runner"
+	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
+	proxy "github.com/nightona-co/nightona/libs/common-go/pkg/proxy"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/utils"
+	"github.com/nightona-co/nightona/apps/runner/pkg/runner"
 	"github.com/gin-gonic/gin"
 )
 

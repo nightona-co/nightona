@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/Amartuvshins0404/nightona/apps/daemon/internal"
+	"github.com/nightona-co/nightona/apps/daemon/internal"
 	"github.com/gin-gonic/gin"
 )
 

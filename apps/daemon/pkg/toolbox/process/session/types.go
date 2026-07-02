@@ -3,7 +3,7 @@
 
 package session
 
-import "github.com/Amartuvshins0404/nightona/apps/daemon/pkg/session"
+import "github.com/nightona-co/nightona/apps/daemon/pkg/session"
 
 type CreateSessionRequest struct {
 	SessionId string `json:"sessionId" validate:"required"`

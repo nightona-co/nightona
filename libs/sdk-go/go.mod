@@ -1,14 +1,14 @@
-module github.com/Amartuvshins0404/nightona/libs/sdk-go
+module github.com/nightona-co/nightona/libs/sdk-go
 
 go 1.25.4
 
 require (
-	github.com/Amartuvshins0404/nightona/libs/api-client-go v0.190.0
-	github.com/Amartuvshins0404/nightona/libs/toolbox-api-client-go v0.190.0
 	github.com/aws/aws-sdk-go-v2 v1.41.6
 	github.com/aws/aws-sdk-go-v2/credentials v1.19.15
 	github.com/aws/aws-sdk-go-v2/service/s3 v1.97.3
 	github.com/gorilla/websocket v1.5.4-0.20250319132907-e064f32e3674
+	github.com/nightona-co/nightona/libs/api-client-go v0.190.0
+	github.com/nightona-co/nightona/libs/toolbox-api-client-go v0.190.0
 	github.com/stretchr/testify v1.11.1
 	go.opentelemetry.io/otel v1.43.0
 	go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetrichttp v1.43.0
@@ -50,6 +50,6 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/Amartuvshins0404/nightona/libs/api-client-go => ../api-client-go
+replace github.com/nightona-co/nightona/libs/api-client-go => ../api-client-go
 
-replace github.com/Amartuvshins0404/nightona/libs/toolbox-api-client-go => ../toolbox-api-client-go
+replace github.com/nightona-co/nightona/libs/toolbox-api-client-go => ../toolbox-api-client-go

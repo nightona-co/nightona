@@ -1,10 +1,8 @@
-module github.com/Amartuvshins0404/nightona/apps/proxy
+module github.com/nightona-co/nightona/apps/proxy
 
 go 1.25.4
 
 require (
-	github.com/Amartuvshins0404/nightona/libs/api-client-go v0.164.0
-	github.com/Amartuvshins0404/nightona/libs/common-go v0.0.0-00010101000000-000000000000
 	github.com/coreos/go-oidc/v3 v3.12.0
 	github.com/gin-contrib/cors v1.7.5
 	github.com/gin-gonic/gin v1.10.1
@@ -13,6 +11,8 @@ require (
 	github.com/joho/godotenv v1.5.1
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/mssola/useragent v1.0.0
+	github.com/nightona-co/nightona/libs/api-client-go v0.164.0
+	github.com/nightona-co/nightona/libs/common-go v0.0.0-00010101000000-000000000000
 	github.com/prometheus/client_golang v1.23.2
 	github.com/sirupsen/logrus v1.9.4
 	golang.org/x/oauth2 v0.35.0
@@ -59,6 +59,6 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/Amartuvshins0404/nightona/libs/api-client-go => ../../libs/api-client-go
+replace github.com/nightona-co/nightona/libs/api-client-go => ../../libs/api-client-go
 
-replace github.com/Amartuvshins0404/nightona/libs/common-go => ../../libs/common-go
+replace github.com/nightona-co/nightona/libs/common-go => ../../libs/common-go

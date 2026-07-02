@@ -9,13 +9,13 @@ import (
 	"log/slog"
 	"time"
 
-	"github.com/Amartuvshins0404/nightona/apps/runner/internal/metrics"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/cache"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/docker"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/models"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/netrules"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/services"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/sshgateway"
+	"github.com/nightona-co/nightona/apps/runner/internal/metrics"
+	"github.com/nightona-co/nightona/apps/runner/pkg/cache"
+	"github.com/nightona-co/nightona/apps/runner/pkg/docker"
+	"github.com/nightona-co/nightona/apps/runner/pkg/models"
+	"github.com/nightona-co/nightona/apps/runner/pkg/netrules"
+	"github.com/nightona-co/nightona/apps/runner/pkg/services"
+	"github.com/nightona-co/nightona/apps/runner/pkg/sshgateway"
 )
 
 type RunnerInstanceConfig struct {

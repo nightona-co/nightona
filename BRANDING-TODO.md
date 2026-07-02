@@ -19,12 +19,12 @@ Status of the visual rebrand (Daytona -> Nightona wordmark: crescent moon + "NIG
    no external fetches remain.
 2. ~~**`apps/docs/src/components/ApiReference.astro`**~~ — RESOLVED: Scalar config `image` /
    `ogImage` now point at
-   `https://raw.githubusercontent.com/Amartuvshins0404/nightona/main/apps/docs/public/nightona.png`
+   `https://raw.githubusercontent.com/nightona-co/nightona/main/apps/docs/public/nightona.png`
    (the rebranded 1248x628 OG card in this repo).
 3. **Contact emails** — `sales@daytona.io` / `support@daytona.io` mailto links remain in
    `LoadingFallbackContent.tsx` and `UsageOverview.tsx` (no Nightona address exists yet).
    `TierUpgradeCard.tsx` and `apps/api/src/common/constants/error-messages.ts` now point at
-   `https://github.com/Amartuvshins0404/nightona/issues` instead.
+   `https://github.com/nightona-co/nightona/issues` instead.
 4. **Docs URLs** — `NIGHTONA_DOCS_URL` in `apps/dashboard/src/constants/ExternalLinks.ts` and other
    deep links still point at `https://www.daytona.io/docs` by design (upstream docs; no replacement
    domain yet). Switch them once Nightona docs are hosted.

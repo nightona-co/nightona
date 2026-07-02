@@ -9,7 +9,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/Amartuvshins0404/nightona/apps/runner/cmd/runner/config"
+	"github.com/nightona-co/nightona/apps/runner/cmd/runner/config"
 	"github.com/minio/minio-go/v7"
 	"github.com/minio/minio-go/v7/pkg/credentials"
 )

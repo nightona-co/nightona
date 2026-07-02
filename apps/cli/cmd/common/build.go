@@ -12,9 +12,9 @@ import (
 	"regexp"
 	"strings"
 
-	apiclient_cli "github.com/Amartuvshins0404/nightona/apps/cli/apiclient"
-	"github.com/Amartuvshins0404/nightona/apps/cli/pkg/minio"
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
+	apiclient_cli "github.com/nightona-co/nightona/apps/cli/apiclient"
+	"github.com/nightona-co/nightona/apps/cli/pkg/minio"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 )
 
 // Create MinIO client from access parameters

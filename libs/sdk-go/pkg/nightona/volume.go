@@ -7,9 +7,9 @@ import (
 	"context"
 	"time"
 
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
-	"github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/errors"
-	"github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/types"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/errors"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
 )
 
 // VolumeService provides persistent storage volume management operations.

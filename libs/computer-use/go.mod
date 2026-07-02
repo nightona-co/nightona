@@ -1,14 +1,14 @@
-module github.com/Amartuvshins0404/nightona/libs/computer-use
+module github.com/nightona-co/nightona/libs/computer-use
 
 go 1.25.4
 
 require (
-	github.com/Amartuvshins0404/nightona/apps/daemon v0.0.0-00010101000000-000000000000
 	github.com/go-vgo/robotgo v0.110.8
 	github.com/godbus/dbus/v5 v5.1.0
 	github.com/hashicorp/go-hclog v1.6.3
 	github.com/hashicorp/go-plugin v1.6.3
 	github.com/kbinani/screenshot v0.0.0-20250118074034-a3924b7bbc8c
+	github.com/nightona-co/nightona/apps/daemon v0.0.0-00010101000000-000000000000
 	github.com/sirupsen/logrus v1.9.4
 	github.com/stretchr/testify v1.11.1
 )
@@ -79,8 +79,8 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/Amartuvshins0404/nightona/apps/daemon => ../../apps/daemon
+replace github.com/nightona-co/nightona/apps/daemon => ../../apps/daemon
 
-replace github.com/Amartuvshins0404/nightona/libs/common-go => ../common-go
+replace github.com/nightona-co/nightona/libs/common-go => ../common-go
 
-replace github.com/Amartuvshins0404/nightona/libs/api-client-go => ../api-client-go
+replace github.com/nightona-co/nightona/libs/api-client-go => ../api-client-go

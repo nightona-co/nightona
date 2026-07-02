@@ -17,12 +17,12 @@ permissions: {}
 env:
   VERSION: ${{ inputs.version }}
   BUILDX_NO_DEFAULT_ATTESTATIONS: 1
-  REGISTRY_IMAGE: ghcr.io/amartuvshins0404/sandbox
-  GPU_REGISTRY_IMAGE: ghcr.io/amartuvshins0404/sandbox-gpu
+  REGISTRY_IMAGE: ghcr.io/nightona-co/sandbox
+  GPU_REGISTRY_IMAGE: ghcr.io/nightona-co/sandbox-gpu
 
 jobs:
   docker_build:
-    if: github.repository == 'Amartuvshins0404/nightona'
+    if: github.repository == 'nightona-co/nightona'
     strategy:
       fail-fast: false
       matrix:

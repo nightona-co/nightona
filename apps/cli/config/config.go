@@ -12,8 +12,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Amartuvshins0404/nightona/apps/cli/cmd"
-	"github.com/Amartuvshins0404/nightona/apps/cli/internal"
+	"github.com/nightona-co/nightona/apps/cli/cmd"
+	"github.com/nightona-co/nightona/apps/cli/internal"
 )
 
 const NIGHTONA_API_URL_ENV_VAR = "NIGHTONA_API_URL"

@@ -12,9 +12,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/recording"
-	recordingcontroller "github.com/Amartuvshins0404/nightona/apps/daemon/pkg/toolbox/computeruse/recording"
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/toolbox/config"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/recording"
+	recordingcontroller "github.com/nightona-co/nightona/apps/daemon/pkg/toolbox/computeruse/recording"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/toolbox/config"
 	"github.com/gin-gonic/gin"
 )
 

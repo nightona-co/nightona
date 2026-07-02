@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"net/http"
 
-	common_errors "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/errors"
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/git"
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/gitprovider"
+	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/git"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/gitprovider"
 	"github.com/gin-gonic/gin"
 	go_git_http "github.com/go-git/go-git/v5/plumbing/transport/http"
 )

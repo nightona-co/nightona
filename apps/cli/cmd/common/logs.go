@@ -13,7 +13,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/Amartuvshins0404/nightona/apps/cli/config"
+	"github.com/nightona-co/nightona/apps/cli/config"
 	log "github.com/sirupsen/logrus"
 )
 

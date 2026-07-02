@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/Amartuvshins0404/nightona/apps/daemon/internal/util"
+	"github.com/nightona-co/nightona/apps/daemon/internal/util"
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/websocket"
 	cmap "github.com/orcaman/concurrent-map/v2"

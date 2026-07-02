@@ -34,19 +34,19 @@ Install the Nightona CLI to interact with Nightona sandboxes from the command li
 <TabItem label="Mac">
 
 \`\`\`bash
-brew install amartuvshins0404/cli/nightona
+brew install nightona-co/cli/nightona
 \`\`\`
 
 Trust the tap once so routine \`brew upgrade\` keeps the Nightona CLI up to date. Recent Homebrew versions require third-party taps to be explicitly trusted; without it, a bare \`brew upgrade\` skips the Nightona tap and the CLI goes stale:
 
 \`\`\`bash
-brew trust amartuvshins0404/cli
+brew trust nightona-co/cli
 \`\`\`
 
 To upgrade the Nightona CLI to the latest version:
 
 \`\`\`bash
-brew upgrade amartuvshins0404/cli/nightona
+brew upgrade nightona-co/cli/nightona
 \`\`\`
 
 Alternatively, install directly without Homebrew:
@@ -54,13 +54,13 @@ Alternatively, install directly without Homebrew:
 For Apple Silicon (\`arm64\`):
 
   \`\`\`bash
-  sudo curl -fL https://github.com/Amartuvshins0404/nightona/releases/latest/download/nightona-darwin-arm64 -o /usr/local/bin/nightona && sudo chmod +x /usr/local/bin/nightona
+  sudo curl -fL https://github.com/nightona-co/nightona/releases/latest/download/nightona-darwin-arm64 -o /usr/local/bin/nightona && sudo chmod +x /usr/local/bin/nightona
   \`\`\`
 
 For Intel (\`amd64\`):
 
   \`\`\`bash
-  sudo curl -fL https://github.com/Amartuvshins0404/nightona/releases/latest/download/nightona-darwin-amd64 -o /usr/local/bin/nightona && sudo chmod +x /usr/local/bin/nightona
+  sudo curl -fL https://github.com/nightona-co/nightona/releases/latest/download/nightona-darwin-amd64 -o /usr/local/bin/nightona && sudo chmod +x /usr/local/bin/nightona
   \`\`\`
 
 </TabItem>
@@ -71,13 +71,13 @@ Choose the command for your Linux architecture. Both commands download the lates
 For \`amd64\` (\`x86_64\`):
 
   \`\`\`bash
-  sudo curl -fL https://github.com/Amartuvshins0404/nightona/releases/latest/download/nightona-linux-amd64 -o /usr/local/bin/nightona && sudo chmod +x /usr/local/bin/nightona
+  sudo curl -fL https://github.com/nightona-co/nightona/releases/latest/download/nightona-linux-amd64 -o /usr/local/bin/nightona && sudo chmod +x /usr/local/bin/nightona
   \`\`\`
 
 For \`arm64\` (\`aarch64\`):
 
   \`\`\`bash
-  sudo curl -fL https://github.com/Amartuvshins0404/nightona/releases/latest/download/nightona-linux-arm64 -o /usr/local/bin/nightona && sudo chmod +x /usr/local/bin/nightona
+  sudo curl -fL https://github.com/nightona-co/nightona/releases/latest/download/nightona-linux-arm64 -o /usr/local/bin/nightona && sudo chmod +x /usr/local/bin/nightona
   \`\`\`
 
 </TabItem>
@@ -106,7 +106,7 @@ macOS Installation: \`\`\`brew install bash-completion\`\`\`
 
 async function fetchRawDocs(ref) {
   const url =
-    'https://api.github.com/repos/Amartuvshins0404/nightona/contents/apps/cli/hack/docs'
+    'https://api.github.com/repos/nightona-co/nightona/contents/apps/cli/hack/docs'
   const request = await fetch(`${url}?ref=${ref}`)
   const response = await request.json()
 

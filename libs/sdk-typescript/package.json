@@ -48,7 +48,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Amartuvshins0404/nightona.git"
+    "url": "git+https://github.com/nightona-co/nightona.git"
   },
   "author": "Daytona Platforms Inc.",
   "contributors": [
@@ -56,7 +56,7 @@
   ],
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/Amartuvshins0404/nightona/issues"
+    "url": "https://github.com/nightona-co/nightona/issues"
   },
   "homepage": "https://www.daytona.io/docs",
   "config": {

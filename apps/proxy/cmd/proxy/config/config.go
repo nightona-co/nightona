@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/cache"
-	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/utils"
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/cache"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/utils"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 	"github.com/go-playground/validator/v10"
 	"github.com/joho/godotenv"
 	"github.com/kelseyhightower/envconfig"

@@ -12,9 +12,9 @@ import (
 	"net/url"
 	"time"
 
-	common_errors "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/errors"
-	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/timer"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/common"
+	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/timer"
+	"github.com/nightona-co/nightona/apps/runner/pkg/common"
 	"github.com/docker/docker/api/types/container"
 	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 	"go.opentelemetry.io/otel"

@@ -11,9 +11,9 @@ import (
 	"regexp"
 	"time"
 
-	common_errors "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/errors"
-	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/utils"
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
+	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/utils"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 	"github.com/gin-gonic/gin"
 
 	log "github.com/sirupsen/logrus"

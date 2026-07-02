@@ -6,9 +6,9 @@ package volume
 import (
 	"context"
 
-	apiclient_cli "github.com/Amartuvshins0404/nightona/apps/cli/apiclient"
-	"github.com/Amartuvshins0404/nightona/apps/cli/cmd/common"
-	"github.com/Amartuvshins0404/nightona/apps/cli/views/volume"
+	apiclient_cli "github.com/nightona-co/nightona/apps/cli/apiclient"
+	"github.com/nightona-co/nightona/apps/cli/cmd/common"
+	"github.com/nightona-co/nightona/apps/cli/views/volume"
 	"github.com/spf13/cobra"
 )
 

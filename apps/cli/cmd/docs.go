@@ -6,7 +6,7 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/Amartuvshins0404/nightona/apps/cli/views/common"
+	"github.com/nightona-co/nightona/apps/cli/views/common"
 	"github.com/pkg/browser"
 	"github.com/spf13/cobra"
 )

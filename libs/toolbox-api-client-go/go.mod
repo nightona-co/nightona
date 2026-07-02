@@ -1,3 +1,3 @@
-module github.com/Amartuvshins0404/nightona/libs/toolbox-api-client-go
+module github.com/nightona-co/nightona/libs/toolbox-api-client-go
 
 go 1.23

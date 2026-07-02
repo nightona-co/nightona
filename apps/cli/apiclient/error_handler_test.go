@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Amartuvshins0404/nightona/apps/cli/apiclient"
+	"github.com/nightona-co/nightona/apps/cli/apiclient"
 )
 
 func response(statusCode int, body string) *http.Response {

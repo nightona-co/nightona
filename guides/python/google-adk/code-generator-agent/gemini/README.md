@@ -105,7 +105,7 @@ The agent has already tested this code in the sandbox before returning it, so yo
 
 ## API Reference
 
-For the complete API reference, see the [nightona-adk documentation](https://github.com/Amartuvshins0404/nightona-adk-plugin#available-tools).
+For the complete API reference, see the [nightona-adk documentation](https://github.com/nightona-co/nightona-adk-plugin#available-tools).
 
 ## License
 

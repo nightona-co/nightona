@@ -71,7 +71,7 @@ Nightona-named packages are **not published yet** (see [PUBLISHING.md](PUBLISHIN
 | npm (TypeScript SDK) | `@daytonaio/sdk` | `@nightona/sdk` |
 | PyPI (Python SDK) | `daytona` | `nightona` |
 | RubyGems (Ruby SDK) | `daytona` | `nightona` |
-| Go module (Go SDK) | `github.com/daytonaio/daytona/libs/sdk-go` | `github.com/Amartuvshins0404/nightona/libs/sdk-go` |
+| Go module (Go SDK) | `github.com/daytonaio/daytona/libs/sdk-go` | `github.com/nightona-co/nightona/libs/sdk-go` |
 | Java / Maven (Java SDK) | `io.daytona:sdk` | `io.nightona:sdk` (with `io.nightona:api-client`, `io.nightona:toolbox-api-client`) |
 | CLI binary | `daytona` | `nightona` |
 
@@ -188,7 +188,7 @@ Not yet audited exhaustively:
 
 ## Getting help
 
-- Issues: https://github.com/Amartuvshins0404/nightona/issues
-- Discussions: https://github.com/Amartuvshins0404/nightona/discussions
+- Issues: https://github.com/nightona-co/nightona/issues
+- Discussions: https://github.com/nightona-co/nightona/discussions
 
 If you hit a migration problem not covered here — especially in the persisted-state area — please open an issue so this guide can be corrected.

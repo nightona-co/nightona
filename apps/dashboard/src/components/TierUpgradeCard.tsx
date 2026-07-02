@@ -122,19 +122,19 @@ export function TierUpgradeCard({ tiers, organizationTier, requirementsState, or
             <div className="text-muted-foreground">
               Reach the maintainers at{' '}
               <a
-                href="https://github.com/Amartuvshins0404/nightona/issues"
+                href="https://github.com/nightona-co/nightona/issues"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-foreground underline"
               >
-                github.com/Amartuvshins0404/nightona/issues
+                github.com/nightona-co/nightona/issues
               </a>
               .
             </div>
           </div>
 
           <Button variant={organizationTier?.tier && organizationTier.tier > 2 ? 'default' : 'secondary'} asChild>
-            <a href="https://github.com/Amartuvshins0404/nightona/issues" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/nightona-co/nightona/issues" target="_blank" rel="noopener noreferrer">
               Contact maintainers
             </a>
           </Button>

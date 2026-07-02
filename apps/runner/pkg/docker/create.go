@@ -13,14 +13,14 @@ import (
 	"time"
 
 	"github.com/containerd/errdefs"
-	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/timer"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/api/dto"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/common"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/models/enums"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/timer"
+	"github.com/nightona-co/nightona/apps/runner/pkg/api/dto"
+	"github.com/nightona-co/nightona/apps/runner/pkg/common"
+	"github.com/nightona-co/nightona/apps/runner/pkg/models/enums"
 	"github.com/docker/docker/api/types/image"
 	v1 "github.com/opencontainers/image-spec/specs-go/v1"
 
-	common_errors "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/errors"
+	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
 )
 
 func (d *DockerClient) Create(ctx context.Context, sandboxDto dto.CreateSandboxDTO) (string, string, error) {

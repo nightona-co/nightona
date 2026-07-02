@@ -9,9 +9,9 @@ import (
 	"net/http"
 	"strings"
 
-	common_errors "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/errors"
-	"github.com/Amartuvshins0404/nightona/apps/daemon/internal/util"
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/session"
+	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
+	"github.com/nightona-co/nightona/apps/daemon/internal/util"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/session"
 	"github.com/gin-gonic/gin"
 )
 

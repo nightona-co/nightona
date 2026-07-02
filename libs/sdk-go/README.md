@@ -12,8 +12,8 @@ import (
     "log"
     "time"
 
-    "github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/nightona"
-    "github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/types"
+    "github.com/nightona-co/nightona/libs/sdk-go/pkg/nightona"
+    "github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
 )
 
 func main() {
@@ -252,5 +252,5 @@ Apache-2.0
 
 For issues and questions:
 
-- **GitHub Issues**: https://github.com/Amartuvshins0404/nightona/issues
+- **GitHub Issues**: https://github.com/nightona-co/nightona/issues
 - **Documentation**: https://www.daytona.io/docs

@@ -10,10 +10,10 @@ import (
 	"time"
 
 	"github.com/containerd/errdefs"
-	"github.com/Amartuvshins0404/nightona/apps/runner/internal/util"
+	"github.com/nightona-co/nightona/apps/runner/internal/util"
 	"github.com/gin-gonic/gin"
 
-	common_errors "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/errors"
+	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
 )
 
 func HandlePossibleDockerError(ctx *gin.Context, err error) common_errors.ErrorResponse {

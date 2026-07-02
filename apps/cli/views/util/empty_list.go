@@ -4,7 +4,7 @@
 package util
 
 import (
-	"github.com/Amartuvshins0404/nightona/apps/cli/views/common"
+	"github.com/nightona-co/nightona/apps/cli/views/common"
 )
 
 func NotifyEmptySandboxList(tip bool) {

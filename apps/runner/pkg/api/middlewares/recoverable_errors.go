@@ -7,8 +7,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	common_errors "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/errors"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/common"
+	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
+	"github.com/nightona-co/nightona/apps/runner/pkg/common"
 	"github.com/gin-gonic/gin"
 )
 

@@ -13,11 +13,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Amartuvshins0404/nightona/apps/daemon/internal/util"
+	"github.com/nightona-co/nightona/apps/daemon/internal/util"
 	"github.com/google/uuid"
 
-	common_errors "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/errors"
-	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/log"
+	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/log"
 )
 
 func (s *SessionService) Execute(sessionId, cmdId, cmd string, async, isCombinedOutput, skipServerDemux, suppressInputEcho bool) (*SessionExecute, error) {

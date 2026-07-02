@@ -1,3 +1,3 @@
-module github.com/Amartuvshins0404/nightona/libs/api-client-go
+module github.com/nightona-co/nightona/libs/api-client-go
 
 go 1.23

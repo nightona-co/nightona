@@ -7,8 +7,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/utils"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/models/enums"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/utils"
+	"github.com/nightona-co/nightona/apps/runner/pkg/models/enums"
 	"github.com/docker/docker/api/types/container"
 )
 

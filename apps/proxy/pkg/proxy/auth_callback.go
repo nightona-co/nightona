@@ -17,9 +17,9 @@ import (
 	"github.com/gin-gonic/gin"
 	"golang.org/x/oauth2"
 
-	common_errors "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/errors"
-	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/utils"
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
+	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/utils"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 )
 
 func (p *Proxy) AuthCallback(ctx *gin.Context) {

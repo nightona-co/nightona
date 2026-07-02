@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["daytonaio", "Nightona contributors"]
   s.email       = ["support@daytona.io", "amaraaamka0404@gmail.com"]
-  s.homepage    = "https://github.com/Amartuvshins0404/nightona"
+  s.homepage    = "https://github.com/nightona-co/nightona"
   s.summary     = "Nightona Toolbox API Ruby Gem"
   s.description = "Nightona Toolbox API Client"
   s.license     = "Unlicense"

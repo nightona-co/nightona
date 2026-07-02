@@ -6,9 +6,9 @@ package sandbox
 import (
 	"context"
 
-	"github.com/Amartuvshins0404/nightona/apps/cli/apiclient"
-	"github.com/Amartuvshins0404/nightona/apps/cli/cmd/common"
-	"github.com/Amartuvshins0404/nightona/apps/cli/views/sandbox"
+	"github.com/nightona-co/nightona/apps/cli/apiclient"
+	"github.com/nightona-co/nightona/apps/cli/cmd/common"
+	"github.com/nightona-co/nightona/apps/cli/views/sandbox"
 	"github.com/spf13/cobra"
 )
 

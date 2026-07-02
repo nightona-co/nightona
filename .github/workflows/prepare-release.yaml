@@ -15,7 +15,7 @@ env:
 
 jobs:
   prepare:
-    if: github.repository == 'Amartuvshins0404/nightona'
+    if: github.repository == 'nightona-co/nightona'
     runs-on: ubuntu-latest
     permissions:
       contents: write

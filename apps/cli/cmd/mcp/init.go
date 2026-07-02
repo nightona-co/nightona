@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Amartuvshins0404/nightona/apps/cli/cmd/mcp/agents"
+	"github.com/nightona-co/nightona/apps/cli/cmd/mcp/agents"
 	"github.com/spf13/cobra"
 )
 

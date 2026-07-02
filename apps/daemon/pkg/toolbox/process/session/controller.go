@@ -6,7 +6,7 @@ package session
 import (
 	"log/slog"
 
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/session"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/session"
 )
 
 type SessionController struct {

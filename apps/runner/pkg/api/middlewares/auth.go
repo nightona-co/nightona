@@ -7,10 +7,10 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/Amartuvshins0404/nightona/apps/runner/internal/constants"
+	"github.com/nightona-co/nightona/apps/runner/internal/constants"
 	"github.com/gin-gonic/gin"
 
-	common_errors "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/errors"
+	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
 )
 
 func AuthMiddleware(apiToken string) gin.HandlerFunc {

@@ -7,7 +7,7 @@ import (
 	"context"
 	"strings"
 
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/api/dto"
+	"github.com/nightona-co/nightona/apps/runner/pkg/api/dto"
 )
 
 type ImageInfo struct {

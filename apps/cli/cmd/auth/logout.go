@@ -4,9 +4,9 @@
 package auth
 
 import (
-	"github.com/Amartuvshins0404/nightona/apps/cli/config"
-	"github.com/Amartuvshins0404/nightona/apps/cli/internal"
-	"github.com/Amartuvshins0404/nightona/apps/cli/views/common"
+	"github.com/nightona-co/nightona/apps/cli/config"
+	"github.com/nightona-co/nightona/apps/cli/internal"
+	"github.com/nightona-co/nightona/apps/cli/views/common"
 	"github.com/spf13/cobra"
 )
 

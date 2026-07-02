@@ -7,10 +7,10 @@ import (
 	"context"
 	"fmt"
 
-	apiclient_cli "github.com/Amartuvshins0404/nightona/apps/cli/apiclient"
-	"github.com/Amartuvshins0404/nightona/apps/cli/cmd/common"
-	view_common "github.com/Amartuvshins0404/nightona/apps/cli/views/common"
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
+	apiclient_cli "github.com/nightona-co/nightona/apps/cli/apiclient"
+	"github.com/nightona-co/nightona/apps/cli/cmd/common"
+	view_common "github.com/nightona-co/nightona/apps/cli/views/common"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 	"github.com/spf13/cobra"
 )
 

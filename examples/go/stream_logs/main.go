@@ -10,8 +10,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/nightona"
-	"github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/types"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/nightona"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
 )
 
 func main() {

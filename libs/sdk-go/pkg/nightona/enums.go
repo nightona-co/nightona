@@ -3,7 +3,7 @@
 
 package nightona
 
-import apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
+import apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 
 // Type aliases re-export api-client enum types under the nightona package so
 // SDK consumers never need to import the api-client directly.

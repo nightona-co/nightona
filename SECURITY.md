@@ -6,9 +6,9 @@ At Nightona, we take security seriously. If you believe you have found a securit
 
 **Please do NOT report security vulnerabilities through public GitHub issues.**
 
-Instead, please report vulnerabilities privately through [GitHub's private vulnerability reporting](https://github.com/Amartuvshins0404/nightona/security/advisories/new):
+Instead, please report vulnerabilities privately through [GitHub's private vulnerability reporting](https://github.com/nightona-co/nightona/security/advisories/new):
 
-**https://github.com/Amartuvshins0404/nightona/security/advisories/new**
+**https://github.com/nightona-co/nightona/security/advisories/new**
 
 Please include:
 
@@ -28,7 +28,7 @@ The following assets and areas are in scope for vulnerability reports:
 - **Sandbox runtime isolation** — escape from sandbox to host, cross-tenant access, isolation boundary bypasses
 - **Authentication and authorization** — SSO, API key management, session handling, privilege escalation across accounts or organizations
 - **Secrets management** — scoped secret injection, unauthorized access to secrets, leakage across sandbox boundaries
-- **Public GitHub repositories** — the [Amartuvshins0404/nightona](https://github.com/Amartuvshins0404/nightona) repository
+- **Public GitHub repositories** — the [nightona-co/nightona](https://github.com/nightona-co/nightona) repository
 
 ## Excluded Submission Types
 
@@ -78,7 +78,7 @@ We follow a coordinated disclosure process:
 
 - **90 days** — We target remediation within 90 days of a validated report. Complex issues may require additional time, and we will communicate timelines transparently.
 - **30 days post-patch** — After a fix is released, we ask that researchers wait 30 days before public disclosure to allow users to update.
-- **No response** — If we fail to acknowledge or respond to a report within 90 days, the researcher may proceed with public disclosure after providing 14 days advance written notice through the same [GitHub private vulnerability reporting channel](https://github.com/Amartuvshins0404/nightona/security/advisories/new).
+- **No response** — If we fail to acknowledge or respond to a report within 90 days, the researcher may proceed with public disclosure after providing 14 days advance written notice through the same [GitHub private vulnerability reporting channel](https://github.com/nightona-co/nightona/security/advisories/new).
 
 ## Rewards
 

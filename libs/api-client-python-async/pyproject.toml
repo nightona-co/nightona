@@ -22,7 +22,7 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/Amartuvshins0404/nightona"
+Repository = "https://github.com/nightona-co/nightona"
 
 [tool.poetry]
 requires-poetry = ">=2.0"

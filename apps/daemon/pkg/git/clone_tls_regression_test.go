@@ -11,7 +11,7 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/gitprovider"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/gitprovider"
 	"github.com/stretchr/testify/require"
 )
 

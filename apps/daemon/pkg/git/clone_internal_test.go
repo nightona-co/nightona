@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/gitprovider"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/gitprovider"
 	"github.com/go-git/go-git/v5/plumbing/transport/http"
 	"github.com/stretchr/testify/require"
 )
@@ -31,7 +31,7 @@ func TestBuildCloneArgs(t *testing.T) {
 		{
 			name: "https URL with branch",
 			repo: &gitprovider.GitRepository{
-				Url:    "https://github.com/Amartuvshins0404/nightona",
+				Url:    "https://github.com/nightona-co/nightona",
 				Branch: "main",
 			},
 			workDir: "/work-dir",
@@ -40,13 +40,13 @@ func TestBuildCloneArgs(t *testing.T) {
 				"-c", "core.hooksPath=/dev/null",
 				"clone", "--single-branch", "--progress",
 				"--branch", "main",
-				"--", "https://github.com/Amartuvshins0404/nightona", "/work-dir",
+				"--", "https://github.com/nightona-co/nightona", "/work-dir",
 			},
 		},
 		{
 			name: "http URL with branch",
 			repo: &gitprovider.GitRepository{
-				Url:    "http://localhost:3000/Amartuvshins0404/nightona",
+				Url:    "http://localhost:3000/nightona-co/nightona",
 				Branch: "main",
 			},
 			workDir: "/work-dir",
@@ -55,13 +55,13 @@ func TestBuildCloneArgs(t *testing.T) {
 				"-c", "core.hooksPath=/dev/null",
 				"clone", "--single-branch", "--progress",
 				"--branch", "main",
-				"--", "http://localhost:3000/Amartuvshins0404/nightona", "/work-dir",
+				"--", "http://localhost:3000/nightona-co/nightona", "/work-dir",
 			},
 		},
 		{
 			name: "URL without protocol gets https:// prefix",
 			repo: &gitprovider.GitRepository{
-				Url:    "github.com/Amartuvshins0404/nightona",
+				Url:    "github.com/nightona-co/nightona",
 				Branch: "main",
 			},
 			workDir: "/work-dir",
@@ -70,20 +70,20 @@ func TestBuildCloneArgs(t *testing.T) {
 				"-c", "core.hooksPath=/dev/null",
 				"clone", "--single-branch", "--progress",
 				"--branch", "main",
-				"--", "https://github.com/Amartuvshins0404/nightona", "/work-dir",
+				"--", "https://github.com/nightona-co/nightona", "/work-dir",
 			},
 		},
 		{
 			name: "no branch omits --branch flag",
 			repo: &gitprovider.GitRepository{
-				Url: "https://github.com/Amartuvshins0404/nightona",
+				Url: "https://github.com/nightona-co/nightona",
 			},
 			workDir: "/work-dir",
 			expected: []string{
 				"-c", "credential.helper=",
 				"-c", "core.hooksPath=/dev/null",
 				"clone", "--single-branch", "--progress",
-				"--", "https://github.com/Amartuvshins0404/nightona", "/work-dir",
+				"--", "https://github.com/nightona-co/nightona", "/work-dir",
 			},
 		},
 		{
@@ -125,7 +125,7 @@ func TestBuildCloneArgs_NeverEmbedsCredsInURL(t *testing.T) {
 	// user:pass@ in the URL, which persisted into .git/config. The new impl
 	// must never do that — creds flow through GIT_ASKPASS env only.
 	repo := &gitprovider.GitRepository{
-		Url:    "https://github.com/Amartuvshins0404/nightona",
+		Url:    "https://github.com/nightona-co/nightona",
 		Branch: "main",
 	}
 	args := buildCloneArgs(repo, "/work-dir", false)

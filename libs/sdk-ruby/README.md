@@ -146,7 +146,7 @@ Clone, list branches, and add files to the sandbox.
 ```ruby
 # Basic clone
 sandbox.git.clone(
-  url: 'https://github.com/Amartuvshins0404/nightona.git',
+  url: 'https://github.com/nightona-co/nightona.git',
   path: 'workspace/repo'
 )
 

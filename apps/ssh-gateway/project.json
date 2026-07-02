@@ -9,7 +9,7 @@
       "executor": "@nx-go/nx-go:build",
       "inputs": ["goProduction"],
       "options": {
-        "main": "github.com/Amartuvshins0404/nightona/apps/ssh-gateway",
+        "main": "github.com/nightona-co/nightona/apps/ssh-gateway",
         "outputPath": "dist/apps/ssh-gateway"
       },
       "configurations": {
@@ -21,7 +21,7 @@
       "options": {
         "cmd": "gow",
         "cwd": ".",
-        "main": "github.com/Amartuvshins0404/nightona/apps/ssh-gateway"
+        "main": "github.com/nightona-co/nightona/apps/ssh-gateway"
       },
       "configurations": {
         "production": {}

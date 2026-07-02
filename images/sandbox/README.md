@@ -1,6 +1,6 @@
 # Nightona Sandbox Image
 
-[Dockerfile](./Dockerfile) defines the default Nightona sandbox image, published as `ghcr.io/amartuvshins0404/sandbox`. It is derived from the upstream [daytonaio/sandbox](https://hub.docker.com/r/daytonaio/sandbox) image lineage.
+[Dockerfile](./Dockerfile) defines the default Nightona sandbox image, published as `ghcr.io/nightona-co/sandbox`. It is derived from the upstream [daytonaio/sandbox](https://hub.docker.com/r/daytonaio/sandbox) image lineage.
 
 The default sandbox image contains Python, Node and their most popular dependencies, including:
 

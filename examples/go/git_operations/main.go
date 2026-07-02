@@ -8,9 +8,9 @@ import (
 	"log"
 	"time"
 
-	"github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/nightona"
-	"github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/options"
-	"github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/types"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/nightona"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/options"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
 )
 
 func main() {
@@ -56,7 +56,7 @@ func main() {
 	}
 
 	// Clone a public repository
-	repoURL := "https://github.com/Amartuvshins0404/nightona.git"
+	repoURL := "https://github.com/nightona-co/nightona.git"
 	log.Printf("Cloning %s...\n", repoURL)
 	if err := sandbox.Git.Clone(ctx, repoURL, repoPath); err != nil {
 		log.Fatalf("Failed to clone repository: %v", err)

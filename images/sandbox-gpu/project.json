@@ -8,13 +8,13 @@
     "docker": {
       "options": {
         "platforms": ["linux/amd64"],
-        "tags": ["ghcr.io/amartuvshins0404/sandbox-gpu:$VERSION"],
-        "cache-from": ["type=registry,ref=ghcr.io/amartuvshins0404/sandbox-gpu:buildcache-linux-amd64"],
-        "cache-to": ["type=registry,ref=ghcr.io/amartuvshins0404/sandbox-gpu:buildcache-linux-amd64,mode=max"]
+        "tags": ["ghcr.io/nightona-co/sandbox-gpu:$VERSION"],
+        "cache-from": ["type=registry,ref=ghcr.io/nightona-co/sandbox-gpu:buildcache-linux-amd64"],
+        "cache-to": ["type=registry,ref=ghcr.io/nightona-co/sandbox-gpu:buildcache-linux-amd64,mode=max"]
       },
       "configurations": {
         "pr-build": {
-          "tags": ["ghcr.io/amartuvshins0404/sandbox-gpu:$VERSION"]
+          "tags": ["ghcr.io/nightona-co/sandbox-gpu:$VERSION"]
         }
       }
     }

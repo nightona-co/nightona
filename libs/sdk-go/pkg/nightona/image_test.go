@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/options"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/options"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

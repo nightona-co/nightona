@@ -68,7 +68,7 @@ publishing {
             pom {
                 name.set("Nightona Java SDK")
                 description.set("Official Java SDK for Nightona — secure, elastic cloud infrastructure for running AI-generated code")
-                url.set("https://github.com/Amartuvshins0404/nightona")
+                url.set("https://github.com/nightona-co/nightona")
 
                 licenses {
                     license {
@@ -86,9 +86,9 @@ publishing {
                 }
 
                 scm {
-                    connection.set("scm:git:git://github.com/Amartuvshins0404/nightona.git")
-                    developerConnection.set("scm:git:ssh://git@github.com:Amartuvshins0404/nightona.git")
-                    url.set("https://github.com/Amartuvshins0404/nightona")
+                    connection.set("scm:git:git://github.com/nightona-co/nightona.git")
+                    developerConnection.set("scm:git:ssh://git@github.com:nightona-co/nightona.git")
+                    url.set("https://github.com/nightona-co/nightona")
                 }
             }
         }

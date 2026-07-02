@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/Amartuvshins0404/nightona/apps/snapshot-manager/internal/config"
+	"github.com/nightona-co/nightona/apps/snapshot-manager/internal/config"
 	"github.com/distribution/distribution/v3/configuration"
 	"golang.org/x/crypto/bcrypt"
 )

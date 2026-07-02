@@ -12,7 +12,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/Amartuvshins0404/nightona/apps/snapshot-manager/internal"
+	"github.com/nightona-co/nightona/apps/snapshot-manager/internal"
 	"github.com/distribution/distribution/v3/configuration"
 	_ "github.com/distribution/distribution/v3/registry/auth/htpasswd"
 	"github.com/distribution/distribution/v3/registry/handlers"

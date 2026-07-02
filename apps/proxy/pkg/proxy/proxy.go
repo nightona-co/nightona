@@ -16,16 +16,16 @@ import (
 	"sync"
 	"time"
 
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
-	"github.com/Amartuvshins0404/nightona/apps/proxy/cmd/proxy/config"
-	"github.com/Amartuvshins0404/nightona/apps/proxy/internal"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
+	"github.com/nightona-co/nightona/apps/proxy/cmd/proxy/config"
+	"github.com/nightona-co/nightona/apps/proxy/internal"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/securecookie"
 
-	common_cache "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/cache"
-	common_errors "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/errors"
-	common_proxy "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/proxy"
+	common_cache "github.com/nightona-co/nightona/libs/common-go/pkg/cache"
+	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
+	common_proxy "github.com/nightona-co/nightona/libs/common-go/pkg/proxy"
 
 	log "github.com/sirupsen/logrus"
 )

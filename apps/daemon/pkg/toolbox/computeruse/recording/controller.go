@@ -4,7 +4,7 @@
 package recording
 
 import (
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/recording"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/recording"
 )
 
 type RecordingController struct {

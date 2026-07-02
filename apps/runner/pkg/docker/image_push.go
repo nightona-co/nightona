@@ -7,8 +7,8 @@ import (
 	"context"
 	"io"
 
-	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/log"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/api/dto"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/log"
+	"github.com/nightona-co/nightona/apps/runner/pkg/api/dto"
 
 	"github.com/docker/docker/api/types/image"
 	"github.com/docker/docker/pkg/jsonmessage"

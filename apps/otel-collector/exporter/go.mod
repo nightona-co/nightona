@@ -1,10 +1,10 @@
-module github.com/Amartuvshins0404/nightona/apps/otel-collector/exporter
+module github.com/nightona-co/nightona/apps/otel-collector/exporter
 
 go 1.25.4
 
 require (
-	github.com/Amartuvshins0404/nightona/libs/api-client-go v0.190.0
-	github.com/Amartuvshins0404/nightona/libs/common-go v0.0.0-00010101000000-000000000000
+	github.com/nightona-co/nightona/libs/api-client-go v0.190.0
+	github.com/nightona-co/nightona/libs/common-go v0.0.0-00010101000000-000000000000
 	go.opentelemetry.io/collector/client v1.50.0
 	go.opentelemetry.io/collector/component v1.50.0
 	go.opentelemetry.io/collector/config/configoptional v1.50.0
@@ -63,6 +63,6 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/Amartuvshins0404/nightona/libs/api-client-go => ../../../libs/api-client-go
+replace github.com/nightona-co/nightona/libs/api-client-go => ../../../libs/api-client-go
 
-replace github.com/Amartuvshins0404/nightona/libs/common-go => ../../../libs/common-go
+replace github.com/nightona-co/nightona/libs/common-go => ../../../libs/common-go

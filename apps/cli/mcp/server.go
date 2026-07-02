@@ -4,7 +4,7 @@
 package mcp
 
 import (
-	"github.com/Amartuvshins0404/nightona/apps/cli/mcp/tools"
+	"github.com/nightona-co/nightona/apps/cli/mcp/tools"
 	"github.com/mark3labs/mcp-go/mcp"
 	"github.com/mark3labs/mcp-go/server"
 )

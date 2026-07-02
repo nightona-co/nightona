@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/childreap"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/childreap"
 	go_git "github.com/go-git/go-git/v5"
 	"github.com/go-git/go-git/v5/plumbing"
 	"github.com/go-git/go-git/v5/plumbing/transport"

@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/childreap"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/childreap"
 	"github.com/go-git/go-git/v5"
 )
 

@@ -6,10 +6,10 @@ package nightona
 import (
 	"context"
 
-	"github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/errors"
-	"github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/options"
-	"github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/types"
-	toolbox "github.com/Amartuvshins0404/nightona/libs/toolbox-api-client-go"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/errors"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/options"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
+	toolbox "github.com/nightona-co/nightona/libs/toolbox-api-client-go"
 )
 
 // GitService provides Git operations for a sandbox.

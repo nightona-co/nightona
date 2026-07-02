@@ -7,8 +7,8 @@ import (
 	"context"
 	"time"
 
-	common_cache "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/cache"
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
+	common_cache "github.com/nightona-co/nightona/libs/common-go/pkg/cache"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 	"go.uber.org/zap"
 )
 

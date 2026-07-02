@@ -35,7 +35,7 @@ COPY libs/common-go/go.mod libs/common-go/go.sum libs/common-go/
 RUN head -1 go.work > go.work.tmp && printf '\nuse (\n\t./apps/otel-collector/exporter\n\t./libs/api-client-go\n\t./libs/common-go\n)\n' >> go.work.tmp && mv go.work.tmp go.work
 
 ENV NX_DAEMON=false
-ENV GONOSUMDB=github.com/Amartuvshins0404/nightona
+ENV GONOSUMDB=github.com/nightona-co/nightona
 
 RUN go -C apps/otel-collector/exporter mod download && \
     go -C libs/api-client-go mod download && \

@@ -15,7 +15,7 @@ A [CopilotKit](https://docs.showcase.copilotkit.ai/) Built-in Agent backed by a 
 Clone the repository and switch into the guide:
 
 ```bash
-git clone https://github.com/Amartuvshins0404/nightona.git
+git clone https://github.com/nightona-co/nightona.git
 cd nightona/guides/typescript/copilotkit/generative-ui-coding-agent
 ```
 

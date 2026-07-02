@@ -24,19 +24,19 @@ Nightona provides command-line access to core features for interacting with Nigh
 <TabItem label="Mac">
 
 ```bash
-brew install amartuvshins0404/cli/nightona
+brew install nightona-co/cli/nightona
 ```
 
 Trust the tap once so routine `brew upgrade` keeps the Nightona CLI up to date. Recent Homebrew versions require third-party taps to be explicitly trusted; without it, a bare `brew upgrade` skips the Nightona tap and the CLI goes stale:
 
 ```bash
-brew trust amartuvshins0404/cli
+brew trust nightona-co/cli
 ```
 
 To upgrade the Nightona CLI to the latest version:
 
 ```bash
-brew upgrade amartuvshins0404/cli/nightona
+brew upgrade nightona-co/cli/nightona
 ```
 
 Alternatively, install directly without Homebrew:
@@ -44,13 +44,13 @@ Alternatively, install directly without Homebrew:
 For Apple Silicon (`arm64`):
 
   ```bash
-  sudo curl -fL https://github.com/Amartuvshins0404/nightona/releases/latest/download/nightona-darwin-arm64 -o /usr/local/bin/nightona && sudo chmod +x /usr/local/bin/nightona
+  sudo curl -fL https://github.com/nightona-co/nightona/releases/latest/download/nightona-darwin-arm64 -o /usr/local/bin/nightona && sudo chmod +x /usr/local/bin/nightona
   ```
 
 For Intel (`amd64`):
 
   ```bash
-  sudo curl -fL https://github.com/Amartuvshins0404/nightona/releases/latest/download/nightona-darwin-amd64 -o /usr/local/bin/nightona && sudo chmod +x /usr/local/bin/nightona
+  sudo curl -fL https://github.com/nightona-co/nightona/releases/latest/download/nightona-darwin-amd64 -o /usr/local/bin/nightona && sudo chmod +x /usr/local/bin/nightona
   ```
 
 </TabItem>
@@ -61,13 +61,13 @@ Choose the command for your Linux architecture. Both commands download the lates
 For `amd64` (`x86_64`):
 
   ```bash
-  sudo curl -fL https://github.com/Amartuvshins0404/nightona/releases/latest/download/nightona-linux-amd64 -o /usr/local/bin/nightona && sudo chmod +x /usr/local/bin/nightona
+  sudo curl -fL https://github.com/nightona-co/nightona/releases/latest/download/nightona-linux-amd64 -o /usr/local/bin/nightona && sudo chmod +x /usr/local/bin/nightona
   ```
 
 For `arm64` (`aarch64`):
 
   ```bash
-  sudo curl -fL https://github.com/Amartuvshins0404/nightona/releases/latest/download/nightona-linux-arm64 -o /usr/local/bin/nightona && sudo chmod +x /usr/local/bin/nightona
+  sudo curl -fL https://github.com/nightona-co/nightona/releases/latest/download/nightona-linux-arm64 -o /usr/local/bin/nightona && sudo chmod +x /usr/local/bin/nightona
   ```
 
 </TabItem>
@@ -141,7 +141,7 @@ Nightona provides a comprehensive set of [guides](/docs/en/guides) to help you g
 ## Examples
 
 Nightona provides quick examples for common sandbox operations and best practices. <br />
-The examples are based on the Nightona [Python](/docs/en/python-sdk/), [TypeScript](/docs/en/typescript-sdk/), [Go](/docs/en/go-sdk/), [Ruby](/docs/en/ruby-sdk/), [Java](/docs/en/java-sdk/) **SDKs**, [CLI](/docs/en/tools/cli), and [API](/docs/en/tools/api) references. More examples are available in our [GitHub repository](https://github.com/Amartuvshins0404/nightona/tree/main/examples).
+The examples are based on the Nightona [Python](/docs/en/python-sdk/), [TypeScript](/docs/en/typescript-sdk/), [Go](/docs/en/go-sdk/), [Ruby](/docs/en/ruby-sdk/), [Java](/docs/en/java-sdk/) **SDKs**, [CLI](/docs/en/tools/cli), and [API](/docs/en/tools/api) references. More examples are available in our [GitHub repository](https://github.com/nightona-co/nightona/tree/main/examples).
 
 ### Create a sandbox
 
@@ -180,7 +180,7 @@ import (
     "fmt"
     "log"
 
-    "github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/nightona"
+    "github.com/nightona-co/nightona/libs/sdk-go/pkg/nightona"
 )
 
 func main() {
@@ -286,7 +286,7 @@ import (
     "fmt"
     "log"
 
-    "github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/nightona"
+    "github.com/nightona-co/nightona/libs/sdk-go/pkg/nightona"
 )
 
 func main() {
@@ -422,8 +422,8 @@ import (
     "context"
     "log"
 
-    "github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/nightona"
-    "github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/types"
+    "github.com/nightona-co/nightona/libs/sdk-go/pkg/nightona"
+    "github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
 )
 
 func main() {
@@ -551,8 +551,8 @@ import (
     "context"
     "log"
 
-    "github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/nightona"
-    "github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/types"
+    "github.com/nightona-co/nightona/libs/sdk-go/pkg/nightona"
+    "github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
 )
 
 func main() {
@@ -672,8 +672,8 @@ import (
     "context"
     "log"
 
-    "github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/nightona"
-    "github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/types"
+    "github.com/nightona-co/nightona/libs/sdk-go/pkg/nightona"
+    "github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
 )
 
 func main() {
@@ -800,8 +800,8 @@ import (
     "context"
     "log"
 
-    "github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/nightona"
-    "github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/types"
+    "github.com/nightona-co/nightona/libs/sdk-go/pkg/nightona"
+    "github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
 )
 
 func main() {
@@ -929,8 +929,8 @@ import (
     "context"
     "log"
 
-    "github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/nightona"
-    "github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/types"
+    "github.com/nightona-co/nightona/libs/sdk-go/pkg/nightona"
+    "github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
 )
 
 func main() {
@@ -1056,7 +1056,7 @@ from nightona import Nightona
 nightona = Nightona()
 sandbox = nightona.create()
 
-sandbox.git.clone("https://github.com/Amartuvshins0404/nightona.git", "/home/daytona/nightona")
+sandbox.git.clone("https://github.com/nightona-co/nightona.git", "/home/daytona/nightona")
 status = sandbox.git.status("/home/daytona/nightona")
 print(f"Branch: {status.current_branch}")
 ```
@@ -1070,7 +1070,7 @@ import { Nightona } from '@nightona/sdk';
 const nightona = new Nightona();
 const sandbox = await nightona.create();
 
-await sandbox.git.clone('https://github.com/Amartuvshins0404/nightona.git', '/home/daytona/nightona');
+await sandbox.git.clone('https://github.com/nightona-co/nightona.git', '/home/daytona/nightona');
 const status = await sandbox.git.status('/home/daytona/nightona');
 console.log(`Branch: ${status.currentBranch}`);
 ```
@@ -1086,7 +1086,7 @@ import (
     "fmt"
     "log"
 
-    "github.com/Amartuvshins0404/nightona/libs/sdk-go/pkg/nightona"
+    "github.com/nightona-co/nightona/libs/sdk-go/pkg/nightona"
 )
 
 func main() {
@@ -1100,7 +1100,7 @@ func main() {
         log.Fatal(err)
     }
 
-    sandbox.Git.Clone(context.Background(), "https://github.com/Amartuvshins0404/nightona.git", "/home/daytona/nightona")
+    sandbox.Git.Clone(context.Background(), "https://github.com/nightona-co/nightona.git", "/home/daytona/nightona")
     status, err := sandbox.Git.Status(context.Background(), "/home/daytona/nightona")
     if err != nil {
         log.Fatal(err)
@@ -1118,7 +1118,7 @@ require 'nightona'
 nightona = Nightona::Nightona.new
 sandbox = nightona.create
 
-sandbox.git.clone(url: "https://github.com/Amartuvshins0404/nightona.git", path: "/home/daytona/nightona")
+sandbox.git.clone(url: "https://github.com/nightona-co/nightona.git", path: "/home/daytona/nightona")
 status = sandbox.git.status("/home/daytona/nightona")
 puts "Branch: #{status.current_branch}"
 ```
@@ -1135,7 +1135,7 @@ public class App {
     public static void main(String[] args) {
         try (Nightona nightona = new Nightona()) {
             Sandbox sandbox = nightona.create();
-            sandbox.git.clone("https://github.com/Amartuvshins0404/nightona.git", "/home/daytona/nightona");
+            sandbox.git.clone("https://github.com/nightona-co/nightona.git", "/home/daytona/nightona");
             GitStatus status = sandbox.git.status("/home/daytona/nightona");
             System.out.println("Branch: " + status.getCurrentBranch());
         }
@@ -1160,7 +1160,7 @@ curl 'https://proxy.app.daytona.io/toolbox/{sandboxId}/git/clone' \
   --header 'Authorization: Bearer <API_KEY>' \
   --header 'Content-Type: application/json' \
   --data '{
-  "url": "https://github.com/Amartuvshins0404/nightona.git",
+  "url": "https://github.com/nightona-co/nightona.git",
   "path": "/home/daytona/nightona"
 }'
 

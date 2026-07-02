@@ -24,4 +24,4 @@ Do not edit the generated source files manually — changes will be overwritten 
 
 ## License
 
-Apache License 2.0 — see [LICENSE](https://github.com/Amartuvshins0404/nightona/blob/main/libs/sdk-java/LICENSE) for details.
+Apache License 2.0 — see [LICENSE](https://github.com/nightona-co/nightona/blob/main/libs/sdk-java/LICENSE) for details.

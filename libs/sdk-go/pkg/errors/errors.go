@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"net/http"
 
-	apiclient "github.com/Amartuvshins0404/nightona/libs/api-client-go"
-	"github.com/Amartuvshins0404/nightona/libs/toolbox-api-client-go"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
+	"github.com/nightona-co/nightona/libs/toolbox-api-client-go"
 )
 
 // NightonaError is the base error type for all Nightona SDK errors

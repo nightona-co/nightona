@@ -20,10 +20,10 @@ import (
 )
 
 // gitCloneRepoURL is the public repo we clone to exercise both clone paths.
-// Not particularly small — Amartuvshins0404/nightona is a real-world-sized repo —
+// Not particularly small — nightona-co/nightona is a real-world-sized repo —
 // the goal is end-to-end coverage, not a micro-benchmark. Memory-envelope
 // behavior is covered by the daemon unit tests.
-const gitCloneRepoURL = "https://github.com/Amartuvshins0404/nightona.git"
+const gitCloneRepoURL = "https://github.com/nightona-co/nightona.git"
 
 // cloneHTTPTimeout is the overall budget for the POST /git/clone request.
 // Generous because the repo is a few hundred MB and the sandbox runner
@@ -131,7 +131,7 @@ func runGitCloneCase(t *testing.T, cfg Config, envVars map[string]string) {
 	})
 
 	t.Run("WorkingTreeCheckedOut", func(t *testing.T) {
-		// Amartuvshins0404/nightona ships a top-level README.md; its presence proves
+		// nightona-co/nightona ships a top-level README.md; its presence proves
 		// the checkout step populated the working tree, not just the .git dir.
 		out := execSandboxCommand(t, execHTTP, cfg, baseURL,
 			fmt.Sprintf("test -f %s/README.md && echo present", clonePath))

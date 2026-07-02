@@ -26,12 +26,12 @@ The Nightona team appreciates any efforts to make our software more accessible t
    community-maintained open-source fork of Daytona v0.190.0 (AGPL-3.0).
    This package is not officially supported or endorsed by the Nightona
    project. For the official source, please visit
-   https://github.com/Amartuvshins0404/nightona.
+   https://github.com/nightona-co/nightona.
    ```
 
 ## Feedback and Questions
 
-If you have any questions about packaging Nightona or need clarification on these guidelines, especially regarding naming conventions, please open an issue at https://github.com/Amartuvshins0404/nightona/issues.
+If you have any questions about packaging Nightona or need clarification on these guidelines, especially regarding naming conventions, please open an issue at https://github.com/nightona-co/nightona/issues.
 
 > **Note**: Nightona does not yet publish official packages of its own (see [PUBLISHING.md](PUBLISHING.md)). Until it does, any package you build comes from this source tree.
 

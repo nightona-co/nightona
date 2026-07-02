@@ -10,9 +10,9 @@ import (
 	"io"
 	"strings"
 
-	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/log"
-	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/timer"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/api/dto"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/log"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/timer"
+	"github.com/nightona-co/nightona/apps/runner/pkg/api/dto"
 
 	"github.com/docker/docker/api/types/image"
 	"github.com/docker/docker/api/types/registry"

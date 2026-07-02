@@ -100,7 +100,7 @@ if(hasProperty('target') && target == 'android') {
                 pom {
                     name = 'Nightona API Client'
                     description = 'Auto-generated Java client for the Nightona REST API'
-                    url = 'https://github.com/Amartuvshins0404/nightona'
+                    url = 'https://github.com/nightona-co/nightona'
                     licenses {
                         license {
                             name = 'Apache License, Version 2.0'
@@ -115,9 +115,9 @@ if(hasProperty('target') && target == 'android') {
                         }
                     }
                     scm {
-                        connection = 'scm:git:git://github.com/Amartuvshins0404/nightona.git'
-                        developerConnection = 'scm:git:ssh://git@github.com:Amartuvshins0404/nightona.git'
-                        url = 'https://github.com/Amartuvshins0404/nightona'
+                        connection = 'scm:git:git://github.com/nightona-co/nightona.git'
+                        developerConnection = 'scm:git:ssh://git@github.com:nightona-co/nightona.git'
+                        url = 'https://github.com/nightona-co/nightona'
                     }
                 }
             }

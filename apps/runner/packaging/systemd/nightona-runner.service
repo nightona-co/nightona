@@ -1,6 +1,6 @@
 [Unit]
 Description=Nightona Runner Service
-Documentation=https://github.com/Amartuvshins0404/nightona
+Documentation=https://github.com/nightona-co/nightona
 After=network.target
 Wants=network-online.target
 

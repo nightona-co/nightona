@@ -16,12 +16,12 @@ import (
 
 	"context"
 
-	"github.com/Amartuvshins0404/nightona/apps/runner/cmd/runner/config"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/api/dto"
-	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/runner"
+	"github.com/nightona-co/nightona/apps/runner/cmd/runner/config"
+	"github.com/nightona-co/nightona/apps/runner/pkg/api/dto"
+	"github.com/nightona-co/nightona/apps/runner/pkg/runner"
 	"github.com/gin-gonic/gin"
 
-	common_errors "github.com/Amartuvshins0404/nightona/libs/common-go/pkg/errors"
+	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
 )
 
 // TagImage godoc

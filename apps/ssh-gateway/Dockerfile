@@ -34,7 +34,7 @@ COPY libs/api-client-go/go.mod libs/api-client-go/go.sum libs/api-client-go/
 RUN head -1 go.work > go.work.tmp && printf '\nuse (\n\t./apps/ssh-gateway\n\t./libs/api-client-go\n)\n' >> go.work.tmp && mv go.work.tmp go.work
 
 ENV NX_DAEMON=false
-ENV GONOSUMDB=github.com/Amartuvshins0404/nightona
+ENV GONOSUMDB=github.com/nightona-co/nightona
 
 RUN go -C apps/ssh-gateway mod download && go -C libs/api-client-go mod download
 
