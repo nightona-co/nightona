@@ -968,7 +968,7 @@ main() {
 
     # Pull sandbox image with visible progress (blocking — sandboxes won't work without it)
     printf "  ${CYAN}▸${NC} Pulling sandbox image (this may take a few minutes)\n"
-    if docker pull daytonaio/sandbox:0.5.0-slim; then
+    if docker pull ghcr.io/nightona-co/sandbox:0.6.0-slim; then
         printf "  ${GREEN}✓${NC} Sandbox image ready\n"
     else
         printf "  ${RED}✗${NC} Failed to pull sandbox image — sandbox creation will download it on first use\n"

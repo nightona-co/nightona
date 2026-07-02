@@ -663,7 +663,7 @@ func TestServerURLConstruction(t *testing.T) {
 		{
 			name:        "default API URL",
 			apiURL:      defaultAPIURL,
-			expectedURL: "https://app.daytona.io/api",
+			expectedURL: "http://localhost:3000/api",
 		},
 		{
 			name:        "custom API URL with path",
