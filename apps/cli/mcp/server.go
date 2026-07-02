@@ -4,9 +4,9 @@
 package mcp
 
 import (
-	"github.com/nightona-co/nightona/apps/cli/mcp/tools"
 	"github.com/mark3labs/mcp-go/mcp"
 	"github.com/mark3labs/mcp-go/server"
+	"github.com/nightona-co/nightona/apps/cli/mcp/tools"
 )
 
 type NightonaMCPServer struct {

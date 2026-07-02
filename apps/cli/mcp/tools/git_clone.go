@@ -7,9 +7,9 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/mark3labs/mcp-go/mcp"
 	apiclient_cli "github.com/nightona-co/nightona/apps/cli/apiclient"
 	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
-	"github.com/mark3labs/mcp-go/mcp"
 
 	log "github.com/sirupsen/logrus"
 )

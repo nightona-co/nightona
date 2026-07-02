@@ -9,8 +9,8 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/nightona-co/nightona/apps/daemon/pkg/toolbox/computeruse"
 	"github.com/go-vgo/robotgo"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/toolbox/computeruse"
 )
 
 type typingActionType int

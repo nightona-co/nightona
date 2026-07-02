@@ -12,8 +12,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
 	"github.com/gorilla/websocket"
+	"github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

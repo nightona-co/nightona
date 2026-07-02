@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"github.com/containerd/errdefs"
-	"github.com/nightona-co/nightona/apps/runner/internal/util"
 	"github.com/gin-gonic/gin"
+	"github.com/nightona-co/nightona/apps/runner/internal/util"
 
 	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
 )

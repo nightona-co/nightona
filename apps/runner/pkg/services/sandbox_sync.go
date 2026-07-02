@@ -9,11 +9,11 @@ import (
 	"log/slog"
 	"time"
 
-	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
+	"github.com/docker/docker/api/types/container"
 	runnerapiclient "github.com/nightona-co/nightona/apps/runner/pkg/apiclient"
 	"github.com/nightona-co/nightona/apps/runner/pkg/docker"
 	"github.com/nightona-co/nightona/apps/runner/pkg/models/enums"
-	"github.com/docker/docker/api/types/container"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 )
 
 type SandboxSyncServiceConfig struct {

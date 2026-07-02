@@ -6,11 +6,11 @@ package main
 import (
 	"os"
 
-	cu "github.com/nightona-co/nightona/libs/computer-use/pkg/computeruse"
-	"github.com/nightona-co/nightona/apps/daemon/pkg/toolbox/computeruse"
-	"github.com/nightona-co/nightona/apps/daemon/pkg/toolbox/computeruse/manager"
 	"github.com/hashicorp/go-hclog"
 	hc_plugin "github.com/hashicorp/go-plugin"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/toolbox/computeruse"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/toolbox/computeruse/manager"
+	cu "github.com/nightona-co/nightona/libs/computer-use/pkg/computeruse"
 )
 
 func main() {

@@ -5,7 +5,7 @@ package internal
 
 var (
 	Version           = "v0.0.0-dev"
-	NightonaApiUrl     = ""
+	NightonaApiUrl    = ""
 	Auth0Domain       = ""
 	Auth0ClientId     = ""
 	Auth0ClientSecret = ""

@@ -11,8 +11,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/nightona-co/nightona/apps/daemon/pkg/common"
 	"github.com/gorilla/websocket"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/common"
 )
 
 var upgrader = websocket.Upgrader{

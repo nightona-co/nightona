@@ -8,9 +8,9 @@ import (
 	"log/slog"
 	"time"
 
-	"github.com/nightona-co/nightona/apps/daemon/internal/util"
 	"github.com/google/uuid"
 	"github.com/gorilla/websocket"
+	"github.com/nightona-co/nightona/apps/daemon/internal/util"
 )
 
 // attachWebSocket connects a WebSocket client to the interpreter context.

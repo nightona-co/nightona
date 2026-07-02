@@ -12,10 +12,10 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/gin-gonic/gin"
 	"github.com/nightona-co/nightona/apps/daemon/pkg/recording"
 	recordingcontroller "github.com/nightona-co/nightona/apps/daemon/pkg/toolbox/computeruse/recording"
 	"github.com/nightona-co/nightona/apps/daemon/pkg/toolbox/config"
-	"github.com/gin-gonic/gin"
 )
 
 // DashboardServer serves the recording dashboard

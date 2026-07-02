@@ -9,11 +9,11 @@ import (
 	"net/url"
 	"strings"
 
+	"github.com/gorilla/websocket"
 	"github.com/nightona-co/nightona/libs/sdk-go/pkg/errors"
 	"github.com/nightona-co/nightona/libs/sdk-go/pkg/options"
 	"github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
 	"github.com/nightona-co/nightona/libs/toolbox-api-client-go"
-	"github.com/gorilla/websocket"
 )
 
 // CodeInterpreterService provides Python code execution capabilities for a sandbox.

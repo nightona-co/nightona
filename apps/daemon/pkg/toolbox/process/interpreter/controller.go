@@ -11,10 +11,10 @@ import (
 	"net/http"
 	"time"
 
-	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
-	"github.com/nightona-co/nightona/apps/daemon/internal/util"
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/websocket"
+	"github.com/nightona-co/nightona/apps/daemon/internal/util"
+	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
 )
 
 func NewInterpreterController(logger *slog.Logger, workDir string) *Controller {

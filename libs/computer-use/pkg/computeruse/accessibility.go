@@ -16,8 +16,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/nightona-co/nightona/apps/daemon/pkg/toolbox/computeruse"
 	"github.com/godbus/dbus/v5"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/toolbox/computeruse"
 )
 
 // ---------------------------------------------------------------------------

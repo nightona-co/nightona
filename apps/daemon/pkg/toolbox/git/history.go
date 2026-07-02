@@ -7,9 +7,9 @@ import (
 	"errors"
 	"net/http"
 
-	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
-	"github.com/nightona-co/nightona/apps/daemon/pkg/git"
 	"github.com/gin-gonic/gin"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/git"
+	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
 )
 
 // GetCommitHistory godoc

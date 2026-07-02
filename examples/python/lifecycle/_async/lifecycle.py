@@ -27,7 +27,9 @@ async def main():
         existing_sandbox = await nightona.get(sandbox.id)
         print("Get existing sandbox")
 
-        response = await existing_sandbox.process.exec('echo "Hello World from exec!"', cwd="/home/nightona", timeout=10)
+        response = await existing_sandbox.process.exec(
+            'echo "Hello World from exec!"', cwd="/home/nightona", timeout=10
+        )
         if response.exit_code != 0:
             print(f"Error: {response.exit_code} {response.result}")
         else:

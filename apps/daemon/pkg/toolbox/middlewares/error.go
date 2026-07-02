@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/nightona-co/nightona/apps/daemon/pkg/common"
 	"github.com/gin-gonic/gin"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/common"
 )
 
 func ErrorMiddleware() gin.HandlerFunc {

@@ -7,9 +7,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/nightona-co/nightona/libs/common-go/pkg/utils"
-	"github.com/nightona-co/nightona/apps/runner/pkg/models/enums"
 	"github.com/docker/docker/api/types/container"
+	"github.com/nightona-co/nightona/apps/runner/pkg/models/enums"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/utils"
 )
 
 func (d *DockerClient) Stop(ctx context.Context, containerId string, force bool) error {

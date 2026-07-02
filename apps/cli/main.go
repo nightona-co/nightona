@@ -8,6 +8,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
+	"github.com/joho/godotenv"
 	"github.com/nightona-co/nightona/apps/cli/cmd"
 	"github.com/nightona-co/nightona/apps/cli/cmd/auth"
 	"github.com/nightona-co/nightona/apps/cli/cmd/mcp"
@@ -16,7 +17,6 @@ import (
 	"github.com/nightona-co/nightona/apps/cli/cmd/snapshot"
 	"github.com/nightona-co/nightona/apps/cli/cmd/volume"
 	"github.com/nightona-co/nightona/apps/cli/internal"
-	"github.com/joho/godotenv"
 	"github.com/spf13/cobra"
 )
 

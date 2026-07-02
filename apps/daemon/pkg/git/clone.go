@@ -11,12 +11,12 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/nightona-co/nightona/apps/daemon/pkg/gitprovider"
 	"github.com/go-git/go-git/v5"
 	"github.com/go-git/go-git/v5/plumbing"
 	"github.com/go-git/go-git/v5/plumbing/protocol/packp/capability"
 	"github.com/go-git/go-git/v5/plumbing/transport"
 	"github.com/go-git/go-git/v5/plumbing/transport/http"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/gitprovider"
 )
 
 func (s *Service) CloneRepository(repo *gitprovider.GitRepository, auth *http.BasicAuth, insecureSkipTLS bool) error {

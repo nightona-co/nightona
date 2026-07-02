@@ -5,8 +5,8 @@ package controllers
 import (
 	"net/http"
 
-	"github.com/nightona-co/nightona/apps/runner/internal"
 	"github.com/gin-gonic/gin"
+	"github.com/nightona-co/nightona/apps/runner/internal"
 )
 
 // HealthCheck 			godoc

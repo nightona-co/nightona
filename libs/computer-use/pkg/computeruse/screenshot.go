@@ -13,9 +13,9 @@ import (
 	"image/png"
 	"os"
 
-	"github.com/nightona-co/nightona/apps/daemon/pkg/toolbox/computeruse"
 	"github.com/go-vgo/robotgo"
 	"github.com/kbinani/screenshot"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/toolbox/computeruse"
 	log "github.com/sirupsen/logrus"
 )
 

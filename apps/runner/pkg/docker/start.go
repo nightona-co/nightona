@@ -10,11 +10,11 @@ import (
 	"slices"
 	"time"
 
-	"github.com/nightona-co/nightona/libs/common-go/pkg/timer"
-	"github.com/nightona-co/nightona/apps/runner/pkg/api/dto"
-	"github.com/nightona-co/nightona/apps/runner/pkg/common"
 	"github.com/docker/docker/api/types/container"
 	"github.com/docker/docker/api/types/strslice"
+	"github.com/nightona-co/nightona/apps/runner/pkg/api/dto"
+	"github.com/nightona-co/nightona/apps/runner/pkg/common"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/timer"
 )
 
 func (d *DockerClient) Start(ctx context.Context, containerId string, authToken *string, metadata map[string]string) (*container.InspectResponse, string, error) {

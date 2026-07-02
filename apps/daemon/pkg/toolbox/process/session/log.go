@@ -6,9 +6,9 @@ package session
 import (
 	"net/http"
 
+	"github.com/gin-gonic/gin"
 	"github.com/nightona-co/nightona/apps/daemon/internal/util"
 	"github.com/nightona-co/nightona/apps/daemon/pkg/session"
-	"github.com/gin-gonic/gin"
 )
 
 // GetSessionCommandLogs godoc

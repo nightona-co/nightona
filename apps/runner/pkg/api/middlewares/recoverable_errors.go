@@ -7,9 +7,9 @@ import (
 	"encoding/json"
 	"net/http"
 
-	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
-	"github.com/nightona-co/nightona/apps/runner/pkg/common"
 	"github.com/gin-gonic/gin"
+	"github.com/nightona-co/nightona/apps/runner/pkg/common"
+	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
 )
 
 func RecoverableErrorsMiddleware() gin.HandlerFunc {

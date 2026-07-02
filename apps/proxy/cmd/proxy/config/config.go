@@ -10,12 +10,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/nightona-co/nightona/libs/common-go/pkg/cache"
-	"github.com/nightona-co/nightona/libs/common-go/pkg/utils"
-	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 	"github.com/go-playground/validator/v10"
 	"github.com/joho/godotenv"
 	"github.com/kelseyhightower/envconfig"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/cache"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/utils"
 )
 
 type Config struct {
@@ -27,7 +27,7 @@ type Config struct {
 	TLSCertFile           string             `envconfig:"TLS_CERT_FILE"`
 	TLSKeyFile            string             `envconfig:"TLS_KEY_FILE"`
 	EnableTLS             bool               `envconfig:"ENABLE_TLS"`
-	NightonaApiUrl         string             `envconfig:"NIGHTONA_API_URL" validate:"required"`
+	NightonaApiUrl        string             `envconfig:"NIGHTONA_API_URL" validate:"required"`
 	Oidc                  OidcConfig         `envconfig:"OIDC"`
 	Redis                 *cache.RedisConfig `envconfig:"REDIS"`
 	ToolboxOnlyMode       bool               `envconfig:"TOOLBOX_ONLY_MODE"`

@@ -17,7 +17,7 @@ import (
 )
 
 type Config struct {
-	NightonaApiUrl                      string        `envconfig:"NIGHTONA_API_URL"`
+	NightonaApiUrl                     string        `envconfig:"NIGHTONA_API_URL"`
 	ApiToken                           string        `envconfig:"NIGHTONA_RUNNER_TOKEN"`
 	ApiPort                            int           `envconfig:"API_PORT"`
 	ApiLogRequests                     bool          `envconfig:"API_LOG_REQUESTS" default:"false"`

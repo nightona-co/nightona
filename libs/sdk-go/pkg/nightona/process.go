@@ -8,12 +8,12 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/gorilla/websocket"
 	"github.com/nightona-co/nightona/libs/sdk-go/pkg/common"
 	"github.com/nightona-co/nightona/libs/sdk-go/pkg/errors"
 	"github.com/nightona-co/nightona/libs/sdk-go/pkg/options"
 	"github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
 	"github.com/nightona-co/nightona/libs/toolbox-api-client-go"
-	"github.com/gorilla/websocket"
 )
 
 // 3-byte multiplexing markers inserted by the shell labelers

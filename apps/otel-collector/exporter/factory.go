@@ -14,9 +14,9 @@ import (
 	"go.opentelemetry.io/collector/exporter"
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 
-	common_cache "github.com/nightona-co/nightona/libs/common-go/pkg/cache"
-	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 	"github.com/nightona-co/nightona/apps/otel-collector/exporter/internal/config"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
+	common_cache "github.com/nightona-co/nightona/libs/common-go/pkg/cache"
 )
 
 const (

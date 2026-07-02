@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/nightona-co/nightona/apps/daemon/pkg/recording"
 	"github.com/gin-gonic/gin"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/recording"
 )
 
 // DownloadRecording godoc

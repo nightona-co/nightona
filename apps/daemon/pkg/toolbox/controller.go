@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/nightona-co/nightona/apps/daemon/internal"
 	"github.com/gin-gonic/gin"
+	"github.com/nightona-co/nightona/apps/daemon/internal"
 )
 
 // Initialize godoc

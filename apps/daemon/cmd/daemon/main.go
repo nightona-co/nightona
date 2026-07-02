@@ -15,6 +15,8 @@ import (
 
 	golog "log"
 
+	"github.com/lmittmann/tint"
+	"github.com/mattn/go-isatty"
 	"github.com/nightona-co/nightona/apps/daemon/cmd/daemon/config"
 	"github.com/nightona-co/nightona/apps/daemon/internal/util"
 	"github.com/nightona-co/nightona/apps/daemon/pkg/childreap"
@@ -26,8 +28,6 @@ import (
 	"github.com/nightona-co/nightona/apps/daemon/pkg/toolbox"
 	"github.com/nightona-co/nightona/libs/common-go/pkg/envcompat"
 	"github.com/nightona-co/nightona/libs/common-go/pkg/log"
-	"github.com/lmittmann/tint"
-	"github.com/mattn/go-isatty"
 	"gopkg.in/natefinch/lumberjack.v2"
 )
 

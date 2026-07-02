@@ -8,9 +8,9 @@ package executor
 import (
 	"context"
 
-	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 	"github.com/nightona-co/nightona/apps/runner/cmd/runner/config"
 	"github.com/nightona-co/nightona/apps/runner/pkg/api/dto"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 )
 
 func (e *Executor) buildSnapshot(ctx context.Context, job *apiclient.Job) (any, error) {

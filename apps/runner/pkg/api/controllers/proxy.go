@@ -12,11 +12,11 @@ import (
 	"strings"
 	"time"
 
+	"github.com/gin-gonic/gin"
+	"github.com/nightona-co/nightona/apps/runner/pkg/runner"
 	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
 	proxy "github.com/nightona-co/nightona/libs/common-go/pkg/proxy"
 	"github.com/nightona-co/nightona/libs/common-go/pkg/utils"
-	"github.com/nightona-co/nightona/apps/runner/pkg/runner"
-	"github.com/gin-gonic/gin"
 )
 
 // ProxyRequest handles proxying requests to a sandbox's container

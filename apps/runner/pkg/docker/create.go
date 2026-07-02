@@ -13,11 +13,11 @@ import (
 	"time"
 
 	"github.com/containerd/errdefs"
-	"github.com/nightona-co/nightona/libs/common-go/pkg/timer"
+	"github.com/docker/docker/api/types/image"
 	"github.com/nightona-co/nightona/apps/runner/pkg/api/dto"
 	"github.com/nightona-co/nightona/apps/runner/pkg/common"
 	"github.com/nightona-co/nightona/apps/runner/pkg/models/enums"
-	"github.com/docker/docker/api/types/image"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/timer"
 	v1 "github.com/opencontainers/image-spec/specs-go/v1"
 
 	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"

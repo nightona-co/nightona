@@ -9,7 +9,7 @@
       "executor": "@nx-go/nx-go:build",
       "inputs": ["goProduction"],
       "options": {
-        "main": "{projectRoot}/main.go",
+        "main": "github.com/nightona-co/nightona/apps/cli",
         "outputPath": "dist/apps/cli/cli"
       }
     },

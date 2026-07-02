@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"strings"
 
-	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
 	"github.com/nightona-co/nightona/apps/runner/pkg/api/dto"
+	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
 )
 
 func (d *DockerClient) PullSnapshot(ctx context.Context, req dto.PullSnapshotRequestDTO) error {

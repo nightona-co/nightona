@@ -18,11 +18,11 @@ import (
 	"go.opentelemetry.io/otel/propagation"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/nightona-co/nightona/libs/common-go/pkg/utils"
-	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 	"github.com/nightona-co/nightona/apps/runner/internal/metrics"
 	runnerapiclient "github.com/nightona-co/nightona/apps/runner/pkg/apiclient"
 	"github.com/nightona-co/nightona/apps/runner/pkg/docker"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
+	"github.com/nightona-co/nightona/libs/common-go/pkg/utils"
 )
 
 type ExecutorConfig struct {

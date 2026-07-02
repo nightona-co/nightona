@@ -13,8 +13,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/nightona-co/nightona/apps/daemon/internal/util"
 	"github.com/gorilla/websocket"
+	"github.com/nightona-co/nightona/apps/daemon/internal/util"
 
 	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
 	"github.com/nightona-co/nightona/libs/common-go/pkg/log"

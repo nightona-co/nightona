@@ -6,11 +6,11 @@ package controllers
 import (
 	"net/http"
 
+	"github.com/gin-gonic/gin"
 	"github.com/nightona-co/nightona/apps/runner/internal"
 	"github.com/nightona-co/nightona/apps/runner/pkg/api/dto"
 	"github.com/nightona-co/nightona/apps/runner/pkg/models"
 	"github.com/nightona-co/nightona/apps/runner/pkg/runner"
-	"github.com/gin-gonic/gin"
 )
 
 // RunnerInfo 			godoc

@@ -16,10 +16,10 @@ import (
 
 	"context"
 
+	"github.com/gin-gonic/gin"
 	"github.com/nightona-co/nightona/apps/runner/cmd/runner/config"
 	"github.com/nightona-co/nightona/apps/runner/pkg/api/dto"
 	"github.com/nightona-co/nightona/apps/runner/pkg/runner"
-	"github.com/gin-gonic/gin"
 
 	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
 )

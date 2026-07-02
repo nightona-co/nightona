@@ -9,9 +9,9 @@ import (
 	"net/url"
 	"strings"
 
+	"github.com/gin-gonic/gin"
 	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
 	commonproxy "github.com/nightona-co/nightona/libs/common-go/pkg/proxy"
-	"github.com/gin-gonic/gin"
 )
 
 func GetProxyTarget(ctx *gin.Context) (*url.URL, map[string]string, error) {

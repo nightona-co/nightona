@@ -10,10 +10,10 @@ import (
 	"os"
 	"os/exec"
 
+	"github.com/gliderlabs/ssh"
 	"github.com/nightona-co/nightona/apps/daemon/pkg/childreap"
 	"github.com/nightona-co/nightona/apps/daemon/pkg/common"
 	"github.com/nightona-co/nightona/apps/daemon/pkg/ssh/config"
-	"github.com/gliderlabs/ssh"
 	"github.com/pkg/sftp"
 	"golang.org/x/sys/unix"
 )

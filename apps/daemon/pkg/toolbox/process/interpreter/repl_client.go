@@ -16,10 +16,10 @@ import (
 	"syscall"
 	"time"
 
-	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
-	"github.com/nightona-co/nightona/apps/daemon/pkg/childreap"
 	"github.com/google/uuid"
 	"github.com/gorilla/websocket"
+	"github.com/nightona-co/nightona/apps/daemon/pkg/childreap"
+	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
 )
 
 //go:embed repl_worker.py

@@ -11,9 +11,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/gorilla/websocket"
 	"github.com/nightona-co/nightona/libs/sdk-go/pkg/errors"
 	"github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
-	"github.com/gorilla/websocket"
 )
 
 // PtyHandle manages a WebSocket connection to a PTY (pseudo-terminal) session.

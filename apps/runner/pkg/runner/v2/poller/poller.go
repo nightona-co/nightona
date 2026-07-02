@@ -11,9 +11,9 @@ import (
 	"log/slog"
 	"time"
 
-	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 	runnerapiclient "github.com/nightona-co/nightona/apps/runner/pkg/apiclient"
 	"github.com/nightona-co/nightona/apps/runner/pkg/runner/v2/executor"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 )
 
 type PollerServiceConfig struct {

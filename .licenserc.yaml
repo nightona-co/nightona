@@ -5,8 +5,13 @@ header:
     content: |
       Copyright Daytona Platforms Inc.
       SPDX-License-Identifier: AGPL-3.0
+    # NOTE: license-eye normalizes headers before matching ("(c)" is expanded to
+    # "Copyright", text is lowercased and whitespace-flattened), so the fork-authored
+    # "Copyright (c) 2026 Nightona contributors" headers are matched here in their
+    # normalized form "Copyright Copyright <year> Nightona contributors".
+    # The stamped default (content above) intentionally stays "Daytona Platforms Inc."
     pattern: |
-      Copyright (\d{4} )?Daytona Platforms Inc\.
+      Copyright ((\d{4} )?Daytona Platforms Inc\.|(Copyright )?\d{4} Nightona contributors)
       SPDX-License-Identifier: AGPL-3\.0
   paths:
     - '**/*.go'

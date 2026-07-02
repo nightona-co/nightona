@@ -11,10 +11,10 @@ import (
 	"regexp"
 	"time"
 
+	"github.com/gin-gonic/gin"
+	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
 	common_errors "github.com/nightona-co/nightona/libs/common-go/pkg/errors"
 	"github.com/nightona-co/nightona/libs/common-go/pkg/utils"
-	apiclient "github.com/nightona-co/nightona/libs/api-client-go"
-	"github.com/gin-gonic/gin"
 
 	log "github.com/sirupsen/logrus"
 )
@@ -67,7 +67,7 @@ func (p *Proxy) getSnapshotTarget(ctx *gin.Context) (*url.URL, map[string]string
 
 	return target, map[string]string{
 		"X-Nightona-Authorization": fmt.Sprintf("Bearer %s", runnerInfo.ApiKey),
-		"X-Forwarded-Host":        ctx.Request.Host,
+		"X-Forwarded-Host":         ctx.Request.Host,
 	}, nil
 }
 

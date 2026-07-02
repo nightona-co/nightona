@@ -11,6 +11,9 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/docker/docker/client"
+	"github.com/lmittmann/tint"
+	"github.com/mattn/go-isatty"
 	"github.com/nightona-co/nightona/apps/runner/cmd/runner/config"
 	"github.com/nightona-co/nightona/apps/runner/internal"
 	"github.com/nightona-co/nightona/apps/runner/internal/metrics"
@@ -29,9 +32,6 @@ import (
 	"github.com/nightona-co/nightona/libs/common-go/pkg/envcompat"
 	"github.com/nightona-co/nightona/libs/common-go/pkg/log"
 	"github.com/nightona-co/nightona/libs/common-go/pkg/telemetry"
-	"github.com/docker/docker/client"
-	"github.com/lmittmann/tint"
-	"github.com/mattn/go-isatty"
 	"go.opentelemetry.io/otel"
 )
 

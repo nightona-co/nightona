@@ -14,10 +14,10 @@ import (
 
 	"bytes"
 
+	"github.com/gorilla/websocket"
 	"github.com/nightona-co/nightona/libs/sdk-go/pkg/options"
 	"github.com/nightona-co/nightona/libs/sdk-go/pkg/types"
 	toolbox "github.com/nightona-co/nightona/libs/toolbox-api-client-go"
-	"github.com/gorilla/websocket"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
