@@ -39,6 +39,8 @@ type SSHGateway struct {
 }
 
 func main() {
+	applyLegacyEnvAliases()
+
 	port := getEnvInt("SSH_GATEWAY_PORT", defaultPort)
 	apiURL := getEnv("API_URL", "http://localhost:3000")
 	apiKey := getEnv("API_KEY", "")

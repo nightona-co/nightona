@@ -11,8 +11,6 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/log"
-	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/telemetry"
 	"github.com/Amartuvshins0404/nightona/apps/runner/cmd/runner/config"
 	"github.com/Amartuvshins0404/nightona/apps/runner/internal"
 	"github.com/Amartuvshins0404/nightona/apps/runner/internal/metrics"
@@ -28,6 +26,9 @@ import (
 	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/services"
 	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/sshgateway"
 	"github.com/Amartuvshins0404/nightona/apps/runner/pkg/telemetry/filters"
+	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/envcompat"
+	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/log"
+	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/telemetry"
 	"github.com/docker/docker/client"
 	"github.com/lmittmann/tint"
 	"github.com/mattn/go-isatty"
@@ -35,6 +36,7 @@ import (
 )
 
 func main() {
+	envcompat.ApplyLegacyEnvAliases()
 	os.Exit(run())
 }
 

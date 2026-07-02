@@ -19,7 +19,7 @@ Nightona continues that codebase as an independent open-source project:
 - **Self-hosted first.** The priority is the open-source deployment path: running the full sandbox stack on your own infrastructure with Docker Compose or Kubernetes, with no managed-service dependency.
 - **Community-maintained.** Bug fixes, security patches, and new features are developed in the open. Contributions are welcome — see [Contributing](#contributing).
 
-> **Status:** Nightona is in its bootstrap phase. The codebase is functionally identical to Daytona v0.190.0, and the rebrand (package names, module paths, binaries, UI) is in progress. Until that lands, code, imports, and docs still reference the Daytona name. Daytona is a trademark of its respective owners; Nightona is not affiliated with or endorsed by Daytona.
+> **Status:** Nightona is in its bootstrap phase. The codebase is functionally identical to Daytona v0.190.0. The in-tree rebrand (package names, module paths, binaries, UI) has largely landed, but Nightona-named packages and container images are not yet published, and some upstream Daytona URLs and image references remain until they are — see [MIGRATION.md](MIGRATION.md). Daytona is a trademark of its respective owners; Nightona is not affiliated with or endorsed by Daytona.
 
 ## What does it do?
 

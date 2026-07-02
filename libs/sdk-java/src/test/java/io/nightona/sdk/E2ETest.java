@@ -85,7 +85,7 @@ class E2ETest {
 
         NightonaConfig config = new NightonaConfig.Builder()
                 .apiKey(apiKey)
-                .apiUrl(envOrDefault("NIGHTONA_API_URL", "https://app.daytona.io/api"))
+                .apiUrl(envOrDefault("NIGHTONA_API_URL", "http://localhost:3000/api"))
                 .target(System.getenv("NIGHTONA_TARGET"))
                 .build();
 

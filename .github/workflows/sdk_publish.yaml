@@ -37,7 +37,7 @@ permissions: {}
 
 jobs:
   publish:
-    if: github.repository == 'daytonaio/nightona'
+    if: github.repository == 'Amartuvshins0404/nightona'
     runs-on: blacksmith-16vcpu-ubuntu-2404
     permissions:
       contents: read
@@ -63,8 +63,10 @@ jobs:
             projects: sdk-python
           - name: Ruby SDK
             projects: sdk-ruby
-          - name: Java SDK
-            projects: sdk-java
+          # disabled post-fork: needs Nightona infra (Maven Central/Sonatype account
+          # and GPG signing keys; upstream MAVEN_* secrets are not available)
+          # - name: Java SDK
+          #   projects: sdk-java
     env:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
@@ -130,7 +132,9 @@ jobs:
           git remote set-url origin "https://github.com/${GITHUB_REPOSITORY}" 2>/dev/null || true
 
   update-homebrew-tap:
-    if: ${{ github.repository == 'daytonaio/nightona' && inputs.npm_tag == 'latest' }}
+    # original condition: ${{ github.repository == 'Amartuvshins0404/nightona' && inputs.npm_tag == 'latest' }}
+    # dispatches to the upstream daytonaio/homebrew-cli repo with the upstream GITHUBBOT_TOKEN
+    if: false # disabled post-fork: needs Nightona infra
     runs-on: blacksmith-4vcpu-ubuntu-2404
     permissions: {}
     name: Update Homebrew CLI tap

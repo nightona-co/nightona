@@ -2,6 +2,8 @@
 
 This document describes how to publish the Nightona SDKs (Python, TypeScript, and Ruby) to their respective package registries.
 
+> **Status (rebrand bootstrap)**: Nightona has not published any packages yet. The coordinates used below — `nightona` on PyPI, `@nightona/sdk` on npm, and `nightona` on RubyGems — are the planned names. **TODO**: register/claim these names on each registry before the first release. Until then, upstream's published Daytona packages (from v0.190.0) remain the only prebuilt artifacts, and the SDKs must be built from source.
+
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
@@ -16,9 +18,9 @@ This document describes how to publish the Nightona SDKs (Python, TypeScript, an
 Before publishing any SDK, ensure you have:
 
 1. **Maintainer Access**: Write access to the Nightona repository
-2. **Package Registry Credentials**:
+2. **Package Registry Credentials** (**TODO**: Nightona registry accounts and tokens do not exist yet):
    - PyPI: Token with upload permissions
-   - npm: Token with publish permissions
+   - npm: Token with publish permissions (requires the `@nightona` npm org/scope)
    - RubyGems: API key with push permissions
 3. **Local Development Setup**:
    - All dependencies installed (`yarn install`)
@@ -67,6 +69,8 @@ yarn nx publish sdk-ruby
 
 ## Automated Publishing (CI/CD)
 
+> **TODO**: The workflow below is inherited from upstream Daytona and has not been re-pointed at Nightona-owned infrastructure. Running it requires registry credentials, GitHub repository secrets, and a Homebrew tap that Nightona does not have yet.
+
 ### GitHub Actions Workflow
 
 The repository includes a GitHub Actions workflow for automated publishing: `.github/workflows/sdk_publish.yaml`
@@ -84,12 +88,12 @@ The repository includes a GitHub Actions workflow for automated publishing: `.gi
 
 #### Required Secrets
 
-Ensure these secrets are configured in GitHub repository settings:
+Ensure these secrets are configured in GitHub repository settings (**TODO**: none of these are configured for the Nightona repository yet):
 
 - `PYPI_TOKEN`: PyPI API token
 - `NPM_TOKEN`: npm access token
 - `RUBYGEMS_API_KEY`: RubyGems API key
-- `GITHUBBOT_TOKEN`: GitHub token for Homebrew tap updates
+- `GITHUBBOT_TOKEN`: GitHub token for Homebrew tap updates (**TODO**: no Nightona Homebrew tap exists)
 
 ### What the Workflow Does
 
@@ -98,7 +102,7 @@ Ensure these secrets are configured in GitHub repository settings:
 3. Installs dependencies
 4. Configures credentials for all package registries
 5. Runs `yarn publish` which uses Nx to publish all SDKs in the correct order
-6. Updates the Homebrew tap (for the CLI)
+6. Updates the Homebrew tap (for the CLI) — **TODO**: create a Nightona Homebrew tap; the upstream tap belongs to Daytona
 
 ## Version Management
 
@@ -137,6 +141,8 @@ Prerelease formats depend on SDK language:
    - `0.126.0.rc.1` - Release candidate
 
 ### Checking Published Versions
+
+> **Note**: These commands will return nothing (or errors) until Nightona's first release is published under these names.
 
 #### PyPI
 

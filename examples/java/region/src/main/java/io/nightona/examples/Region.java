@@ -13,7 +13,7 @@ public class Region {
                 .apiKey(System.getenv("NIGHTONA_API_KEY"))
                 .apiUrl(System.getenv("NIGHTONA_API_URL") != null
                         ? System.getenv("NIGHTONA_API_URL")
-                        : "https://app.daytona.io/api")
+                        : "http://localhost:3000/api")
                 .target("us")
                 .build();
 

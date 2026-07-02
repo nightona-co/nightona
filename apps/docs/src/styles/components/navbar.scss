@@ -31,6 +31,10 @@
       fill: var(--primary-text-color);
     }
 
+    & svg text {
+      fill: var(--primary-text-color);
+    }
+
     & svg rect {
       stroke: var(--primary-text-color);
     }

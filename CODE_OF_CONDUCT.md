@@ -60,8 +60,10 @@ representative at an online or offline event.
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the community leaders responsible for enforcement at
-codeofconduct@daytona.io.
+reported to the community leaders responsible for enforcement by opening an
+issue at https://github.com/Amartuvshins0404/nightona/issues or, for reports
+that should remain private, through GitHub's private reporting at
+https://github.com/Amartuvshins0404/nightona/security/advisories/new.
 
 All complaints will be reviewed and investigated promptly and fairly.
 

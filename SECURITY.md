@@ -6,9 +6,9 @@ At Nightona, we take security seriously. If you believe you have found a securit
 
 **Please do NOT report security vulnerabilities through public GitHub issues.**
 
-Instead, please email us at: **security@daytona.io**
+Instead, please report vulnerabilities privately through [GitHub's private vulnerability reporting](https://github.com/Amartuvshins0404/nightona/security/advisories/new):
 
-You can also report vulnerabilities privately through [GitHub's security advisory feature](https://github.com/Amartuvshins0404/nightona/security/advisories/new).
+**https://github.com/Amartuvshins0404/nightona/security/advisories/new**
 
 Please include:
 
@@ -17,18 +17,18 @@ Please include:
 - Impact assessment
 - Any relevant screenshots or proof-of-concept
 
-We will acknowledge receipt within 2 business days and provide an initial assessment within 5 business days.
+Nightona is a community-maintained project. We aim to acknowledge receipt within 5 business days and provide an initial assessment as soon as possible after that, on a best-effort basis.
 
 ## Scope
 
 The following assets and areas are in scope for vulnerability reports:
 
-- **Nightona platform** — app.daytona.io, including the web application and management interfaces
+- **Nightona platform** — the self-hostable platform in this repository, including the API, dashboard, proxy, runner, and management interfaces
 - **API and SDK** — all documented and undocumented API endpoints, client SDKs
 - **Sandbox runtime isolation** — escape from sandbox to host, cross-tenant access, isolation boundary bypasses
 - **Authentication and authorization** — SSO, API key management, session handling, privilege escalation across accounts or organizations
 - **Secrets management** — scoped secret injection, unauthorized access to secrets, leakage across sandbox boundaries
-- **Public GitHub repositories** — any repository under the [daytonaio](https://github.com/daytonaio) organization
+- **Public GitHub repositories** — the [Amartuvshins0404/nightona](https://github.com/Amartuvshins0404/nightona) repository
 
 ## Excluded Submission Types
 
@@ -40,7 +40,7 @@ The following categories are excluded from this program. Reports in these catego
 4. **Rate limiting observations** that do not demonstrate resource exhaustion, financial impact, or abuse potential.
 5. **Social engineering** — phishing, vishing, pretexting, or any form of social engineering targeting Nightona employees or users.
 6. **Physical security testing** of offices, data centers, or personnel.
-7. **Marketing and documentation sites** — findings against daytona.io or docs.daytona.io, excluding subdomain takeover vulnerabilities.
+7. **Upstream Daytona sites and services** — findings against daytona.io, docs.daytona.io, app.daytona.io, or any other infrastructure operated by upstream Daytona. Nightona does not operate these; report them to the upstream Daytona project.
 8. **Third-party services** — vulnerabilities in services or platforms not owned or operated by Nightona.
 9. **Known public files or directories** — e.g., robots.txt, .well-known, or other intentionally public resources.
 10. **DNSSEC or TLS cipher suite configuration suggestions** without a demonstrated exploit path.
@@ -78,8 +78,8 @@ We follow a coordinated disclosure process:
 
 - **90 days** — We target remediation within 90 days of a validated report. Complex issues may require additional time, and we will communicate timelines transparently.
 - **30 days post-patch** — After a fix is released, we ask that researchers wait 30 days before public disclosure to allow users to update.
-- **No response** — If we fail to acknowledge or respond to a report within 90 days, the researcher may proceed with public disclosure after providing 14 days advance written notice to security@daytona.io.
+- **No response** — If we fail to acknowledge or respond to a report within 90 days, the researcher may proceed with public disclosure after providing 14 days advance written notice through the same [GitHub private vulnerability reporting channel](https://github.com/Amartuvshins0404/nightona/security/advisories/new).
 
 ## Rewards
 
-We offer rewards from $100 to $1,000 for valid, original findings that demonstrate real security impact. Severity, exploitability, and report quality are all considered. Duplicate reports are credited to the first submission.
+Nightona is a community-maintained open-source project and does not currently operate a paid bug bounty program. Valid, original findings are credited in the resulting security advisory and release notes. Duplicate reports are credited to the first submission.

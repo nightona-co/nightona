@@ -12,6 +12,12 @@ RSpec.describe Nightona::Config do
       NIGHTONA_TARGET
       NIGHTONA_ORGANIZATION_ID
       NIGHTONA_CUSTOM_VAR
+      DAYTONA_API_KEY
+      DAYTONA_JWT_TOKEN
+      DAYTONA_API_URL
+      DAYTONA_TARGET
+      DAYTONA_ORGANIZATION_ID
+      DAYTONA_CUSTOM_VAR
     ]
     saved = env_keys.to_h { |key| [key, ENV.delete(key)] }
     example.run
@@ -61,6 +67,29 @@ RSpec.describe Nightona::Config do
       expect(config.api_key).to eq('explicit-key')
     end
 
+    it 'falls back to legacy DAYTONA_ ENV variables' do
+      ENV['DAYTONA_API_KEY'] = 'legacy-key'
+      ENV['DAYTONA_API_URL'] = 'https://legacy.api'
+      ENV['DAYTONA_TARGET'] = 'legacy-target'
+      ENV['DAYTONA_ORGANIZATION_ID'] = 'org-legacy'
+
+      config = described_class.new
+
+      expect(config.api_key).to eq('legacy-key')
+      expect(config.api_url).to eq('https://legacy.api')
+      expect(config.target).to eq('legacy-target')
+      expect(config.organization_id).to eq('org-legacy')
+    end
+
+    it 'prefers NIGHTONA_ ENV variables over legacy DAYTONA_ ones' do
+      ENV['NIGHTONA_API_KEY'] = 'new-key'
+      ENV['DAYTONA_API_KEY'] = 'legacy-key'
+
+      config = described_class.new
+
+      expect(config.api_key).to eq('new-key')
+    end
+
     it 'reads .env and .env.local without mutating ENV and prefers .env.local', :real_dotenv do
       Dir.mktmpdir do |dir|
         File.write(File.join(dir, '.env'), <<~ENVFILE)
@@ -84,6 +113,23 @@ RSpec.describe Nightona::Config do
       end
     end
 
+    it 'reads legacy DAYTONA_ variables from .env files as a fallback', :real_dotenv do
+      Dir.mktmpdir do |dir|
+        File.write(File.join(dir, '.env'), <<~ENVFILE)
+          DAYTONA_API_KEY=legacy-file-key
+          DAYTONA_ORGANIZATION_ID=legacy-file-org
+          NIGHTONA_ORGANIZATION_ID=file-org
+        ENVFILE
+
+        Dir.chdir(dir) do
+          config = described_class.new
+
+          expect(config.api_key).to eq('legacy-file-key')
+          expect(config.organization_id).to eq('file-org')
+        end
+      end
+    end
+
     it 'stores experimental config' do
       config = described_class.new(api_key: 'k', _experimental: { 'otel_enabled' => true })
 
@@ -103,6 +149,13 @@ RSpec.describe Nightona::Config do
       config = described_class.new(api_key: 'k')
 
       expect(config.read_env('NIGHTONA_NONEXISTENT')).to be_nil
+    end
+
+    it 'falls back to the legacy DAYTONA_ variable when the NIGHTONA_ one is unset' do
+      ENV['DAYTONA_CUSTOM_VAR'] = 'legacy-hello'
+      config = described_class.new(api_key: 'k')
+
+      expect(config.read_env('NIGHTONA_CUSTOM_VAR')).to eq('legacy-hello')
     end
 
     it 'raises ArgumentError for non-NIGHTONA_ variable names' do

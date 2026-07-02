@@ -1,24 +1,28 @@
 name: nightona
 services:
   api:
+    image: nightona/api
     build:
       context: ../
       dockerfile: apps/api/Dockerfile
       target: nightona
-  
+
   proxy:
+    image: nightona/proxy
     build:
       context: ../
       dockerfile: apps/proxy/Dockerfile
       target: proxy
 
   runner:
+    image: nightona/runner
     build:
       context: ../
       dockerfile: apps/runner/Dockerfile
       target: runner
 
   ssh-gateway:
+    image: nightona/ssh-gateway
     build:
       context: ../
       dockerfile: apps/ssh-gateway/Dockerfile

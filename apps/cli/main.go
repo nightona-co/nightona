@@ -93,6 +93,8 @@ func createSandboxShortcut(original *cobra.Command) *cobra.Command {
 }
 
 func main() {
+	applyLegacyEnvAliases()
+
 	_ = godotenv.Load()
 
 	err := rootCmd.Execute()

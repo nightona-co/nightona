@@ -18,6 +18,8 @@ import (
 )
 
 func main() {
+	applyLegacyEnvAliases()
+
 	log := logger.NewLogger()
 
 	cfg, err := config.Load()

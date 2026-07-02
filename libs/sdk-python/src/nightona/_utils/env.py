@@ -13,6 +13,7 @@ class NightonaEnvReader:
 
     Parses .env and .env.local once at construction.
     Precedence: runtime env → .env.local → .env
+    Within each level, ``NIGHTONA_*`` takes precedence over its legacy ``DAYTONA_*`` twin.
     """
 
     def __init__(self) -> None:
@@ -22,17 +23,27 @@ class NightonaEnvReader:
     def get(self, name: str) -> str | None:
         if not name.startswith("NIGHTONA_"):
             raise ValueError(f"NightonaEnvReader: variable name must start with 'NIGHTONA_', got '{name}'")
+        legacy_name = "DAYTONA_" + name[len("NIGHTONA_") :]
         # 1. Runtime env
-        val = os.environ.get(name)
-        if val is not None:
-            return val
+        for candidate in (name, legacy_name):
+            val = os.environ.get(candidate)
+            if val is not None:
+                return val
         # 2. .env.local
-        if name in self._env_local_vars:
-            return self._env_local_vars[name]
+        for candidate in (name, legacy_name):
+            if candidate in self._env_local_vars:
+                return self._env_local_vars[candidate]
         # 3. .env
-        return self._env_vars.get(name)
+        for candidate in (name, legacy_name):
+            if candidate in self._env_vars:
+                return self._env_vars[candidate]
+        return None
 
     @staticmethod
     def _load(path: str) -> dict[str, str]:
         parsed = dotenv_values(path)
-        return {k: v for k, v in parsed.items() if k.startswith("NIGHTONA_") and v is not None}
+        return {
+            k: v
+            for k, v in parsed.items()
+            if (k.startswith("NIGHTONA_") or k.startswith("DAYTONA_")) and v is not None
+        }

@@ -20,7 +20,7 @@
 //   - NIGHTONA_API_KEY: API key for authentication
 //   - NIGHTONA_JWT_TOKEN: JWT token for authentication (alternative to API key)
 //   - NIGHTONA_ORGANIZATION_ID: Organization ID (required when using JWT token)
-//   - NIGHTONA_API_URL: API URL (defaults to https://app.daytona.io/api)
+//   - NIGHTONA_API_URL: API URL (defaults to http://localhost:3000/api)
 //   - NIGHTONA_TARGET: Target environment
 //
 // Or provide configuration explicitly:
@@ -63,7 +63,6 @@ import (
 	"io"
 	"iter"
 	"net/http"
-	"os"
 	"strings"
 	"time"
 
@@ -77,7 +76,8 @@ import (
 
 const (
 	// defaultAPIURL is the default Nightona API endpoint used when no custom URL is configured.
-	defaultAPIURL = "https://app.daytona.io/api"
+	// It points at a locally hosted Nightona API (see docker/docker-compose.yaml).
+	defaultAPIURL = "http://localhost:3000/api"
 
 	// sdkSource identifies requests as originating from the Go SDK for telemetry purposes.
 	sdkSource = "sdk-go"
@@ -181,13 +181,14 @@ func NewClientWithConfig(config *types.NightonaConfig) (*Client, error) {
 		}
 	}
 
-	// Load from environment variables if not set
+	// Load from environment variables if not set.
+	// Each NIGHTONA_* variable falls back to its deprecated DAYTONA_* twin.
 	if client.apiKey == "" {
-		client.apiKey = os.Getenv("NIGHTONA_API_KEY")
+		client.apiKey = envOrLegacy("NIGHTONA_API_KEY")
 	}
 
 	if client.jwtToken == "" {
-		client.jwtToken = os.Getenv("NIGHTONA_JWT_TOKEN")
+		client.jwtToken = envOrLegacy("NIGHTONA_JWT_TOKEN")
 	}
 
 	// Validate authentication
@@ -196,7 +197,7 @@ func NewClientWithConfig(config *types.NightonaConfig) (*Client, error) {
 	}
 
 	if client.organizationID == "" {
-		client.organizationID = os.Getenv("NIGHTONA_ORGANIZATION_ID")
+		client.organizationID = envOrLegacy("NIGHTONA_ORGANIZATION_ID")
 	}
 
 	if client.jwtToken != "" && client.organizationID == "" {
@@ -205,15 +206,15 @@ func NewClientWithConfig(config *types.NightonaConfig) (*Client, error) {
 
 	if client.apiURL == "" {
 		client.apiURL = defaultAPIURL
-		if apiURL := os.Getenv("NIGHTONA_API_URL"); apiURL != "" {
+		if apiURL := envOrLegacy("NIGHTONA_API_URL"); apiURL != "" {
 			client.apiURL = apiURL
-		} else if serverURL := os.Getenv("NIGHTONA_SERVER_URL"); serverURL != "" {
+		} else if serverURL := envOrLegacy("NIGHTONA_SERVER_URL"); serverURL != "" {
 			client.apiURL = serverURL
 		}
 	}
 
 	if client.region == "" {
-		client.region = os.Getenv("NIGHTONA_TARGET")
+		client.region = envOrLegacy("NIGHTONA_TARGET")
 	}
 
 	// Initialize api-client-go
@@ -241,8 +242,8 @@ func NewClientWithConfig(config *types.NightonaConfig) (*Client, error) {
 	// Initialize OpenTelemetry if enabled
 	otelEnabled := (config != nil && config.OtelEnabled) ||
 		(config != nil && config.Experimental != nil && config.Experimental.OtelEnabled) || //nolint:staticcheck
-		os.Getenv("NIGHTONA_OTEL_ENABLED") == "true" ||
-		os.Getenv("NIGHTONA_EXPERIMENTAL_OTEL_ENABLED") == "true"
+		envOrLegacy("NIGHTONA_OTEL_ENABLED") == "true" ||
+		envOrLegacy("NIGHTONA_EXPERIMENTAL_OTEL_ENABLED") == "true"
 	if otelEnabled {
 		otelState, err := initOtel(context.Background())
 		if err != nil {

@@ -12,11 +12,14 @@ import (
 
 	"github.com/Amartuvshins0404/nightona/apps/proxy/cmd/proxy/config"
 	"github.com/Amartuvshins0404/nightona/apps/proxy/pkg/proxy"
+	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/envcompat"
 
 	log "github.com/sirupsen/logrus"
 )
 
 func main() {
+	envcompat.ApplyLegacyEnvAliases()
+
 	config, err := config.GetConfig()
 	if err != nil {
 		log.Fatal(err)

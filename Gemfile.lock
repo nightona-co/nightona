@@ -1,17 +1,17 @@
 PATH
   remote: libs/api-client-ruby
   specs:
-    daytona_api_client (0.0.0.pre.dev)
+    nightona_api_client (0.0.0.pre.dev)
       typhoeus (~> 1.0, >= 1.0.1)
 
 PATH
   remote: libs/sdk-ruby
   specs:
-    daytona (0.0.0.pre.dev)
+    nightona (0.0.0.pre.dev)
       aws-sdk-s3 (~> 1.0)
-      daytona_api_client (= 0.0.0.pre.dev)
-      daytona_toolbox_api_client (= 0.0.0.pre.dev)
       dotenv (~> 2.0)
+      nightona_api_client (= 0.0.0.pre.dev)
+      nightona_toolbox_api_client (= 0.0.0.pre.dev)
       observer (~> 0.1)
       opentelemetry-exporter-otlp (~> 0.29)
       opentelemetry-exporter-otlp-metrics (~> 0.1)
@@ -23,7 +23,7 @@ PATH
 PATH
   remote: libs/toolbox-api-client-ruby
   specs:
-    daytona_toolbox_api_client (0.0.0.pre.dev)
+    nightona_toolbox_api_client (0.0.0.pre.dev)
       typhoeus (~> 1.0, >= 1.0.1)
 
 GEM
@@ -284,9 +284,9 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  daytona (>= 0.0.0.pre.dev)!
-  daytona_api_client (>= 0.0.0.pre.dev)!
-  daytona_toolbox_api_client (>= 0.0.0.pre.dev)!
+  nightona (>= 0.0.0.pre.dev)!
+  nightona_api_client (>= 0.0.0.pre.dev)!
+  nightona_toolbox_api_client (>= 0.0.0.pre.dev)!
   pry (~> 0.15)
   pry-byebug
   rake (~> 13.0)

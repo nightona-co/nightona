@@ -173,7 +173,7 @@ class AsyncNightona:
             ```
         """
 
-        default_api_url = "https://app.daytona.io/api"
+        default_api_url = "http://localhost:3000/api"
         self.default_language: CodeLanguage = CodeLanguage.PYTHON
         api_url = None
 

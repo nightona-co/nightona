@@ -3,6 +3,9 @@
  * SPDX-License-Identifier: AGPL-3.0
  */
 
+// Must be the first import: maps legacy DAYTONA_* env vars to NIGHTONA_*
+// before any other module reads the environment.
+import './legacy-env'
 import { otelSdk } from './tracing'
 import http from 'node:http'
 import https from 'node:https'

@@ -18,7 +18,7 @@ public final class NightonaConfig {
     private NightonaConfig(Builder builder) {
         this.apiKey = builder.apiKey;
         this.apiUrl = builder.apiUrl == null || builder.apiUrl.isEmpty()
-                ? "https://app.daytona.io/api"
+                ? "http://localhost:3000/api"
                 : builder.apiUrl;
         this.target = builder.target;
         this.otelEnabled = builder.otelEnabled;
@@ -87,7 +87,7 @@ public final class NightonaConfig {
         /**
          * Sets the Nightona API base URL.
          *
-         * @param apiUrl API URL to use; defaults to {@code https://app.daytona.io/api} when omitted
+         * @param apiUrl API URL to use; defaults to {@code http://localhost:3000/api} when omitted
          * @return this builder instance
          */
         public Builder apiUrl(String apiUrl) {

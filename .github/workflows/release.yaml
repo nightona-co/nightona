@@ -18,7 +18,7 @@ env:
 
 jobs:
   publish:
-    if: github.repository == 'daytonaio/nightona'
+    if: github.repository == 'Amartuvshins0404/nightona'
     runs-on: blacksmith-4vcpu-ubuntu-2404
     permissions:
       contents: write
@@ -221,6 +221,7 @@ jobs:
             arch: arm64
     permissions:
       contents: read
+      packages: write
     env:
       NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_ACCESS_TOKEN }}
       PUBLIC_ALGOLIA_DOCS_INDEX_NAME: ${{ secrets.PUBLIC_ALGOLIA_DOCS_INDEX_NAME }}
@@ -275,9 +276,9 @@ jobs:
       - name: Log in to the Container registry
         uses: docker/login-action@650006c6eb7dba73a995cc03b0b2d7f5ca915bee # v4.2.0
         with:
-          registry: docker.io
-          username: daytonaio
-          password: ${{ secrets.DOCKER_TOKEN }}
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Blacksmith Builder
         uses: useblacksmith/setup-docker-builder@ab5c1da94f53f5cd75c1038092aa276dddfccbba # v1.9.0
@@ -312,6 +313,7 @@ jobs:
     runs-on: blacksmith-4vcpu-ubuntu-2404
     permissions:
       contents: read
+      packages: write
     env:
       NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_ACCESS_TOKEN }}
     steps:
@@ -336,9 +338,9 @@ jobs:
       - name: Log in to the Container registry
         uses: docker/login-action@650006c6eb7dba73a995cc03b0b2d7f5ca915bee # v4.2.0
         with:
-          registry: docker.io
-          username: daytonaio
-          password: ${{ secrets.DOCKER_TOKEN }}
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
       - name: Push manifest
         run: |
           yarn push-manifest

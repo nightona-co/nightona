@@ -8,7 +8,9 @@ permissions: {}
 jobs:
   translate:
     runs-on: blacksmith-4vcpu-ubuntu-2404
-    if: ${{ github.repository == 'daytonaio/nightona' && github.event.head_commit.author.name != 'github-actions[bot]' && !contains(github.event.head_commit.message, 'gt-translate/') }}
+    # original condition: ${{ github.repository == 'Amartuvshins0404/nightona' && github.event.head_commit.author.name != 'github-actions[bot]' && !contains(github.event.head_commit.message, 'gt-translate/') }}
+    # requires the upstream General Translation project (GT_API_KEY / GT_PROJECT_ID secrets)
+    if: false # disabled post-fork: needs Nightona infra
     permissions:
       contents: write
       pull-requests: write

@@ -9,6 +9,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"sync"
 	"time"
 
 	"github.com/Amartuvshins0404/nightona/apps/cli/cmd"
@@ -182,6 +183,8 @@ func getConfigPath() (string, error) {
 	return filepath.Join(configDir, "config.json"), nil
 }
 
+var legacyConfigDirNotice sync.Once
+
 func GetConfigDir() (string, error) {
 	nightonaConfigDir := os.Getenv("NIGHTONA_CONFIG_DIR")
 	if nightonaConfigDir != "" {
@@ -193,7 +196,22 @@ func GetConfigDir() (string, error) {
 		return "", err
 	}
 
-	return filepath.Join(userConfigDir, "nightona"), nil
+	configDir := filepath.Join(userConfigDir, "nightona")
+
+	// Backward compatibility: if the nightona config dir does not exist yet
+	// but a legacy daytona one does, keep using the legacy dir (read fallback
+	// only, no automatic migration).
+	if _, err := os.Stat(configDir); os.IsNotExist(err) {
+		legacyConfigDir := filepath.Join(userConfigDir, "daytona")
+		if info, statErr := os.Stat(legacyConfigDir); statErr == nil && info.IsDir() {
+			legacyConfigDirNotice.Do(func() {
+				fmt.Fprintf(os.Stderr, "Warning: using legacy config dir %s; it is deprecated, move it to %s\n", legacyConfigDir, configDir)
+			})
+			return legacyConfigDir, nil
+		}
+	}
+
+	return configDir, nil
 }
 
 func DeleteConfigDir() error {

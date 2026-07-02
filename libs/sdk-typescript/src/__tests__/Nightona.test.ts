@@ -178,7 +178,7 @@ describe('Nightona', () => {
       basePath: string
     }
 
-    expect(firstConfigArg.basePath).toBe('https://app.daytona.io/api')
+    expect(firstConfigArg.basePath).toBe('http://localhost:3000/api')
   })
 
   it('supports deprecated serverUrl config', async () => {

@@ -15,7 +15,6 @@ import (
 
 	golog "log"
 
-	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/log"
 	"github.com/Amartuvshins0404/nightona/apps/daemon/cmd/daemon/config"
 	"github.com/Amartuvshins0404/nightona/apps/daemon/internal/util"
 	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/childreap"
@@ -25,12 +24,15 @@ import (
 	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/ssh"
 	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/terminal"
 	"github.com/Amartuvshins0404/nightona/apps/daemon/pkg/toolbox"
+	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/envcompat"
+	"github.com/Amartuvshins0404/nightona/libs/common-go/pkg/log"
 	"github.com/lmittmann/tint"
 	"github.com/mattn/go-isatty"
 	"gopkg.in/natefinch/lumberjack.v2"
 )
 
 func main() {
+	envcompat.ApplyLegacyEnvAliases()
 	os.Exit(run())
 }
 

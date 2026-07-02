@@ -8,7 +8,7 @@ Thanks for taking the time to contribute! ❤️
 >
 > - Star the project
 > - Tweet about it
-> - Contribute to our [Docs](https://github.com/daytonaio/docs/)
+> - Contribute to the [documentation](apps/docs/)
 > - Refer this project in your project's readme
 > - Mention the project at local meetups and tell your friends/colleagues
 
@@ -17,7 +17,7 @@ Thanks for taking the time to contribute! ❤️
 This project and everyone participating in it is governed by the
 [Nightona Code of Conduct](https://github.com/Amartuvshins0404/nightona?tab=coc-ov-file#readme).
 By participating, you are expected to uphold this code. Please report unacceptable behavior
-to [info@daytona.io](mailto:info@daytona.io).
+to the maintainers by [opening an issue](https://github.com/Amartuvshins0404/nightona/issues/new) or, for sensitive reports, through [GitHub's private reporting](https://github.com/Amartuvshins0404/nightona/security/advisories/new).
 
 ## Provide Feedback
 
@@ -35,8 +35,8 @@ We will then take care of the issue as soon as possible.
 
 You can engage with our community by:
 
-- Helping other users on [Nightona Community Slack](https://go.daytona.io/slack).
-- Improving [documentation](https://github.com/daytonaio/docs/)
+- Helping other users in [GitHub Discussions](https://github.com/Amartuvshins0404/nightona/discussions)
+- Improving the [documentation](apps/docs/)
 - Participating in general discussions about development and DevOps
 - Authoring new Nightona Plugins and sharing those Plugins
 - Authoring new dev containers and sharing examples
@@ -49,7 +49,7 @@ You can contribute to Nightona by:
 - Fixing bugs
 - Adding new features and capabilities
 
-Before starting your contribution, especially for core features, we encourage you to reach out to us on [Slack](https://go.daytona.io/slack). This allows us to ensure that your proposed feature aligns with the project's roadmap and goals. Developers are the key to making Nightona the best tool it can be, and we value input from the community.
+Before starting your contribution, especially for core features, we encourage you to open a [GitHub Discussion](https://github.com/Amartuvshins0404/nightona/discussions) or an [issue](https://github.com/Amartuvshins0404/nightona/issues) first. This allows us to ensure that your proposed feature aligns with the project's roadmap and goals. Developers are the key to making Nightona the best tool it can be, and we value input from the community.
 
 We look forward to working with you to improve Nightona and make development environments as easy as possible for developers everywhere.
 
@@ -105,4 +105,4 @@ Here is what being a contributor means for you:
 - License all our contributions to the project under the AGPL 3.0 License or the Apache 2.0 License
 - Have the legal rights to license our contributions ourselves, or get permission to license them from our employers, clients, or others who may have them
 
-For more information, see the [README](README.md) and feel free to reach out to us on [Slack](https://go.daytona.io/slack).
+For more information, see the [README](README.md) and feel free to reach out via [GitHub Discussions](https://github.com/Amartuvshins0404/nightona/discussions).

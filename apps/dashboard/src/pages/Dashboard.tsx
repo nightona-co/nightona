@@ -16,7 +16,7 @@ import { Sidebar } from '@/components/Sidebar'
 import { SidebarInset, SidebarProvider } from '@/components/ui/sidebar'
 import { Toaster } from '@/components/ui/sonner'
 import { VerifyEmailDialog } from '@/components/VerifyEmailDialog'
-import { NIGHTONA_DOCS_URL, NIGHTONA_SLACK_URL } from '@/constants/ExternalLinks'
+import { NIGHTONA_COMMUNITY_URL, NIGHTONA_DOCS_URL } from '@/constants/ExternalLinks'
 import { useTheme } from '@/contexts/ThemeContext'
 import { LocalStorageKey } from '@/enums/LocalStorageKey'
 import { useOwnerWalletQuery } from '@/hooks/queries/billingQueries'
@@ -25,7 +25,7 @@ import { useDocsSearchCommands } from '@/hooks/useDocsSearchCommands'
 import { useSelectedOrganization } from '@/hooks/useSelectedOrganization'
 import { useSuspensionBanner } from '@/hooks/useSuspensionBanner'
 import { cn } from '@/lib/utils'
-import { SlackLogoIcon } from '@phosphor-icons/react'
+import { GithubLogoIcon } from '@phosphor-icons/react'
 import { BookOpen, BookSearchIcon, SunMoon } from 'lucide-react'
 
 function useDashboardCommands() {
@@ -34,10 +34,10 @@ function useDashboardCommands() {
   const helpCommands: CommandConfig[] = useMemo(
     () => [
       {
-        id: 'open-slack',
-        label: 'Open Slack',
-        icon: <SlackLogoIcon className="w-4 h-4" />,
-        onSelect: () => window.open(NIGHTONA_SLACK_URL, '_blank'),
+        id: 'open-github',
+        label: 'Open GitHub',
+        icon: <GithubLogoIcon className="w-4 h-4" />,
+        onSelect: () => window.open(NIGHTONA_COMMUNITY_URL, '_blank'),
       },
       {
         id: 'open-docs',

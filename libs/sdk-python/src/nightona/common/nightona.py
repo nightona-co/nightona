@@ -56,7 +56,7 @@ class NightonaConfig(BaseModel):
             via the environment variable `NIGHTONA_JWT_TOKEN`, or an API key must be provided instead.
         organization_id (str | None): Organization ID used for JWT-based authentication. Required if a JWT token
             is provided, and must be set either here or in the environment variable `NIGHTONA_ORGANIZATION_ID`.
-        api_url (str | None): URL of the Nightona API. Defaults to `'https://app.daytona.io/api'` if not set
+        api_url (str | None): URL of the Nightona API. Defaults to `'http://localhost:3000/api'` if not set
             here or in the environment variable `NIGHTONA_API_URL`.
         server_url (str | None): Deprecated. Use `api_url` instead. This property will be removed
             in a future version.

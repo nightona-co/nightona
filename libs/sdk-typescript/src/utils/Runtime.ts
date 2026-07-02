@@ -76,6 +76,14 @@ export class NightonaEnvReader {
     if (!name.startsWith('NIGHTONA_')) {
       throw new Error(`NightonaEnvReader: variable name must start with 'NIGHTONA_', got '${name}'`)
     }
+    const value = this.lookup(name)
+    if (value !== undefined) return value
+    // Backward compatibility: fall back to the legacy DAYTONA_-prefixed twin
+    // (Nightona is a fork of Daytona). The NIGHTONA_ name always wins.
+    return this.lookup('DAYTONA_' + name.slice('NIGHTONA_'.length))
+  }
+
+  private lookup(name: string): string | undefined {
     // 1. Runtime env
     const runtimeVal = getEnvVar(name)
     if (runtimeVal !== undefined) return runtimeVal
@@ -91,7 +99,9 @@ export class NightonaEnvReader {
     if (!fs.existsSync(path)) return {}
     const dotenv = require('dotenv')
     const parsed = dotenv.parse(fs.readFileSync(path)) as Record<string, string>
-    return Object.fromEntries(Object.entries(parsed).filter(([k]) => k.startsWith('NIGHTONA_')))
+    return Object.fromEntries(
+      Object.entries(parsed).filter(([k]) => k.startsWith('NIGHTONA_') || k.startsWith('DAYTONA_')),
+    )
   }
 }
 

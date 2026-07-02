@@ -22,13 +22,17 @@ The Nightona team appreciates any efforts to make our software more accessible t
 5. **Standard Note**: Please include the following standard note in your package description or metadata:
 
    ```
-   This package contains an unofficial distribution of Nightona,
-   developed by Nightona Platforms Inc. This package is not officially supported or endorsed
-   by the Nightona project. For the official version, please visit https://github.com/Amartuvshins0404/nightona.
+   This package contains an unofficial distribution of Nightona, a
+   community-maintained open-source fork of Daytona v0.190.0 (AGPL-3.0).
+   This package is not officially supported or endorsed by the Nightona
+   project. For the official source, please visit
+   https://github.com/Amartuvshins0404/nightona.
    ```
 
 ## Feedback and Questions
 
-If you have any questions about packaging Nightona or need clarification on these guidelines, especially regarding naming conventions, please open an issue in our GitHub repository.
+If you have any questions about packaging Nightona or need clarification on these guidelines, especially regarding naming conventions, please open an issue at https://github.com/Amartuvshins0404/nightona/issues.
+
+> **Note**: Nightona does not yet publish official packages of its own (see [PUBLISHING.md](PUBLISHING.md)). Until it does, any package you build comes from this source tree.
 
 We appreciate your contribution to making Nightona more accessible to users across different platforms, while respecting our project's identity!

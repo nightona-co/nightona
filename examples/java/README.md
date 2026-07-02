@@ -8,7 +8,7 @@ This directory contains example projects demonstrating how to use the Nightona J
 
    ```bash
    export NIGHTONA_API_KEY="your-api-key"
-   export NIGHTONA_API_URL="https://app.daytona.io/api"  # optional, this is the default
+   export NIGHTONA_API_URL="http://localhost:3000/api"  # optional, this is the default
    export NIGHTONA_TARGET="us"  # optional
    ```
 

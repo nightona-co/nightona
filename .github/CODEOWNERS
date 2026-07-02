@@ -4,23 +4,23 @@
 # Enforcement: the "Security baseline" Ruleset requires CODEOWNERS review on main,
 # so listed owners must approve before merge.
 
-# Security and compliance policies (CISO-owned)
-SECURITY.md                @daytonaio/security
-CODE_OF_CONDUCT.md         @daytonaio/security
+# Security and compliance policies
+SECURITY.md                @Amartuvshins0404
+CODE_OF_CONDUCT.md         @Amartuvshins0404
 
 # CI/CD pipelines and composite actions
-.github/workflows/         @daytonaio/security @Tpuljak
-.github/actions/           @daytonaio/security @Tpuljak
+.github/workflows/         @Amartuvshins0404
+.github/actions/           @Amartuvshins0404
 
 # Dependency and supply chain configuration
-.github/dependabot.yml     @daytonaio/security @Tpuljak
-.yarnrc.yml                @daytonaio/security @Tpuljak
-.npmrc                     @daytonaio/security @Tpuljak
+.github/dependabot.yml     @Amartuvshins0404
+.yarnrc.yml                @Amartuvshins0404
+.npmrc                     @Amartuvshins0404
 
 # Linting and license enforcement (security-relevant)
-.github/actionlint.yaml    @daytonaio/security @Tpuljak
-.licenserc.yaml            @daytonaio/security @Tpuljak
-.licenserc-clients.yaml    @daytonaio/security @Tpuljak
+.github/actionlint.yaml    @Amartuvshins0404
+.licenserc.yaml            @Amartuvshins0404
+.licenserc-clients.yaml    @Amartuvshins0404
 
 # CODEOWNERS itself (must protect itself)
-.github/CODEOWNERS         @daytonaio/security @Tpuljak
+.github/CODEOWNERS         @Amartuvshins0404

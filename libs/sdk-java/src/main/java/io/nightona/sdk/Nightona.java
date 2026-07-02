@@ -57,14 +57,17 @@ public class Nightona implements AutoCloseable {
      * Creates a client using environment variables.
      *
      * <p>Reads {@code NIGHTONA_API_KEY}, {@code NIGHTONA_API_URL}, and {@code NIGHTONA_TARGET}.
+     * For backward compatibility, the legacy {@code DAYTONA_API_KEY}, {@code DAYTONA_API_URL},
+     * and {@code DAYTONA_TARGET} variables are used as fallbacks when the {@code NIGHTONA_}
+     * variables are unset or empty.
      *
      * @throws NightonaException if required authentication is missing
      */
     public Nightona() {
         this(new NightonaConfig.Builder()
-                .apiKey(System.getenv("NIGHTONA_API_KEY"))
-                .apiUrl(envOrDefault("NIGHTONA_API_URL", "https://app.daytona.io/api"))
-                .target(System.getenv("NIGHTONA_TARGET"))
+                .apiKey(envWithFallback("NIGHTONA_API_KEY", "DAYTONA_API_KEY"))
+                .apiUrl(envWithFallbackOrDefault("NIGHTONA_API_URL", "DAYTONA_API_URL", "http://localhost:3000/api"))
+                .target(envWithFallback("NIGHTONA_TARGET", "DAYTONA_TARGET"))
                 .build());
     }
 
@@ -616,9 +619,17 @@ public class Nightona implements AutoCloseable {
         return out;
     }
 
-    private static String envOrDefault(String key, String fallback) {
-        String value = System.getenv(key);
-        return value == null || value.isEmpty() ? fallback : value;
+    private static String envWithFallback(String primaryKey, String legacyKey) {
+        String value = System.getenv(primaryKey);
+        if (value == null || value.isEmpty()) {
+            value = System.getenv(legacyKey);
+        }
+        return value;
+    }
+
+    private static String envWithFallbackOrDefault(String primaryKey, String legacyKey, String defaultValue) {
+        String value = envWithFallback(primaryKey, legacyKey);
+        return value == null || value.isEmpty() ? defaultValue : value;
     }
 
     private String toJson(Object value) {

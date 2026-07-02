@@ -41,7 +41,7 @@ import {
   DialogTitle,
 } from './components/ui/dialog'
 import { Empty, EmptyContent, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from './components/ui/empty'
-import { NIGHTONA_DOCS_URL, NIGHTONA_SLACK_URL } from './constants/ExternalLinks'
+import { NIGHTONA_COMMUNITY_URL, NIGHTONA_DOCS_URL } from './constants/ExternalLinks'
 import { FeatureFlags } from './enums/FeatureFlags'
 import { getRouteSubPath, RoutePath, trimLeadingSlash } from './enums/RoutePath'
 import { useConfig } from './hooks/useConfig'
@@ -329,7 +329,7 @@ const router = createBrowserRouter([
       { index: true, element: <LandingPage /> },
       { path: trimLeadingSlash(RoutePath.LOGOUT), element: <Logout /> },
       { path: trimLeadingSlash(RoutePath.DOCS), loader: () => redirect(NIGHTONA_DOCS_URL) },
-      { path: trimLeadingSlash(RoutePath.SLACK), loader: () => redirect(NIGHTONA_SLACK_URL) },
+      { path: trimLeadingSlash(RoutePath.SLACK), loader: () => redirect(NIGHTONA_COMMUNITY_URL) },
       {
         path: trimLeadingSlash(RoutePath.DASHBOARD),
         element: <DashboardOutlet />,

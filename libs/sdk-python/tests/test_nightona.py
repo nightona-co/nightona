@@ -79,8 +79,10 @@ class TestNightonaInit:
         monkeypatch.setenv("NIGHTONA_TARGET", "us")
         monkeypatch.delenv("NIGHTONA_API_URL", raising=False)
         monkeypatch.delenv("NIGHTONA_SERVER_URL", raising=False)
+        monkeypatch.delenv("DAYTONA_API_URL", raising=False)
+        monkeypatch.delenv("DAYTONA_SERVER_URL", raising=False)
         nightona = _make_nightona()
-        assert nightona._api_url == "https://app.daytona.io/api"
+        assert nightona._api_url == "http://localhost:3000/api"
 
     @patch("nightona._utils.env.dotenv_values", return_value={})
     def test_env_server_url_warns_when_api_url_missing(self, _mock_dotenv, monkeypatch):

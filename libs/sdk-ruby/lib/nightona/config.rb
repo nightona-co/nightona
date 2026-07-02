@@ -7,7 +7,7 @@ require 'dotenv'
 
 module Nightona
   class Config
-    API_URL = 'https://app.daytona.io/api'
+    API_URL = 'http://localhost:3000/api'
 
     # API key for authentication with the Nightona API
     #
@@ -75,6 +75,8 @@ module Nightona
 
     # Reads a NIGHTONA_-prefixed environment variable using the same precedence
     # as the Config initializer: runtime ENV first, then .env.local, then .env.
+    # For backwards compatibility, the legacy DAYTONA_-prefixed variable is used
+    # as a fallback at each level when the NIGHTONA_ one is not set.
     # Only names starting with NIGHTONA_ are accepted.
     #
     # @param name [String] The environment variable name. Must start with NIGHTONA_.
@@ -88,6 +90,7 @@ module Nightona
 
     # Returns a lambda that looks up NIGHTONA_-prefixed env vars without writing to ENV.
     # Files are parsed once; lookups check runtime env first, then .env.local, then .env.
+    # Legacy DAYTONA_-prefixed variables are honored as a fallback.
     def nightona_env_reader
       file_vars = {}
       env_file = File.join(Dir.pwd, '.env')
@@ -98,12 +101,16 @@ module Nightona
       lambda do |name|
         raise ArgumentError, "Variable must start with 'NIGHTONA_', got '#{name}'" unless name.start_with?('NIGHTONA_')
 
-        ENV.key?(name) ? ENV[name] : file_vars[name]
+        legacy_name = name.sub(/\ANIGHTONA_/, 'DAYTONA_')
+        return ENV[name] if ENV.key?(name)
+        return ENV[legacy_name] if ENV.key?(legacy_name)
+
+        file_vars.key?(name) ? file_vars[name] : file_vars[legacy_name]
       end
     end
 
     def nightona_filter(env_hash)
-      env_hash.select { |k, _| k.start_with?('NIGHTONA_') }
+      env_hash.select { |k, _| k.start_with?('NIGHTONA_') || k.start_with?('DAYTONA_') }
     end
   end
 end

@@ -60,7 +60,7 @@ export interface VolumeMount extends SandboxVolume {
  * via the environment variable `NIGHTONA_JWT_TOKEN`, or an API key must be provided instead.
  * @property {string} organizationId - Organization ID used for JWT-based authentication. Required if a JWT token
  * is provided, and must be set either here or in the environment variable `NIGHTONA_ORGANIZATION_ID`.
- * @property {string} apiUrl - URL of the Nightona API. Defaults to 'https://app.daytona.io/api'
+ * @property {string} apiUrl - URL of the Nightona API. Defaults to 'http://localhost:3000/api'
  * if not set here and not set in environment variable NIGHTONA_API_URL.
  * @property {string} target - Target location for Sandboxes
  * @property {boolean} otelEnabled - OpenTelemetry tracing enabled.
@@ -286,7 +286,7 @@ export class Nightona implements AsyncDisposable {
       }
     }
 
-    this.apiUrl = apiUrl || 'https://app.daytona.io/api'
+    this.apiUrl = apiUrl || 'http://localhost:3000/api'
 
     if (!this.apiKey && !this.jwtToken) {
       throw new NightonaAuthenticationError(
@@ -306,8 +306,7 @@ export class Nightona implements AsyncDisposable {
       orgHeader['X-Nightona-Organization-ID'] = this.organizationId
     }
 
-    const isLegacyPackage = packageJson.name === '@daytonaio/sdk'
-    const sdkLabel = isLegacyPackage ? 'sdk-typescript-legacy' : 'sdk-typescript'
+    const sdkLabel = 'sdk-typescript'
 
     const configuration = new Configuration({
       basePath: this.apiUrl,
