@@ -38,7 +38,7 @@ permissions: {}
 jobs:
   publish:
     if: github.repository == 'Amartuvshins0404/nightona'
-    runs-on: blacksmith-16vcpu-ubuntu-2404
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     name: Publish ${{ matrix.name }}
@@ -135,7 +135,7 @@ jobs:
     # original condition: ${{ github.repository == 'Amartuvshins0404/nightona' && inputs.npm_tag == 'latest' }}
     # dispatches to the Amartuvshins0404/homebrew-cli repo (fork of upstream daytonaio/homebrew-cli) with a GITHUBBOT_TOKEN
     if: false # disabled post-fork: needs Nightona infra
-    runs-on: blacksmith-4vcpu-ubuntu-2404
+    runs-on: ubuntu-latest
     permissions: {}
     name: Update Homebrew CLI tap
     steps:

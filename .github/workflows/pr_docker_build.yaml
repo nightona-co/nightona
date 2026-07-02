@@ -17,8 +17,8 @@ jobs:
   docker-build:
     if: github.repository == 'Amartuvshins0404/nightona' && github.event.pull_request.head.repo.full_name == github.repository
     name: Docker build
-    runs-on: blacksmith-16vcpu-ubuntu-2404
-    timeout-minutes: 40
+    runs-on: ubuntu-latest
+    timeout-minutes: 80
     env:
       VERSION: v0.0.0-pr
       NX_DAEMON: 'false'
@@ -44,8 +44,8 @@ jobs:
         # Dockerfiles' `COPY go.work go.work.sum` fails. Matches release.yaml:270.
         run: touch go.work.sum
 
-      - name: Setup Blacksmith Builder
-        uses: useblacksmith/setup-docker-builder@ab5c1da94f53f5cd75c1038092aa276dddfccbba # v1.9.0
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
 
       - name: Build all Docker targets
         # sandbox, sandbox-slim and sandbox-gpu excluded: sandbox/sandbox-slim's base

@@ -23,7 +23,7 @@ jobs:
   e2e-pr-tests:
     if: github.repository == 'Amartuvshins0404/nightona'
     name: E2E sandbox lifecycle (from source)
-    runs-on: blacksmith-4vcpu-ubuntu-2404
+    runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
       NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_ACCESS_TOKEN }}
@@ -77,7 +77,14 @@ jobs:
       - name: Configure Docker daemon for insecure local registry
         if: steps.affected.outputs.affected == 'true'
         run: |
-          echo '{"insecure-registries": ["localhost:5000"]}' | sudo tee /etc/docker/daemon.json
+          # GitHub-hosted runners ship a pre-populated /etc/docker/daemon.json
+          # (cgroup-parent, exec-opts) — merge instead of overwriting it.
+          if [ -s /etc/docker/daemon.json ]; then
+            jq '. + {"insecure-registries": ["localhost:5000"]}' /etc/docker/daemon.json | sudo tee /etc/docker/daemon.json.new
+            sudo mv /etc/docker/daemon.json.new /etc/docker/daemon.json
+          else
+            echo '{"insecure-registries": ["localhost:5000"]}' | sudo tee /etc/docker/daemon.json
+          fi
           sudo systemctl restart docker
           sudo systemctl is-active docker
 

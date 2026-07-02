@@ -19,7 +19,7 @@ env:
 jobs:
   publish:
     if: github.repository == 'Amartuvshins0404/nightona'
-    runs-on: blacksmith-4vcpu-ubuntu-2404
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     env:
@@ -109,7 +109,7 @@ jobs:
 
   build_projects:
     needs: publish
-    runs-on: blacksmith-16vcpu-ubuntu-2404
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     env:
@@ -215,9 +215,9 @@ jobs:
     strategy:
       matrix:
         include:
-          - runner: blacksmith-16vcpu-ubuntu-2404
+          - runner: ubuntu-latest
             arch: amd64
-          - runner: blacksmith-16vcpu-ubuntu-2404-arm
+          - runner: ubuntu-24.04-arm
             arch: arm64
     permissions:
       contents: read
@@ -280,8 +280,8 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Setup Blacksmith Builder
-        uses: useblacksmith/setup-docker-builder@ab5c1da94f53f5cd75c1038092aa276dddfccbba # v1.9.0
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
 
       - name: Project dependencies
         run: corepack enable
@@ -310,7 +310,7 @@ jobs:
   # Push combined manifest
   docker_push_manifest:
     needs: docker_build
-    runs-on: blacksmith-4vcpu-ubuntu-2404
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
@@ -353,7 +353,7 @@ jobs:
 
   sync_gosum:
     needs: build_projects
-    runs-on: blacksmith-4vcpu-ubuntu-2404
+    runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write

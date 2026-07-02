@@ -27,9 +27,9 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - runner: blacksmith-16vcpu-ubuntu-2404-arm
+          - runner: ubuntu-24.04-arm
             platform: linux/arm64
-          - runner: blacksmith-16vcpu-ubuntu-2404
+          - runner: ubuntu-latest
             platform: linux/amd64
 
     runs-on: ${{ matrix.runner }}
@@ -56,8 +56,8 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Setup Blacksmith Builder
-        uses: useblacksmith/setup-docker-builder@ab5c1da94f53f5cd75c1038092aa276dddfccbba # v1.9.0
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
 
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@650006c6eb7dba73a995cc03b0b2d7f5ca915bee # v4.2.0
@@ -68,12 +68,14 @@ jobs:
 
       - name: Build and push sandbox by digest
         id: build-sandbox
-        uses: useblacksmith/build-push-action@fb9e3e6a9299c78462bfadd0d93352c316adc9b8 # v2.2.0
+        uses: docker/build-push-action@v6
         with:
           context: ./images/sandbox
           file: ./images/sandbox/Dockerfile
           platforms: ${{ matrix.platform }}
           tags: ${{ env.REGISTRY_IMAGE }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
           outputs: type=image,push-by-digest=true,name-canonical=true,push=true
 
       - name: Export sandbox digest
@@ -84,12 +86,14 @@ jobs:
 
       - name: Build and push sandbox-slim by digest
         id: build-sandbox-slim
-        uses: useblacksmith/build-push-action@fb9e3e6a9299c78462bfadd0d93352c316adc9b8 # v2.2.0
+        uses: docker/build-push-action@v6
         with:
           context: ./images/sandbox-slim
           file: ./images/sandbox-slim/Dockerfile
           platforms: ${{ matrix.platform }}
           tags: ${{ env.REGISTRY_IMAGE }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
           outputs: type=image,push-by-digest=true,name-canonical=true,push=true
 
       - name: Export sandbox-slim digest
@@ -117,7 +121,7 @@ jobs:
       - name: Build and push sandbox-gpu by digest
         if: matrix.platform == 'linux/amd64'
         id: build-sandbox-gpu
-        uses: useblacksmith/build-push-action@fb9e3e6a9299c78462bfadd0d93352c316adc9b8 # v2.2.0
+        uses: docker/build-push-action@v6
         with:
           context: ./images/sandbox-gpu
           file: ./images/sandbox-gpu/Dockerfile
@@ -125,6 +129,8 @@ jobs:
           tags: ${{ env.GPU_REGISTRY_IMAGE }}
           build-args: |
             SANDBOX_IMAGE=${{ env.REGISTRY_IMAGE }}@${{ steps.build-sandbox.outputs.digest }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
           outputs: type=image,push-by-digest=true,name-canonical=true,push=true
 
       - name: Export sandbox-gpu digest
@@ -151,7 +157,7 @@ jobs:
 
   docker_manifest:
     needs: docker_build
-    runs-on: blacksmith-4vcpu-ubuntu-2404
+    runs-on: ubuntu-latest
     permissions:
       packages: write
 
@@ -177,8 +183,8 @@ jobs:
           pattern: digests-gpu-*
           merge-multiple: true
 
-      - name: Setup Blacksmith Builder
-        uses: useblacksmith/setup-docker-builder@ab5c1da94f53f5cd75c1038092aa276dddfccbba # v1.9.0
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
 
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@650006c6eb7dba73a995cc03b0b2d7f5ca915bee # v4.2.0
