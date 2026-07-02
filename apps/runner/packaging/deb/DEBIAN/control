@@ -3,7 +3,7 @@ Version: ${VERSION}
 Section: utils
 Priority: optional
 Architecture: amd64
-Maintainer: Nightona <support@daytona.io>
+Maintainer: Nightona <amaraaamka0404@gmail.com>
 Description: Nightona Runner
  The Nightona Runner manages execution of jobs and sandboxes
  for the Nightona development environment platform.

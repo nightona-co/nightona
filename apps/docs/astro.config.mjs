@@ -32,7 +32,7 @@ export default defineConfig({
         {
           icon: 'github',
           label: 'GitHub',
-          href: 'https://github.com/daytonaio',
+          href: 'https://github.com/Amartuvshins0404/nightona',
         },
       ],
       editLink: {

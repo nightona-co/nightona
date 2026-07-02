@@ -2,7 +2,7 @@
 name = "nightona-verl-retool"
 version = "0.1.0"
 description = "Companion files for benchmarking veRL ReTool backends with Nightona"
-authors = [{name = "Nightona Team", email = "support@daytona.io"}]
+authors = [{name = "Nightona Team", email = "amaraaamka0404@gmail.com"}]
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [

@@ -14,15 +14,13 @@ Status of the visual rebrand (Daytona -> Nightona wordmark: crescent moon + "NIG
 
 ## Remaining items needing manual attention
 
-1. **`apps/cli/auth/auth_success.html`** — the post-login page loads its logo from
-   `https://raw.githubusercontent.com/daytonaio/nightona/main/assets/images/Nightona-logotype-black.png`
-   (upstream `daytonaio` org URL; 404s and would show Daytona branding if it resolved). Outside this
-   pass's file scope. Point it at
-   `https://raw.githubusercontent.com/Amartuvshins0404/nightona/main/assets/images/Nightona-logotype-black.png`
-   or inline the SVG.
-2. **`apps/docs/src/components/ApiReference.astro`** — Scalar config `image` / `ogImage` point at
-   `https://daytona.io/docs/nightona.png` (Daytona-owned domain). The local file is rebranded, but the
-   URL still serves Daytona's copy. Needs a hosted replacement once a domain/CDN exists.
+1. ~~**`apps/cli/auth/auth_success.html`**~~ — RESOLVED: the post-login page now renders an inline
+   SVG of the Nightona wordmark (crescent + NIGHTONA) and an inline data-URI crescent favicon;
+   no external fetches remain.
+2. ~~**`apps/docs/src/components/ApiReference.astro`**~~ — RESOLVED: Scalar config `image` /
+   `ogImage` now point at
+   `https://raw.githubusercontent.com/Amartuvshins0404/nightona/main/apps/docs/public/nightona.png`
+   (the rebranded 1248x628 OG card in this repo).
 3. **Contact emails** — `sales@daytona.io` / `support@daytona.io` mailto links remain in
    `apps/dashboard/src/components/TierUpgradeCard.tsx`, `LoadingFallbackContent.tsx`, and
    `UsageOverview.tsx` (no Nightona address exists yet).

@@ -63,7 +63,7 @@ func checkVersionsMismatch(res *http.Response) {
 	}
 
 	versionMismatchWarningOnce.Do(func() {
-		log.Warn(fmt.Sprintf("Version mismatch: Nightona CLI is on v%s and API is on v%s.\nMake sure the versions are aligned using 'brew upgrade daytonaio/cli/nightona' or by downloading the latest version from https://github.com/Amartuvshins0404/nightona/releases.", cliVersion, apiVersion))
+		log.Warn(fmt.Sprintf("Version mismatch: Nightona CLI is on v%s and API is on v%s.\nMake sure the versions are aligned using 'brew upgrade amartuvshins0404/cli/nightona' or by downloading the latest version from https://github.com/Amartuvshins0404/nightona/releases.", cliVersion, apiVersion))
 	})
 }
 

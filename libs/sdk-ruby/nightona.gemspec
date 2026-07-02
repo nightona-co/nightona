@@ -5,8 +5,8 @@ require_relative 'lib/nightona/sdk/version'
 Gem::Specification.new do |spec|
   spec.name = 'nightona'
   spec.version = Nightona::Sdk::VERSION
-  spec.authors = ['Nightona Platforms Inc.']
-  spec.email = ['support@daytona.io']
+  spec.authors = ['Nightona contributors']
+  spec.email = ['amaraaamka0404@gmail.com']
 
   spec.summary = 'Ruby SDK for Nightona'
   spec.description = 'High-level Ruby SDK for Nightona: sandboxes, git, filesystem, LSP, process, and object storage.'

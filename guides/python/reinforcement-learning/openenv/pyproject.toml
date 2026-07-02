@@ -2,7 +2,7 @@
 name = "nightona-openenv-finqa"
 version = "0.1.0"
 description = "FinQA evaluation and training on Nightona sandboxes using OpenEnv"
-authors = [{name = "Nightona Team", email = "support@daytona.io"}]
+authors = [{name = "Nightona Team", email = "amaraaamka0404@gmail.com"}]
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [

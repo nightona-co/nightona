@@ -7,13 +7,13 @@
   "targets": {
     "docker": {
       "options": {
-        "tags": ["daytonaio/sandbox:$VERSION$ARCH"],
-        "cache-from": ["type=registry,ref=daytonaio/sandbox:buildcache$ARCH"],
-        "cache-to": ["type=registry,ref=daytonaio/sandbox:buildcache$ARCH,mode=max"]
+        "tags": ["ghcr.io/amartuvshins0404/sandbox:$VERSION$ARCH"],
+        "cache-from": ["type=registry,ref=ghcr.io/amartuvshins0404/sandbox:buildcache$ARCH"],
+        "cache-to": ["type=registry,ref=ghcr.io/amartuvshins0404/sandbox:buildcache$ARCH,mode=max"]
       },
       "configurations": {
         "pr-build": {
-          "tags": ["daytonaio/sandbox:$VERSION"]
+          "tags": ["ghcr.io/amartuvshins0404/sandbox:$VERSION"]
         }
       }
     }

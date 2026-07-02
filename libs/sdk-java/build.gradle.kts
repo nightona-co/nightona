@@ -79,15 +79,15 @@ publishing {
 
                 developers {
                     developer {
-                        id.set("daytonaio")
-                        name.set("Nightona Platforms Inc.")
-                        email.set("support@daytona.io")
+                        id.set("Amartuvshins0404")
+                        name.set("Nightona contributors")
+                        email.set("amaraaamka0404@gmail.com")
                     }
                 }
 
                 scm {
                     connection.set("scm:git:git://github.com/Amartuvshins0404/nightona.git")
-                    developerConnection.set("scm:git:ssh://github.com:daytonaio/nightona.git")
+                    developerConnection.set("scm:git:ssh://git@github.com:Amartuvshins0404/nightona.git")
                     url.set("https://github.com/Amartuvshins0404/nightona")
                 }
             }

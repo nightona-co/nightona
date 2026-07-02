@@ -46,7 +46,7 @@ func TestBuildCloneArgs(t *testing.T) {
 		{
 			name: "http URL with branch",
 			repo: &gitprovider.GitRepository{
-				Url:    "http://localhost:3000/daytonaio/nightona",
+				Url:    "http://localhost:3000/Amartuvshins0404/nightona",
 				Branch: "main",
 			},
 			workDir: "/work-dir",
@@ -55,7 +55,7 @@ func TestBuildCloneArgs(t *testing.T) {
 				"-c", "core.hooksPath=/dev/null",
 				"clone", "--single-branch", "--progress",
 				"--branch", "main",
-				"--", "http://localhost:3000/daytonaio/nightona", "/work-dir",
+				"--", "http://localhost:3000/Amartuvshins0404/nightona", "/work-dir",
 			},
 		},
 		{

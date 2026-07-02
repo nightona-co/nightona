@@ -1,7 +1,7 @@
 version: v2
 modules:
   - path: proto
-    name: buf.build/daytonaio/runner
+    name: buf.build/amartuvshins0404/runner
 lint:
   use:
     - STANDARD

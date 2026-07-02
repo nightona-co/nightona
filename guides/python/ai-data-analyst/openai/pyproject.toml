@@ -7,7 +7,7 @@ name = "openai-data-analysis-openai"
 version = "0.1.0"
 description = "Nightona + OpenAI data analyst example in Python"
 authors = [
-    {name = "Nightona Team", email = "support@daytona.io"}
+    {name = "Nightona Team", email = "amaraaamka0404@gmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.10"

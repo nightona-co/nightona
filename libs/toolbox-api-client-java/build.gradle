@@ -109,14 +109,14 @@ if(hasProperty('target') && target == 'android') {
                     }
                     developers {
                         developer {
-                            id = 'daytonaio'
-                            name = 'Nightona Platforms Inc.'
-                            email = 'support@daytona.io'
+                            id = 'Amartuvshins0404'
+                            name = 'Nightona contributors'
+                            email = 'amaraaamka0404@gmail.com'
                         }
                     }
                     scm {
                         connection = 'scm:git:git://github.com/Amartuvshins0404/nightona.git'
-                        developerConnection = 'scm:git:ssh://github.com:daytonaio/nightona.git'
+                        developerConnection = 'scm:git:ssh://git@github.com:Amartuvshins0404/nightona.git'
                         url = 'https://github.com/Amartuvshins0404/nightona'
                     }
                 }

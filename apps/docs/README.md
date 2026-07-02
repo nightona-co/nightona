@@ -3,8 +3,8 @@
 [![Documentation](https://img.shields.io/github/v/release/daytonaio/docs?label=Docs&color=23cc71)](https://www.daytona.io/docs)
 ![License](https://img.shields.io/badge/License-AGPL--3-blue)
 [![Go Report Card](https://goreportcard.com/badge/github.com/Amartuvshins0404/nightona)](https://goreportcard.com/report/github.com/Amartuvshins0404/nightona)
-[![Issues - nightona](https://img.shields.io/github/issues/daytonaio/nightona)](https://github.com/Amartuvshins0404/nightona/issues)
-![GitHub Release](https://img.shields.io/github/v/release/daytonaio/nightona)
+[![Issues - nightona](https://img.shields.io/github/issues/Amartuvshins0404/nightona)](https://github.com/Amartuvshins0404/nightona/issues)
+![GitHub Release](https://img.shields.io/github/v/release/Amartuvshins0404/nightona)
 
 </div>
 

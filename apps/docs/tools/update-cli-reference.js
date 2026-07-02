@@ -34,19 +34,19 @@ Install the Nightona CLI to interact with Nightona sandboxes from the command li
 <TabItem label="Mac">
 
 \`\`\`bash
-brew install daytonaio/cli/nightona
+brew install amartuvshins0404/cli/nightona
 \`\`\`
 
 Trust the tap once so routine \`brew upgrade\` keeps the Nightona CLI up to date. Recent Homebrew versions require third-party taps to be explicitly trusted; without it, a bare \`brew upgrade\` skips the Nightona tap and the CLI goes stale:
 
 \`\`\`bash
-brew trust daytonaio/cli
+brew trust amartuvshins0404/cli
 \`\`\`
 
 To upgrade the Nightona CLI to the latest version:
 
 \`\`\`bash
-brew upgrade daytonaio/cli/nightona
+brew upgrade amartuvshins0404/cli/nightona
 \`\`\`
 
 Alternatively, install directly without Homebrew:
@@ -106,7 +106,7 @@ macOS Installation: \`\`\`brew install bash-completion\`\`\`
 
 async function fetchRawDocs(ref) {
   const url =
-    'https://api.github.com/repos/daytonaio/nightona/contents/apps/cli/hack/docs'
+    'https://api.github.com/repos/Amartuvshins0404/nightona/contents/apps/cli/hack/docs'
   const request = await fetch(`${url}?ref=${ref}`)
   const response = await request.json()
 
