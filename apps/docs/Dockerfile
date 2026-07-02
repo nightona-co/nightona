@@ -6,7 +6,7 @@ ENV CI=true
 # module's prebuilt binary download fails and node-gyp falls back to compiling
 # from source — it stays out of the runtime image. py3-setuptools provides the
 # distutils module node-gyp needs on Python 3.12+.
-RUN apk add --no-cache python3 py3-setuptools make g++
+RUN apk add --no-cache python3 py3-setuptools make g++ git
 
 RUN npm install -g corepack && corepack enable
 
